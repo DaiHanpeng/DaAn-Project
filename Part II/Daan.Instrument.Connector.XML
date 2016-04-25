@@ -1,0 +1,608 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Daan.Instrument.Connector</name>
+    </assembly>
+    <members>
+        <!-- 对于成员“T:Daan.Instrument.Communication.WorkListOriginalData”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsLog”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsCalibrationResult”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Entity.InsStatus">
+            <summary>
+            仪器状态数据格式
+            </summary>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsCalibrationStatus”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Type.QCType">
+            <summary>
+            质控物水平类型,高中低
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Connector.Encrypt.Des3">
+            <summary>
+            DES3加密解密
+            </summary>
+        </member>
+        <member name="M:Daan.Instrument.Connector.Encrypt.Des3.Des3EncodeCBC(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            DES3 CBC模式加密
+            </summary>
+            <param name="key">密钥</param>
+            <param name="iv">IV</param>
+            <param name="data">明文的byte数组</param>
+            <returns>密文的byte数组</returns>
+        </member>
+        <member name="M:Daan.Instrument.Connector.Encrypt.Des3.Des3DecodeCBC(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            DES3 CBC模式解密
+            </summary>
+            <param name="key">密钥</param>
+            <param name="iv">IV</param>
+            <param name="data">密文的byte数组</param>
+            <returns>明文的byte数组</returns>
+        </member>
+        <member name="M:Daan.Instrument.Connector.Encrypt.Des3.Des3EncodeECB(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            DES3 ECB模式加密
+            </summary>
+            <param name="key">密钥</param>
+            <param name="iv">IV(当模式为ECB时，IV无用)</param>
+            <param name="str">明文的byte数组</param>
+            <returns>密文的byte数组</returns>
+        </member>
+        <member name="M:Daan.Instrument.Connector.Encrypt.Des3.Des3DecodeECB(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            DES3 ECB模式解密
+            </summary>
+            <param name="key">密钥</param>
+            <param name="iv">IV(当模式为ECB时，IV无用)</param>
+            <param name="str">密文的byte数组</param>
+            <returns>明文的byte数组</returns>
+        </member>
+        <member name="T:Daan.Instrument.Type.StatusType">
+            <summary>
+            仪器状态类别
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Type.LogType">
+            <summary>
+            日志分级
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Entity.InsCalibrationResult">
+            <summary>
+            定标结果数据格式
+            </summary>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsTest”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Type.CalibrationStateType">
+            <summary>
+            定标是否通过类型
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Entity.InsLog">
+            <summary>
+            日志数据包格式
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Entity.InsCalibrationStatus">
+            <summary>
+            定标状态数据格式
+            </summary>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsHeart”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Type.CommunicationType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Type.CalibrationType">
+            <summary>
+            定标点的类型
+            </summary>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.TestR”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Type.ReagentUsageType">
+            <summary>
+            试剂使用类别
+            </summary>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.InitConnector">
+            <summary>
+            初始化传输对象
+            </summary>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendStatus(Daan.Instrument.Entity.InsStatus)">
+            <summary>
+            <para>示例代码可通过【引用】-->选中"Daan.Instrument.Connector"-->【在对象浏览器中查看】</para>
+            <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para>
+            <para>发送仪器状态【无返回值】，抛异常时请尝试重发，示例调用代码如下：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsStatus status = new InsStatus();</para>
+            <para>　　　　　status.StatusCode =StatusType.START;</para>
+            <para>　　　　　status.RunDate = DateTime.Parse("2016-02-16 08:11:12");</para>
+            <para>　　　　　InsConnector.SendStatus(status);</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            </summary>
+            <param name="status">参数是InsStatus实体类型,使用前需要赋值</param>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendAdjustmentResult(Daan.Instrument.Entity.InsAdjustmentResult)">
+            <summary>
+            <para>示例代码可通过【引用】-->选中"Daan.Instrument.Connector"-->【在对象浏览器中查看】</para>
+            <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para> 
+            <para>发送校准结果【无返回值】，抛异常时请尝试重发，示例调用代码如下：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsAdjustmentResult adjustmentResult = new InsAdjustmentResult();</para>
+            <para>　　　　　adjustmentResult.Absorbance = getAbsorbance();</para>
+            <para>　　　　　adjustmentResult.Barcode = "440103128800";</para>
+            <para>　　　　　adjustmentResult.Unit = "g/L";</para>
+            <para>　　　　　adjustmentResult.ResultValue = "20";</para>
+            <para>　　　　　adjustmentResult.ResultDate = DateTime.Now;</para>
+            <para>　　　　　adjustmentResult.TestCode = "38";</para>
+            <para>　　　　　adjustmentResult.ReagentLotNo = "160209";</para>
+            <para>　　　　　adjustmentResult.LotNo = "160301";</para>
+            <para>　　　　　adjustmentResult.Name = "谷草转氨酶";</para>
+            <para>　　　　　adjustmentResult.ExpireDate = DateTime.Parse("2016-09-01 00:00:00");</para>
+            <para>　　　　　adjustmentResult.OpenDate = DateTime.Parse("2016-03-01 00:00:00");</para>
+            <para>　　　　　adjustmentResult.OpenValidDays = 30;</para>
+            <para>　　　　　adjustmentResult.RefValue = "21";</para>
+            <para>　　　　　adjustmentResult.DeviationRange = "3";</para>
+            <para>　　　　　InsConnector.SendAdjustmentResult(adjustmentResult);</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            </summary>
+            <param name="adjustmentResult">参数是InsAdjustmentResult实体类型,使用前需要赋值</param>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendTest(Daan.Instrument.Entity.InsTest)">
+            <summary>
+            <para>示例代码可通过【引用】-->选中"Daan.Instrument.Connector"-->【在对象浏览器中查看】</para>
+            <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para>
+            <para>发送常规结果【无返回值】，抛异常时请尝试重发，示例调用代码如下：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsTest test = new InsTest();</para>
+            <para>　　　　　test.Barcode = "4400582244312";</para>
+            <para>　　　　　test.Unit = "ng/mL";</para>
+            <para>　　　　　test.Absorbance = "36837";</para>
+            <para>　　　　　test.ResultValue = "10.29";</para>
+            <para>　　　　　test.ResultDate = DateTime.Now;</para>
+            <para>　　　　　test.TestCode = "49";</para>
+            <para>　　　　　test.ReagentLotNo = "160307";</para>
+            <para>　　　　　test.SeqNo = "";</para>
+            <para>　　　　　test.RefHigh = "20.0";</para>
+            <para>　　　　　test.RefLow = "0.0";</para>
+            <para>　　　　　InsConnector.SendTest(test);</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            </summary>
+            <param name="test">参数是InsTest实体类型,使用前需要赋值</param>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendReagent(Daan.Instrument.Entity.InsReagent)">
+            <summary>
+            <para>示例代码可通过【引用】-->选中"Daan.Instrument.Connector"-->【在对象浏览器中查看】</para>
+            <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para>
+            <para>发送试剂消耗信息【无返回值】，抛异常时请尝试重发，调用代码如下：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsReagent reagent = new InsReagent();</para>
+            <para>　　　　　reagent.Barcode = "160311132";</para>
+            <para>　　　　　reagent.Unit = "BMU/ml";</para>
+            <para>　　　　　reagent.LotNo = "160301";</para>
+            <para>　　　　　reagent.ExpireDate = DateTime.Parse("2016-09-16 08:11:12");</para>
+            <para>　　　　　reagent.OpenDate = DateTime.Parse("2016-02-28 08:11:12");</para>
+            <para>　　　　　reagent.OpenValidDays = 31;</para>
+            <para>　　　　　reagent.Position = "001-02";</para>
+            <para>　　　　　reagent.TestName = "AFP";</para>
+            <para>　　　　　reagent.TestEnglishName = "AFP";</para>
+            <para>　　　　　reagent.Name = "甲胎蛋白";</para>
+            <para>　　　　　reagent.UsageType = ReagentUsageType.Default;</para>
+            <para>　　　　　reagent.UsageDate = DateTime.Now;</para>
+            <para>　　　　　reagent.Quantity = "-1";</para>
+            <para>　　　　　reagent.TestCode = "38";</para>
+            <para>　　　　　InsConnector.SendReagent(reagent);</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            </summary>
+            <param name="reagent">参数是InsReagent实体类型,使用前需要赋值</param>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendCalibrationResult(Daan.Instrument.Entity.InsCalibrationResult[])">
+            <summary>
+            <para>示例代码可通过【引用】-->选中"Daan.Instrument.Connector"-->【在对象浏览器中查看】</para>
+            <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para>
+            <para>发送定标结果信息，只包含结果，不发送曲线【无返回值】，抛异常时请尝试重发，示例调用代码如下：</para>
+            <para>发送单个定标结果示例：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsCalibrationResult calibrationResult = new InsCalibrationResult();</para>
+            <para>　　　　　calibrationResult.LotNo = "160308";</para>
+            <para>　　　　　calibrationResult.Name = "甲胎蛋白";</para>
+            <para>　　　　　calibrationResult.Barcode = "20160311001";</para>
+            <para>　　　　　calibrationResult.Unit = "ng/ml";</para>
+            <para>　　　　　calibrationResult.ExpireDate = DateTime.Parse("2017-05-17");</para>
+            <para>　　　　　calibrationResult.OpenDate = DateTime.Parse("2016-01-15");</para>
+            <para>　　　　　calibrationResult.ResultDate = DateTime.Parse("2016-03-10 10:10:11");</para>
+            <para>　　　　　calibrationResult.ReagentLotNo = "20150826";</para>
+            <para>　　　　　calibrationResult.OpenValidDays = 31;</para>
+            <para>　　　　　calibrationResult.Type = CalibrationType.S0;</para>
+            <para>　　　　　calibrationResult.Absorbance = 11;</para>
+            <para>　　　　　calibrationResult.ResultValue = 0;</para>
+            <para>　　　　　calibrationResult.ResultDate = DateTime.Now;</para>
+            <para>　　　　　calibrationResult.TestCode = "50";</para>
+            <para>　　　　　InsConnector.SendCalibrationResult(calibrationResult);</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            <para>发送多个定标结果示例：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsCalibrationResult[] calibrationResult = new InsCalibrationResult[6];</para>
+            <para>　　　　　for (int i = 0;i &lt; 6;i++) </para>
+            <para>　　　　　{</para>
+            <para>　　　　　　　    calibrationResult[i] = new InsCalibrationResult();</para>
+            <para>　　　　　　　    calibrationResult[i].LotNo = "160308";</para>
+            <para>　　　　　　　    calibrationResult[i].Name = "甲胎蛋白";</para>
+            <para>　　　　　　　    calibrationResult[i].Barcode = "20160311001";</para>
+            <para>　　　　　　　    calibrationResult[i].Unit = "ng/ml";</para>
+            <para>　　　　　　　    calibrationResult[i].ExpireDate = DateTime.Parse("2017-05-17");</para>
+            <para>　　　　　　　    calibrationResult[i].OpenDate = DateTime.Parse("2016-01-15");</para>
+            <para>　　　　　　　    calibrationResult[i].ResultDate = DateTime.Parse("2016-03-10 10:10:11");</para>
+            <para>　　　　　　　    calibrationResult[i].ReagentLotNo = "20150826";</para>
+            <para>　　　　　　　    calibrationResult[i].OpenValidDays = 31;</para>
+            <para>　　　　　　　    calibrationResult[i].TestCode = "50";</para>
+            <para>　　　　　　　    calibrationResult[i].ResultDate = DateTime.Now;</para>
+            <para>　　　　　　　    calibrationResult[i].Type = (CalibrationType)i;</para>
+            <para>　　　　　　　    calibrationResult[i].ResultValue = (i * 2.5).ToString();</para>
+            <para>　　　　　　　    calibrationResult[i].Absorbance = (i * 10).ToString();</para>
+            <para>　　　　　}</para>
+            <para>　　　　　InsConnector.SendCalibrationResult(calibrationResult[0], calibrationResult[1], calibrationResult[2],</para> 
+            <para>　　　　　                  calibrationResult[3], calibrationResult[4], calibrationResult[5]);</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            </summary>
+            <param name="calibrationResults">参数是params InsCalibrationResult[]实体类型 可传1个或多个参数,使用前需要赋值</param>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendCalibrationResult(Daan.Instrument.Entity.InsCalibrationStatus,Daan.Instrument.Entity.InsCalibrationResult[])">
+            <summary>
+            <para>示例代码可通过【引用】-->选中"Daan.Instrument.Connector"-->【在对象浏览器中查看】</para>
+            <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para>
+            <para>发送定标状态和曲线，可单发曲线信息或曲线+N个结果信息【无返回值】，抛异常时请尝试重发，示例调用代码如下：</para>
+            <para>发送定标状态和曲线示例：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsCalibrationStatus calibrationStatus = new InsCalibrationStatus();</para>
+            <para>　　　　　calibrationStatus.LotNo = strLotNo;</para>
+            <para>　　　　　calibrationStatus.TtlNums = 6;</para>
+            <para>　　　　　calibrationStatus.FitRate = "0.995";</para>
+            <para>　　　　　calibrationStatus.State =  CalibrationStateType.Pass;</para>
+            <para>　　　　　calibrationStatus.ResultDate = DateTime.Now;</para>
+            <para>　　　　　calibrationStatus.ReagentLotNo = "201602169988";</para>
+            <para>　　　　　calibrationStatus.TestCode = strTestCode;</para>
+            <para>　　　　　calibrationStatus.Curve = "y=ax+b";</para>
+            <para>　　　　　InsConnector.SendCalibrationResult(calibrationStatus);</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            <para>发送多个定标结果示例：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsCalibrationStatus calibrationStatus = new InsCalibrationStatus();</para>
+            <para>　　　　　calibrationStatus.LotNo = strLotNo;</para>
+            <para>　　　　　calibrationStatus.TtlNums = 6;</para>
+            <para>　　　　　calibrationStatus.FitRate = "0.995";</para>
+            <para>　　　　　calibrationStatus.State =  CalibrationStateType.Pass;</para>
+            <para>　　　　　calibrationStatus.ResultDate = DateTime.Now;</para>
+            <para>　　　　　calibrationStatus.ReagentLotNo = "201602169988";</para>
+            <para>　　　　　calibrationStatus.TestCode = strTestCode;</para>
+            <para>　　　　　calibrationStatus.Curve = "y=ax+b";</para>
+            <para>　　　　　InsCalibrationResult[] calibrationResult = new InsCalibrationResult[6];</para>
+            <para>　　　　　for (int i = 0;i &lt; 6;i++) </para>
+            <para>　　　　　{</para>
+            <para>　　　　　　　    calibrationResult[i] = new InsCalibrationResult();</para>
+            <para>　　　　　　　    calibrationResult[i].LotNo = "160308";</para>
+            <para>　　　　　　　    calibrationResult[i].Name = "甲胎蛋白";</para>
+            <para>　　　　　　　    calibrationResult[i].Barcode = "20160311001";</para>
+            <para>　　　　　　　    calibrationResult[i].Unit = "ng/ml";</para>
+            <para>　　　　　　　    calibrationResult[i].ExpireDate = DateTime.Parse("2017-05-17");</para>
+            <para>　　　　　　　    calibrationResult[i].OpenDate = DateTime.Parse("2016-01-15");</para>
+            <para>　　　　　　　    calibrationResult[i].ResultDate = DateTime.Parse("2016-03-10 10:10:11");</para>
+            <para>　　　　　　　    calibrationResult[i].ReagentLotNo = "20150826";</para>
+            <para>　　　　　　　    calibrationResult[i].OpenValidDays = 31;</para>
+            <para>　　　　　　　    calibrationResult[i].TestCode = "50";</para>
+            <para>　　　　　　　    calibrationResult[i].ResultDate = DateTime.Now;</para>
+            <para>　　　　　　　    calibrationResult[i].Type = (CalibrationType)i;</para>
+            <para>　　　　　　　    calibrationResult[i].ResultValue = (i * 2.5).ToString();</para>
+            <para>　　　　　　　    calibrationResult[i].Absorbance = (i * 10).ToString();</para>
+            <para>　　　　　}</para>
+            <para>　　　　　InsConnector.SendCalibrationResult(InsCalibrationStatus,calibrationResult[0], calibrationResult[1], calibrationResult[2],</para> 
+            <para>　　　　　                  calibrationResult[3], calibrationResult[4], calibrationResult[5]);</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            </summary>
+            <param name="calibrationStatus">参数是InsCalibrationStatus实体类型 </param>
+            <param name="calibrationResults">参数是params InsCalibrationResult[]实体类型 可传1个或多个参数,使用前需要赋值</param>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendQC(Daan.Instrument.Entity.InsQC)">
+            <summary>
+            <para>示例代码可通过【引用】-->选中"Daan.Instrument.Connector"-->【在对象浏览器中查看】</para>
+            <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para>
+            <para>发送质控信息【无返回值】，抛异常时请尝试重发，调用代码如下：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsQC qc = new InsQC();</para>
+            <para>　　　　　qc.Barcode = "20160226001122";</para>
+            <para>　　　　　qc.Unit = "umol/ml";</para>
+            <para>　　　　　qc.ResultDate = DateTime.Parse( "2016-03-10 10:10:11");</para>
+            <para>　　　　　qc.TestCode = "49";</para>
+            <para>　　　　　qc.ReagentLotNo = "20160826";</para>
+            <para>　　　　　qc.LotNo = "160301";</para>
+            <para>　　　　　qc.Name = "高浓度质控";</para>
+            <para>　　　　　qc.ExpireDate =DateTime.Parse( "2017-01-22 12:12:11");</para>
+            <para>　　　　　qc.OpenDate =DateTime.Parse( "2016-02-22 12:12:11");</para>
+            <para>　　　　　qc.OpenValidDays = 31;</para>
+            <para>　　　　　qc.Type = QCType.High;</para>
+            <para>　　　　　qc.TargetValue = "18.52";</para>
+            <para>　　　　　qc.OneSD = "0.18";</para>
+            <para>　　　　　qc.Absorbance = "35183";</para>
+            <para>　　　　　qc.ResultValue = "18.32";</para>
+            <para>　　　　　qc.ResultDate = DateTime.Parse( "2016-03-11 10:10:11");</para>
+            <para>　　　　　qc.TestCode = "50";</para>
+            <para>　　　　　InsConnector.SendQC(qc);</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            </summary>
+            <param name="qc">参数是InsQC实体类型,使用前需要赋值</param>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendReagentStatus(Daan.Instrument.Entity.InsReagentStatus,Daan.Instrument.Entity.InsReagentInfo[])">
+            <summary>
+            <para>示例代码可通过【引用】-->选中"Daan.Instrument.Connector"-->【在对象浏览器中查看】</para>
+            <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para>
+            <para>发送试剂状态信息【无返回值】，抛异常时请尝试重发，示例调用代码如下：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsReagentStatus reagentStatus = new InsReagentStatus();</para>
+            <para>　　　　　reagentStatus.RunDate = DateTime.Now;</para>
+            <para>　　　　　InsReagentInfo[] ragentInfo = new InsReagentInfo[20];</para>
+            <para>　　　　　for (int i = 0;i &lt; 20; i++)</para>
+            <para>　　　　　{</para>
+            <para>　　　　　　　ragentInfo[i] = new InsReagentInfo();</para>
+            <para>　　　　　　　ragentInfo[i].Position = (i+1).ToString();</para>
+            <para>　　　　　　　ragentInfo[i].TestCode = "Test"+(i+1).ToString();</para>
+            <para>　　　　　　　ragentInfo[i].TestName = "Test"+(i+1).ToString();</para>
+            <para>　　　　　　　ragentInfo[i].LotNo = "160317";</para>
+            <para>　　　　　　　ragentInfo[i].Type = "试剂1";</para>
+            <para>　　　　　　　ragentInfo[i].RemainderCount = 115;</para>
+            <para>　　　　　　　ragentInfo[i].RemainderValue = "523";</para>
+            <para>　　　　　　　ragentInfo[i].AuthorizeCount = "3112";</para>
+            <para>　　　　　}</para>
+            <para>　　　　　InsConnector.SendReagentStatus(reagentStatus, ragentInfo[0], ragentInfo[5], ragentInfo[19]);</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            </summary>
+            <param name="reagentStatus">参数是reagentStatus实体类型 </param>
+            <param name="reagentInfos">参数是params InsReagentInfo[]实体类型 可传0个或多个参数,使用前需要赋值</param>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendHeart(Daan.Instrument.Entity.InsHeart)">
+            <summary>
+            <para>示例代码可通过【引用】-->选中"Daan.Instrument.Connector"-->【在对象浏览器中查看】</para>
+            <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para>
+            <para>发送心跳信息【无返回值】，抛异常时请尝试重发，调用代码如下：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsHeart heart = new InsHeart();</para>
+            <para>　　　　　heart.RunDate = DateTime.Parse("2016-03-08 08:11:12");</para>
+            <para>　　　　　heart.TempReagent = "4.3";</para>
+            <para>　　　　　heart.TempIncubation = "36.5";</para>
+            <para>　　　　　InsConnector.SendHeart(heart);</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            </summary>
+            <param name="heart">参数是InsHeart实体类型,使用前需要赋值</param>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendYinYangCompare(Daan.Instrument.Entity.InsYinYangCompare)">
+            <summary>
+            <para>示例代码可通过【引用】-->选中"Daan.Instrument.Connector"-->【在对象浏览器中查看】</para>
+            <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para>
+            <para>发送阴阳性结果对照信息【无返回值】，抛异常时请尝试重发，调用代码如下：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsYinYangCompare yinYangCompare = new InsYinYangCompare();</para>
+            <para>　　　　　yinYangCompare.LotNo = "160304";</para>
+            <para>　　　　　yinYangCompare.Name = "阴性对照";</para>
+            <para>　　　　　yinYangCompare.Barcode = "441829302200";</para>
+            <para>　　　　　yinYangCompare.Unit = "ng/ml";</para>
+            <para>　　　　　yinYangCompare.ExpireDate = DateTime.Parse("2017-05-17");</para>
+            <para>　　　　　yinYangCompare.OpenDate = DateTime.Parse("2016-02-15");</para>
+            <para>　　　　　yinYangCompare.Absorbance = "28961";</para>
+            <para>　　　　　yinYangCompare.ResultValue = "12.03";</para>
+            <para>　　　　　yinYangCompare.ResultDate = DateTime.Now;</para>
+            <para>　　　　　yinYangCompare.TestCode = "39";</para>
+            <para>　　　　　yinYangCompare.ReagentLotNo = "20150826";</para>
+            <para>　　　　　yinYangCompare.OpenValidDays = 31;</para>
+            <para>　　　　　yinYangCompare.Type = YinYangCompareType.Negative;</para>
+            <para>　　　　　yinYangCompare.TargetValue = "15.11";</para>
+            <para>　　　　　InsConnector.SendYinYangCompare(yinYangCompare);</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            </summary>
+            <param name="yinYangCompare">参数是InsYinYangCompare实体类型,使用前需要赋值</param>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendLog(Daan.Instrument.Entity.InsLog)">
+            <summary>
+            <para>示例代码可通过【引用】-->选中"Daan.Instrument.Connector"-->【在对象浏览器中查看】</para>
+            <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para>
+            <para>发送日志息【无返回值】，抛异常时请尝试重发，调用代码如下：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsLog log = new InsLog();</para>
+            <para>　　　　　log.RunDate=DateTime.Parse("2016-02-16 08:11:12");</para>
+            <para>　　　　　log.Content="试剂仓温度过高！";</para>
+            <para>　　　　　log.LogType=LogType.Exception;</para>
+            <para>　　　　　InsConnector.SendLog(log);</para> 
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            </summary>
+            <param name="log">参数是InsLog实体类型,使用前需要赋值</param>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendWorkList(Daan.Instrument.Entity.InsWorkListRequest)">
+            <summary>
+            <para>示例代码可通过【引用】-->选中"Daan.Instrument.Connector"-->【在对象浏览器中查看】</para>
+            <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para>
+            <para>发送工单信息【有返回值】，返回 InsWorkListResponse， 抛异常时请尝试重发，调用代码如下：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsWorkListRequest workListRequest = new InsWorkListRequest();</para>
+            <para>　　　　　workListRequest.Barcode = "440013205600";</para>
+            <para>　　　　　workListRequest.SeqNo = "";</para>
+            <para>　　　　　workListRequest.Type = 0;</para>
+            <para>　　　　　InsWorkListResponse workListResponse = InsConnector.SendWorkList(workListRequest);</para>
+            <para>　　　　　if (workListResponse != null)</para>
+            <para>　　　　　{</para>
+            <para>　　　　　      //如果返回的WorkList不为null，则表示信息返回成功，可读取 workListResponse 来处理。</para>
+            <para>　　　　　}</para>
+            <para>　　　　　else</para>
+            <para>　　　　　{</para>
+            <para>　　　　　     //当服务器返回WorkList为null时，可启动重发机制，重发3都返回null，则跳过此标本。</para>
+            <para>　　　　　}</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            </summary>
+            <param name="workListRequest">参数是InsWorkListRequest实体类型,使用前需要赋值</param>
+            <returns>返回值InsWorkListResponse实体类，包含病人基本信息和项目信息</returns>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.PostMessage(Daan.Instrument.Type.CommunicationType,System.String)">
+            <summary>
+            消息投递函数，异步传输模式，【无返回】,仅供内部调用使用
+            </summary>
+            <param name="mtType">发送数据包格式</param>
+            <param name="mtResp">应答数据包格式</param>
+            <param name="listMessage">消息列表</param>
+            <returns>返回bool</returns>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendMessage(Daan.Instrument.Type.CommunicationType,System.String)">
+            <summary>
+            消息投递函数，同步传输模式，【有返回】,返回值为Group对象,仅供内部调用使用
+            </summary>
+            <param name="mtType">发送数据包格式</param>
+            <param name="mtResp">应答数据包格式</param>
+            <param name="listMessage">消息列表</param>
+            <returns>返回Group</returns>
+        </member>
+        <member name="T:Daan.Instrument.Entity.InsWorkListRequest">
+            <summary>
+            工单WorkList的查询格式
+            </summary>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.ReagentInfoS”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsYinYangCompare”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsQC”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsAdjustmentResult”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Entity.InsHeart">
+            <summary>
+            心跳包数据格式
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Entity.InsAdjustmentResult">
+            <summary>
+            校准结果数据结构
+            </summary>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsReagent”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Entity.InsWorkListResponse">
+            <summary>
+            服务器返回工单内容的数据格式
+            </summary>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsReagentStatus”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Entity.InsYinYangCompare">
+            <summary>
+            阴阳性对照结果的数据格式
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Entity.InsTest">
+            <summary>
+            常规标本结果数据格式
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Entity.InsQC">
+            <summary>
+            质控数据结果格式
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Entity.InsReagent">
+            <summary>
+            试剂消耗数据格式
+            </summary>
+        </member>
+        <member name="M:Daan.Instrument.Connector.Utility.ByteService.ByteMerge(System.Byte[],System.Byte[])">
+            <summary>
+            byte数组合并，为数据包加入结束码
+            </summary>
+            <param name="Message">原始消息数组</param>
+            <param name="EndCode">结束码byte</param>
+            <returns></returns>
+        </member>
+        <member name="M:Daan.Instrument.Connector.Utility.ByteService.DeleteEndCode(System.Byte[],System.Byte[])">
+            <summary>
+            删除多余的结束码
+            </summary>
+            <param name="Message">原始消息</param>
+            <param name="EndCode">结束码</param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.WorkListQuery”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsState”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Type.YinYangCompareType">
+            <summary>
+            阴阳性对照类别
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Type.MessageType">
+            <summary>
+            数据包的类型
+            </summary>
+        </member>
+    </members>
+</doc>

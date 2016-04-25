@@ -1,0 +1,1 @@
+ipy pyc.py /main:D:\DaAn\DaAnProject\DBInterface.py /target:exe /standalone

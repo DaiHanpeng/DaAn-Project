@@ -1,0 +1,179 @@
+***** Reagent Inventory *****
+Date/Time : 04 May 2016 22:34:36
+System # : CA12560017
+
+
+***** Reagent Inventory Summary for <RTT1> *****
+
+                                        Primary/                                                                                                       Days
+Deselect  Test Name         R  Posi.#   Backup   #Tests    Lot#   Exp.Date         Cal Interval  CalStatus                          QCStatus         Remaining
+          5UN               R1    37    Primary     577          NA                                 Pass                                                 NA      
+          ADA               R1    36    Primary     541          NA                                 Pass                                                 NA      
+          AFU               R1    35    Primary     434          NA                                 Pass                                                 NA      
+          ALB               R1    22    Primary     540          NA                                 Pass                                                 NA      
+          ALB-GA            R1    34                123          NA                                                                                      NA      
+          ALPAMP            R1     4    Primary     710          NA                                 Pass                                                 NA      
+          ALT               R1     1    Primary     692          NA                                 Pass                                                 NA      
+          AMY               R1    33    Primary     109          NA                                 Pass                                                 NA      
+          ApoA1             R1    31    Primary     307          NA                                 Pass-Edit                                            NA      
+          ApoB              R1    32    Primary     579          NA                                 Pass                                                 NA      
+          AST               R1     2    Primary     583          NA                                 Pass                                                 NA      
+          B2MG              R1    39    Primary     508          NA                                 Pass                                                 NA      
+          bHBDH             R1    42    Primary     466          NA                                 Pass                                                 NA      
+          CA                R1    18    Primary     367          NA                                 Pass                                                 NA      
+          CHE               R1     6    Primary     368          NA                                 Pass                                                 NA      
+          CHOL              R1    11    Primary     505          NA                                 Pass                                                 NA      
+          CK                R1    27    Primary     382          NA                                 Pass                                                 NA      
+          CK-MB             R1    38    Primary     244          NA                                 Pass                                                 NA      
+          CO2               R1    23    Primary     423          NA                                 Pass                                                 NA      
+          CREA_E            R1    15    Primary     636          NA                                 Pass                                                 NA      
+          CRP               R1    28    Primary     399          NA                                 Pass                                                 NA      
+          CysC              R1    16    Primary     658          NA                                 Pass                                                 NA      
+          DBIL              R1    25    Primary     521          NA                                 Pass                                                 NA      
+          GA                R1    40    Primary     345          NA                                 Pass                                                 NA      
+          GGT               R1     3    Primary     273          NA                                 Pass                                                 NA      
+          GLUH_3            R1    17    Primary     711          NA                                 Pass                                                 NA      
+          GSP               R1    43    Primary     140          NA                                 Pass                                                 NA      
+          HBDH              R1    14    Primary     443          NA                                 Pass                                                 NA      
+          HCY               R1    40    Primary     363          NA                                 Pass                                                 NA      
+          HDL-CH            R1    13    Primary     690          NA                                 Pass                                                 NA      
+          IP                R1    19    Primary     445          NA                                 Pass                                                 NA      
+          LDH               R1     5    Primary     519          NA                                 Pass                                                 NA      
+          LDL-CH            R1    12    Primary     378          NA                                 Pass                                                 NA      
+          LP(a)             R1    29    Primary     121          NA                                 Pass                                                 NA      
+          LPS               R1    41    Primary     235          NA                                 Pass                                                 NA      
+          MG                R1     8    Primary     564          NA                                 Pass                                                 NA      
+          MP                R1    46    Primary      77          NA                                 Pass                                                 NA      
+          PA                R1    20    Primary     508          NA                                 Pass                                                 NA      
+          RBP               R1    30    Primary     439          NA                                 Pass                                                 NA      
+          Saline            R1    45    Primary     703          NA                                 Pass-Edit                                            NA      
+          SCRP              R1    28    Primary     399          NA                                 Pass                                                 NA      
+          SOD               R1    34                121          NA                                                                                      NA      
+          TBA               R1     7    Primary     520          NA                                 Pass                                                 NA      
+          TBIL_2            R1    26    Primary     541          NA                                 Pass                                                 NA      
+          TG                R1     9    Primary     375          NA                                 Pass                                                 NA      
+          TP                R1    21    Primary     474          NA                                 Pass                                                 NA      
+          UA                R1    24    Primary     460          NA                                 Pass                                                 NA      
+          UN                R1    10    Primary     706          NA                                 Pass                                                 NA      
+          URBP              R1    44    Primary     234          NA                                 Pass                                                 NA      
+          Probe Wash 1      R1    47    Primary    3818    NA    NA                                 NA                                                   NA      
+          Probe Wash 2      R1    48    Primary     909    NA    NA                                 NA                                                   NA      
+          10% CUV.WASH      R1    49    Primary    5280    NA    NA                                 NA                                                   NA      
+          Dl Water          R1    50    Primary    5008    NA    NA                                 NA                                                   NA      
+
+
+***** Reagent Inventory Summary for <RTT2> *****
+
+                                        Primary/                                                                                                       Days
+Deselect  Test Name         R  Posi.#   Backup   #Tests    Lot#   Exp.Date         Cal Interval  CalStatus                          QCStatus         Remaining
+          5UN               R2    37    Primary     569          NA                                 Pass                                                 NA      
+          ADA               R2    36    Primary     328          NA                                 Pass                                                 NA      
+         *ALB-GA            R2    34             *    0          NA                                                                                      NA      
+          ALPAMP            R2     4    Primary     582          NA                                 Pass                                                 NA      
+          ALT               R2     1    Primary     991          NA                                 Pass                                                 NA      
+          AMY               R2    33    Primary     820          NA                                 Pass                                                 NA      
+          ApoA1             R2    31    Primary     371          NA                                 Pass-Edit                                            NA      
+          ApoB              R2    32    Primary     450          NA                                 Pass                                                 NA      
+          AST               R2     2    Primary     738          NA                                 Pass                                                 NA      
+          B2MG              R2    39    Primary     402          NA                                 Pass                                                 NA      
+          bHBDH             R2    42    Primary     341          NA                                 Pass                                                 NA      
+          CHE               R2     6    Primary     348          NA                                 Pass                                                 NA      
+          CK                R2    27    Primary    1292          NA                                 Pass                                                 NA      
+         +CK-MB             R2    38    Primary  +  211          NA                                 Pass                                                 NA      
+          CREA_E            R2    15    Primary    1067          NA                                 Pass                                                 NA      
+          CRP               R2    28    Primary     556          NA                                 Pass                                                 NA      
+          CysC              R2    16    Primary     848          NA                                 Pass                                                 NA      
+          DBIL              R2    25    Primary     712          NA                                 Pass                                                 NA      
+          GA                R2    40    Primary     517          NA                                 Pass                                                 NA      
+          GGT               R2     3    Primary     704          NA                                 Pass                                                 NA      
+          GLUH_3            R2    17    Primary     425          NA                                 Pass                                                 NA      
+          HBDH              R2    14    Primary     448          NA                                 Pass                                                 NA      
+          HCY               R2    40    Primary    1003          NA                                 Pass                                                 NA      
+          HDL-CH            R2    13    Primary     658          NA                                 Pass                                                 NA      
+          IP                R2    19    Primary     526          NA                                 Pass                                                 NA      
+          LDH               R2     5    Primary     843          NA                                 Pass                                                 NA      
+          LDL-CH            R2    12    Primary     553          NA                                 Pass                                                 NA      
+          LP(a)             R2    29    Primary     377          NA                                 Pass                                                 NA      
+          LPS               R2    41    Primary     553          NA                                 Pass                                                 NA      
+          MG                R2     8    Primary     300          NA                                 Pass                                                 NA      
+          PA                R2    20    Primary    1338          NA                                 Pass                                                 NA      
+          RBP               R2    30    Primary     925          NA                                 Pass                                                 NA      
+          SCRP              R2    28    Primary     556          NA                                 Pass                                                 NA      
+         *SOD               R2    34             *    0          NA                                                                                      NA      
+          TBA               R2     7    Primary     479          NA                                 Pass                                                 NA      
+          TBIL_2            R2    26    Primary     685          NA                                 Pass                                                 NA      
+          TP                R2    21    Primary     688          NA                                 Pass                                                 NA      
+          UA                R2    24    Primary     921          NA                                 Pass                                                 NA      
+          UN                R2    10    Primary     541          NA                                 Pass                                                 NA      
+          URBP              R2    44    Primary     437          NA                                 Pass                                                 NA      
+                                   9
+                                  11
+                                  18
+                                  22
+                                  23
+                                  35
+                                  43
+                                  45
+                                  46
+          Probe Wash 1      R2    47    Primary    3820    NA    NA                                 NA                                                   NA      
+          Probe Wash 2      R2    48    Primary    1256    NA    NA                                 NA                                                   NA      
+          10% CUV.WASH      R2    49    Primary    5654    NA    NA                                 NA                                                   NA      
+          Dl Water          R2    50    Primary    5545    NA    NA                                 NA                                                   NA      
+
+
+***** Total Tests Summary Table *****
+
+  Test Name          Total # Tests
+  5UN                          569
+  ADA                          328
+  AFU                          434
+  ALB                          540
+  ALB-GA                         0
+  ALPAMP                       582
+  ALT                          692
+  AMY                          109
+  ApoA1                        307
+  ApoB                         450
+  AST                          583
+  B2MG                         402
+  bHBDH                        341
+  CA                           367
+  CHE                          348
+  CHOL                         505
+  CK                           382
+  CK-MB                        211
+  CO2                          423
+  CREA_E                       636
+  CRP                          399
+  CysC                         658
+  DBIL                         521
+  GA                           345
+  GGT                          273
+  GLUH_3                       425
+  GSP                          140
+  HBDH                         443
+  HCY                          363
+  HDL-CH                       658
+  IP                           445
+  LDH                          519
+  LDL-CH                       378
+  LP(a)                        121
+  LPS                          235
+  MG                           300
+  MP                            77
+  PA                           508
+  RBP                          439
+  Saline                       703
+  SCRP                         399
+  SOD                            0
+  TBA                          479
+  TBIL_2                       541
+  TG                           375
+  TP                           474
+  UA                           460
+  UN                           541
+  URBP                         234
+  Probe Wash 1                3818
+  Probe Wash 2                 909
+  10% CUV.WASH                5280
+  Dl Water                    5008

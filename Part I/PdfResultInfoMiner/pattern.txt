@@ -1,0 +1,17 @@
+//pattern of sample order result information.
+//datetime and sample id info are in the same sequence, from left of the pdf to right.
+//But, the sequence of order and result can be in random sequence, so, we should compare the x0 value to sort the lists of order and result.
+//information per sample should not cross multiple pages.
+
+1. date time
+contain character '/' and ':'
+
+2. sample id:
+all numbers, and length >=8
+
+3. order list
+string start with Alpha, can contain numbers or special characters like '_' or '-'
+
+4. result list
+can only be numbers or '+' or '-'
+

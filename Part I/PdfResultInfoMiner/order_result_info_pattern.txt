@@ -1,0 +1,15 @@
+//pattern of sample order result information.
+//all information of one specify sample should be in one block, with datetime in first position.
+//information per sample should not cross multiple pages.
+
+1. date time
+contain character '/' and ':'
+
+2. sample id:
+all numbers, and length >=8
+
+3. order list
+string start with alphabet, can contain numbers or special characters like '_' or '-' or '.'
+
+4. result list
+can only be numbers or '+' or '-'

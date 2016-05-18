@@ -1,0 +1,8 @@
+*.pyc
+/ReagentLogParser/*.pyc
+/PdfResultInfoMiner/*.pyc
+/MtdResultInfoParser/*.pyc
+/GetLatestFile/*.pyc
+/DatabaseInterface/__init__.pyc
+/DatabaseInterface/DBInterface.pyc
+/DatabaseInterface/DBTables.pyc

@@ -6,7 +6,7 @@
     <ProjectGuid>{a1249fc9-539a-48b3-80e6-7e3df14e1ff5}</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>DaAnTesting.py</StartupFile>
+    <StartupFile>DBInterface.py</StartupFile>
     <SearchPath>.</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <InterpreterId>{80659ab7-4d53-4e0c-8588-a766116cbd46}</InterpreterId>
@@ -58,11 +58,6 @@
     <Compile Include="Testing01.py">
       <SubType>Code</SubType>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DaAnDialog.xaml">
-      <SubType>Designer</SubType>
-    </Content>
   </ItemGroup>
   <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />

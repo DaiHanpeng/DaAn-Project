@@ -61,6 +61,7 @@ class DBInterface(object):
 if __name__ == '__main__':
     DBInterface.db_connect_initialize()
 
+    print 'testing start...'
     try:
         heart = DBInterface.fetch_one_unsent_item_from_InsHeart()
         if heart:

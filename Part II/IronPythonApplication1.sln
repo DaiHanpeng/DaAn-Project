@@ -1,17 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DaAn Part II", "DaAn Part II.pyproj", "{A1249FC9-539A-48B3-80E6-7E3DF14E1FF5}"
-EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "WindowsApplication1", "..\WindowsApplication1\WindowsApplication1.pyproj", "{175EDF2A-EFF5-4EE6-89D2-0AB98C27F18C}"
-EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "WindowsApplication2", "..\WindowsApplication2\WindowsApplication2.pyproj", "{611D7256-61DB-4476-871F-497BE6309ADD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "..\WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{E895CE5C-2671-47F4-83F6-B11F557692D7}"
-EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "WinFormTesting", "..\WinFormTesting\WinFormTesting.pyproj", "{8093F806-856A-4E9F-B214-46B702D81886}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,36 +25,6 @@ Global
 		{A1249FC9-539A-48B3-80E6-7E3DF14E1FF5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A1249FC9-539A-48B3-80E6-7E3DF14E1FF5}.Release|x86.ActiveCfg = Release|Any CPU
 		{A1249FC9-539A-48B3-80E6-7E3DF14E1FF5}.Release|x86.Build.0 = Release|Any CPU
-		{175EDF2A-EFF5-4EE6-89D2-0AB98C27F18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{175EDF2A-EFF5-4EE6-89D2-0AB98C27F18C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{175EDF2A-EFF5-4EE6-89D2-0AB98C27F18C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{175EDF2A-EFF5-4EE6-89D2-0AB98C27F18C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{175EDF2A-EFF5-4EE6-89D2-0AB98C27F18C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{175EDF2A-EFF5-4EE6-89D2-0AB98C27F18C}.Release|x86.ActiveCfg = Release|Any CPU
-		{611D7256-61DB-4476-871F-497BE6309ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{611D7256-61DB-4476-871F-497BE6309ADD}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{611D7256-61DB-4476-871F-497BE6309ADD}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{611D7256-61DB-4476-871F-497BE6309ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{611D7256-61DB-4476-871F-497BE6309ADD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{611D7256-61DB-4476-871F-497BE6309ADD}.Release|x86.ActiveCfg = Release|Any CPU
-		{E895CE5C-2671-47F4-83F6-B11F557692D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E895CE5C-2671-47F4-83F6-B11F557692D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E895CE5C-2671-47F4-83F6-B11F557692D7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{E895CE5C-2671-47F4-83F6-B11F557692D7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{E895CE5C-2671-47F4-83F6-B11F557692D7}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{E895CE5C-2671-47F4-83F6-B11F557692D7}.Debug|x86.Build.0 = Debug|Any CPU
-		{E895CE5C-2671-47F4-83F6-B11F557692D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E895CE5C-2671-47F4-83F6-B11F557692D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E895CE5C-2671-47F4-83F6-B11F557692D7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{E895CE5C-2671-47F4-83F6-B11F557692D7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{E895CE5C-2671-47F4-83F6-B11F557692D7}.Release|x86.ActiveCfg = Release|Any CPU
-		{E895CE5C-2671-47F4-83F6-B11F557692D7}.Release|x86.Build.0 = Release|Any CPU
-		{8093F806-856A-4E9F-B214-46B702D81886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8093F806-856A-4E9F-B214-46B702D81886}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{8093F806-856A-4E9F-B214-46B702D81886}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8093F806-856A-4E9F-B214-46B702D81886}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8093F806-856A-4E9F-B214-46B702D81886}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{8093F806-856A-4E9F-B214-46B702D81886}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

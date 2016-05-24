@@ -19,7 +19,7 @@ from System.Windows.Forms import Application, Button, Form
 from System.Drawing import Point
 from System import *
 
-from DBInterface import *
+from DBInterface.DBInterface import *
 
 #from Google.ProtocolBuffers import *
 #from Daan.Instrument.Log import *

@@ -6,7 +6,7 @@
     <ProjectGuid>{a1249fc9-539a-48b3-80e6-7e3df14e1ff5}</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Main\IronPythonApplication1.py</StartupFile>
+    <StartupFile>DBInterface\SqliteInterface.py</StartupFile>
     <SearchPath>.</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <InterpreterId>{80659ab7-4d53-4e0c-8588-a766116cbd46}</InterpreterId>
@@ -79,16 +79,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBInterface\InsHeartHandler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBInterface\SqliteInterface.py" />
     <Compile Include="DBInterface\DBInterface.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DBInterface\DBTables.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DBInterface\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RpcInterface\RpcInterface.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DBInterface\" />
     <Folder Include="Main\" />
+    <Folder Include="RpcInterface\" />
   </ItemGroup>
   <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />

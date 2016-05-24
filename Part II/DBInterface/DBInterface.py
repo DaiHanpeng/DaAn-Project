@@ -6,7 +6,10 @@ import sqlite3
 
 from DBTables import *
 
-SQLITE_DB_PATH = 'DaAn.db'
+#Attention:
+#The SQLITE_DB_PATH is related to path of <IronPython.SQLite.dll>.
+#if related path is used...
+SQLITE_DB_PATH = r'D:\DaAn\DaAn-Project\Part II\DaAn.db'
 
 class DBInterface(object):
     connect = None
@@ -16,6 +19,7 @@ class DBInterface(object):
     def db_connect_initialize(cls):
         cls.connect = sqlite3.connect(SQLITE_DB_PATH)
         with cls.connect:
+            print 'DB connected OK．'
             cls.connect.row_factory = sqlite3.Row
             cls.cursor = cls.connect.cursor()
 

@@ -6,7 +6,7 @@
     <ProjectGuid>{a1249fc9-539a-48b3-80e6-7e3df14e1ff5}</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>DBInterface.py</StartupFile>
+    <StartupFile>Main\IronPythonApplication1.py</StartupFile>
     <SearchPath>.</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <InterpreterId>{80659ab7-4d53-4e0c-8588-a766116cbd46}</InterpreterId>
@@ -29,7 +29,7 @@
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="IronPythonApplication1.py" />
+    <None Include="Main\IronPythonApplication1.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{80659ab7-4d53-4e0c-8588-a766116cbd46}\2.7" />
@@ -41,23 +41,54 @@
       <HintPath>Daan.Instrument.Connector.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Daan.Instrument.Log, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <Name>Daan.Instrument.Log</Name>
+      <AssemblyName>Daan.Instrument.Log.dll</AssemblyName>
+      <HintPath>Daan.Instrument.Log.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Daan.Instrument.Proxy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <Name>Daan.Instrument.Proxy</Name>
+      <AssemblyName>Daan.Instrument.Proxy.dll</AssemblyName>
+      <HintPath>Daan.Instrument.Proxy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.ProtocolBuffers, Version=2.4.1.555, Culture=neutral, PublicKeyToken=17b3b1f090c3ea48">
+      <Name>Google.ProtocolBuffers</Name>
+      <AssemblyName>Google.ProtocolBuffers.dll</AssemblyName>
+      <HintPath>Google.ProtocolBuffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IronPython.SQLite, Version=2.7.5.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1">
+      <Name>IronPython.SQLite</Name>
+      <AssemblyName>IronPython.SQLite.dll</AssemblyName>
+      <HintPath>IronPython.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a">
+      <Name>log4net</Name>
+      <AssemblyName>log4net.dll</AssemblyName>
+      <HintPath>log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <Name>Newtonsoft.Json</Name>
+      <AssemblyName>Newtonsoft.Json.dll</AssemblyName>
+      <HintPath>Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DaAnDialog.py">
+    <Compile Include="DBInterface\DBInterface.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DaAnTesting.py">
+    <Compile Include="DBInterface\DBTables.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DBInterface.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="DBTables.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Testing01.py">
-      <SubType>Code</SubType>
-    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DBInterface\" />
+    <Folder Include="Main\" />
   </ItemGroup>
   <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />

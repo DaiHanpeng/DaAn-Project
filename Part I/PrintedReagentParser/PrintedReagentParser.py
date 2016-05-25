@@ -73,8 +73,8 @@ class PrintedReagentInfoParser():
             total_test_matching_flag = False
             for line in file_content_list:
                 if isinstance(line,str):
-                    if -1 <> line.find(r'Date/Time') and -1 <> line.find(':'):
-                        self.date_time = line.split(':')[1]
+                    if -1 <> line.find(r'Date/Time') and -1 <> line.find(r' : '):
+                        self.date_time = line.split(r' : ')[1]
                     elif -1 <> line.find(r'System #') and -1 <> line.find(':'):
                         self.system_id = line.split(':')[1]
                     elif -1 <> line.find('R1'):
@@ -121,13 +121,13 @@ class PrintedReagentInfoParser():
                             self.update_reagent_info(reagent_name,self.reagent_type_map['TOTAL'],count)
 
     def __repr__(self):
-        return 'date time:' + str(self.date_time) + '\t'\
-            'system id:' + str(self.system_id) + '\n'\
+        return 'date time:' + str(self.date_time)+'\t'\
+            'system id:' + str(self.system_id)+'\n'\
             ''.join(str(item) for item in self.reagent_info_list if isinstance(item,PrintedReagentInfoItem))
 
 def test():
     reagent_parser = PrintedReagentInfoParser()
-    file_path = r'D:\01_Automation\23_Experiential_Conclusions_2016\05_DaAn\Advia2400_ScreenCapture'
+    file_path = r'..\Advia2400_ScreenCapture'
     reagent_parser.extract_info_from_printed_file(file_path)
     print reagent_parser
 

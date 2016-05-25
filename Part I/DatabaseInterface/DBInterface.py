@@ -5,10 +5,11 @@ from ReagentLogParser.ReagentDef import ReagentDict
 from MtdResultInfoParser.MtdResultParser import ResultInfo,MtdResultParser
 from PdfResultInfoMiner.ReviewAndEditInfoMiner import ReviewAndEditInfoMiner
 from PdfResultInfoMiner.OrderResultStruct import *
+from PrintedReagentParser.PrintedReagentParser import PrintedReagentInfoItem,PrintedReagentInfoParser
 
 from DBTables import *
 
-SQLITE_DB_PATH = 'DaAn.db'
+SQLITE_DB_PATH = r'D:\DaAn\DaAn-Project\DaAn.db'
 
 class DBInterface(object):
     """
@@ -30,6 +31,28 @@ class DBInterface(object):
                 db_insert = "insert into InsReagentInfo (RemainderCount,TestCode,TestName,Sent) values (?,?,?,0)"
                 self.cursor.execute(db_insert, [reagent_info.reagent_dict[key], key, key])
                 self.connect.commit()
+
+    def put_printed_reagent_info(self,printed_reagent_info):
+        if isinstance(printed_reagent_info,PrintedReagentInfoParser):
+            self.cursor.execute("delete from InsReagentInfo")
+            for reagent_info in printed_reagent_info.reagent_info_list:
+                if isinstance(reagent_info,PrintedReagentInfoItem):
+                    #R1
+                    if reagent_info.r1_position:
+                        db_insert = "insert into InsReagentInfo (Position,RemainderCount,TestCode,TestName,Sent,Type) values (?,?,?,?,0,'R1')"
+                        self.cursor.execute(db_insert,\
+                    [reagent_info.r1_position, reagent_info.r1_count, reagent_info.reagent_name,reagent_info.reagent_name])
+                    #R2
+                    if reagent_info.r2_position:
+                        db_insert = "insert into InsReagentInfo (Position,RemainderCount,TestCode,TestName,Sent,Type) values (?,?,?,?,0,'R2')"
+                        self.cursor.execute(db_insert,\
+                    [reagent_info.r2_position, reagent_info.r2_count, reagent_info.reagent_name,reagent_info.reagent_name])
+                    #Total reagent
+                    db_insert = "insert into InsReagentInfo (RemainderCount,TestCode,TestName,Sent,Type) values (?,?,?,0,'Total')"
+                    self.cursor.execute(db_insert,\
+                [reagent_info.total_count, reagent_info.reagent_name,reagent_info.reagent_name])
+                    #commit to database.
+                    self.connect.commit()
 
     def put_mtd_result_info(self, result_info):
         if isinstance(result_info,MtdResultParser):
@@ -79,14 +102,14 @@ def test():
         db_interface.put_reagent_info(reagent_list)
         '''
 
-
+        '''
         mtd_parser = MtdResultParser()
         mtd_path = r'D:\01_Automation\23_Experiential_Conclusions_2016\05_DaAn\A002\DATA'
         mtd_parser.build_result_info_from_mtd_file(mtd_path,None)
         print mtd_parser
 
         db_interface.put_mtd_result_info(mtd_parser)
-
+        '''
 
         '''
         pdf_folder_path = r'D:\01_Automation\23_Experiential_Conclusions_2016\05_DaAn\Advia2400_ScreenCapture'
@@ -97,6 +120,13 @@ def test():
 
         db_interface.put_pdf_result_info(pdf_miner)
         '''
+
+        reagent_parser = PrintedReagentInfoParser()
+        file_path = r'..\Advia2400_ScreenCapture'
+        reagent_parser.extract_info_from_printed_file(file_path)
+        db_interface.put_printed_reagent_info(reagent_parser)
+        print reagent_parser
+
 
     except Exception as ex:
         print ex

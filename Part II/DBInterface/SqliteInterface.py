@@ -10,6 +10,9 @@ clr.AddReferenceToFileAndPath('IronPython.SQLite.dll')
 #The SQLITE_DB_PATH is related to path of <IronPython.SQLite.dll>.
 SQLITE_DB_PATH = r'D:\DaAn\DaAn-Project\Part II\DaAn.db'
 
+from InsHeartHandler import InsHeartHandler
+from InsReagentInfoHandler import InsReagentInfoHandler
+
 class SqliteInterface(object):
     def __init__(self):
         self.connect = None
@@ -27,11 +30,20 @@ class SqliteInterface(object):
             self.connect.row_factory = sqlite3.Row
             self.cursor = self.connect.cursor()
 
+    # InsHeart Interface...
     def fetch_unsent_items_from_InsHeart(self):
         return InsHeartHandler.fetch_unsent_items_from_InsHeart(self.cursor)
     
     def set_inshearts_as_sent(self,hearts):
         return InsHeartHandler.set_inshearts_as_sent(hearts,self.cursor,self.connect)
+    #InsReagentInfo Interface...
+    def fetch_unsent_items_from_InsReagentInfo(self):
+        print 'sqlite interface fectching ins reagent info.'
+        return InsReagentInfoHandler.fetch_unsent_items_from_InsReagentInfo(self.cursor)
+    
+    def set_InsReagentInfos_as_sent(self,reagents):
+        return InsReagentInfoHandler.set_InsReagentInfos_as_sent(reagents,self.cursor,self.connect)
+
     
     def __exit__(self,_type,value,traceback):
         self.db_disconnect()

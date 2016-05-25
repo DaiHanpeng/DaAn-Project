@@ -27,9 +27,6 @@ class InsHeartHandler(object):
                 heart.NegativePressure = row['NegativePressure']
                 heart.ID = row['ID']
                 unsent_ins_hearts.append(heart)
-                #print 'get one heart:'
-                #print heart
-        #print unsent_ins_hearts
         return unsent_ins_hearts
 
     @staticmethod

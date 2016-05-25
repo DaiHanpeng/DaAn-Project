@@ -167,9 +167,12 @@ class ins_reagent_status(Common,InsReagentStatus):
     def __init__(self):
         Common.__init__(self)
         InsReagentStatus.__init__(self)
+        self.reagentInfos = []
 
     def __repr__(self):
-        return 'not implemented yet...'
+        return 'RunDate:'+str(self.RunDate)+'\t'+\
+                '\n'.join(repr(item) for item in self.reagentInfos if isinstance(item,ins_reagent_info))+\
+                super(ins_reagent_status, self).__repr__()
 
 class ins_status(Common,InsStatus):
     def __init__(self):

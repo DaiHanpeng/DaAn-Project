@@ -1,6 +1,7 @@
 import xmlrpclib
 from SimpleXMLRPCServer import SimpleXMLRPCServer
 
+from DBInterface.DBTables import *
 from DBInterface.SqliteInterface import SqliteInterface
 from DaAnInterface.DaAnInterface import DaAnInterface
 
@@ -14,7 +15,6 @@ class MessageHandler():
     def reagent_handler(self):
         print 'reagent handler is triggered...'
         with SqliteInterface() as db_interface:
-            print 'getting reagent start...'
             try:
                 reagents = db_interface.fetch_unsent_items_from_InsReagentInfo()
                 if reagents:
@@ -32,7 +32,23 @@ class MessageHandler():
                 print ex
 
     def order_result_handler(self):
-        pass
+        print 'order result handler is triggered...'
+        with SqliteInterface() as db_interface:
+            try:
+                tests = db_interface.fetch_unsent_items_from_InsTest()
+                if tests:
+                    ##
+                    print 'get unsent ins test info records,'
+                    for test in tests:
+                        if isinstance(test,ins_test):
+                            print test
+                    ## reagent info processing...
+                    daan_interface = DaAnInterface()
+                    daan_interface.send_order_result_info(tests)
+                    ##
+                    db_interface.set_InsTests_as_sent(tests)
+            except Exception as ex:
+                print ex
 
     def calibration_handler(self):
         pass

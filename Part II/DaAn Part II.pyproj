@@ -86,6 +86,12 @@
     <Compile Include="DaAnInterface\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DBInterface\InsQCHandler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBInterface\InsCalibrationResultHandler.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DBInterface\InsHeartHandler.py">
       <SubType>Code</SubType>
     </Compile>

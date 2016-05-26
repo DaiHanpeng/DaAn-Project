@@ -6,6 +6,8 @@ from MtdResultInfoParser.MtdResultParser import ResultInfo,MtdResultParser
 from PdfResultInfoMiner.ReviewAndEditInfoMiner import ReviewAndEditInfoMiner
 from PdfResultInfoMiner.OrderResultStruct import *
 from PrintedReagentParser.PrintedReagentParser import PrintedReagentInfoItem,PrintedReagentInfoParser
+from CalibrationParser.CalibrationParser import CalibrationParser,CalibrationInfo
+from ControlParser.ControlParser import ControlParser,ControlInfo
 
 from DBTables import *
 
@@ -75,6 +77,22 @@ class DBInterface(object):
                                         self.cursor.execute(db_insert, [result.sample_id, result_item.order, result_item.result])
                                         self.connect.commit()
 
+    def put_calibration_info(self,cal_parser):
+        if isinstance(cal_parser,CalibrationParser):
+            for cal_item in cal_parser.cal_list:
+                if isinstance(cal_item,CalibrationInfo):
+                    db_insert = "insert into InsCalibrationResult (Name,LotNo,Unit,Absorbance,Sent) values (?,?,?,?,0)"
+                    self.cursor.execute(db_insert, [cal_item.test, cal_item.cal_lot, cal_item.unit,cal_item.abs])
+                    self.connect.commit()
+
+    def put_control_info(self,control_info):
+        if isinstance(control_info,ControlParser):
+            for qc_item in control_info.qc_list:
+                if isinstance(qc_item,ControlInfo):
+                    db_insert = "insert into InsQC (Name,LotNo,ResultValue,Unit,Absorbance,Sent) values (?,?,?,?,?,0)"
+                    self.cursor.execute(db_insert, [qc_item.test,qc_item.qc_lot,qc_item.value,qc_item.unit,qc_item.abs])
+                    self.connect.commit()
+
     def db_disconnect(self):
         if self.connect:
             self.connect.close()
@@ -121,12 +139,27 @@ def test():
         db_interface.put_pdf_result_info(pdf_miner)
         '''
 
+        '''
         reagent_parser = PrintedReagentInfoParser()
         file_path = r'..\Advia2400_ScreenCapture'
         reagent_parser.extract_info_from_printed_file(file_path)
         db_interface.put_printed_reagent_info(reagent_parser)
         print reagent_parser
+        '''
 
+        '''
+        file_path = r'D:\DaAn\DaAn-Project\Part I\Advia2400_ScreenCapture'
+        cal_parser = CalibrationParser()
+        cal_parser.extract_cal_info(file_path)
+        db_interface.put_calibration_info(cal_parser)
+        print cal_parser
+        '''
+
+        file_path = r'D:\DaAn\DaAn-Project\Part I\ControlParser'
+        qc_parser = ControlParser()
+        qc_parser.extract_qc_info(file_path)
+        db_interface.put_control_info(qc_parser)
+        print qc_parser
 
     except Exception as ex:
         print ex

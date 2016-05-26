@@ -14,7 +14,10 @@ class RpcClient():
             print ex
 
     def fire_order_result_notification(self):
-        pass
+        try:
+            self.server_proxy.order_result_handler()
+        except Exception as ex:
+            print ex
 
     def fire_calibration_notification(self):
         pass
@@ -25,7 +28,7 @@ class RpcClient():
 
 def test():
     rpc_client = RpcClient()
-    rpc_client.fire_reagent_notification()
+    rpc_client.fire_order_result_notification()
 
 if __name__ == '__main__':
     test()

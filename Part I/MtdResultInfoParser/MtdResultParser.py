@@ -32,8 +32,9 @@ class MtdResultParser():
 
     def __init__(self):
         self.result_list = []
+        self.last_time_stamp = None
 
-    def build_result_info_from_mtd_file(self,mtd_folder_path,start_time_stamp=None):
+    def build_result_info_from_mtd_file(self,mtd_folder_path):
         lates_mtd_file = GetLatestFile.get_latest_file(mtd_folder_path,'','.MTD')
 
         self.result_list = []
@@ -63,13 +64,15 @@ class MtdResultParser():
                         sample_id = splitted_line_list[0]
                         sample_date_time = splitted_line_list[-2] + ' ' + splitted_line_list[-1]
                         date_time = datetime.datetime.strptime(sample_date_time,'%m/%d/%Y %H:%M:%S')
-                        if start_time_stamp:
-                            if date_time > start_time_stamp:
+                        if self.last_time_stamp:
+                            if date_time > self.last_time_stamp:
                                 matching_status = self.result_type_map['START']
+                                self.last_time_stamp = date_time
                             else:
                                 matching_status = self.result_type_map['OFF']
                         else:
                             matching_status = self.result_type_map['START']
+                            self.last_time_stamp = date_time
                     elif -1 <> line.find(ISE_RESULT_HEADER):
                         if matching_status <> self.result_type_map['OFF']:
                             matching_status = self.result_type_map['ISE']
@@ -110,7 +113,7 @@ def test_result_info():
 
 def test():
     mtd_parser = MtdResultParser()
-    mtd_parser.build_result_info_from_mtd_file('.',None)
+    mtd_parser.build_result_info_from_mtd_file('.')
     print mtd_parser
 
 if __name__ == '__main__':

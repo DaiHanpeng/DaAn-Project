@@ -53,6 +53,24 @@ class DaAnInterface():
                     except Exception as ex:
                         print ex
 
+    def send_calibration_result(self,cal_results):
+        if cal_results:
+            for result in cal_results:
+                if isinstance(result,ins_calibration_result):
+                    try:
+                        InsConnector.SendCalibrationResult(result)
+                    except Exception as ex:
+                        print ex
+
+    def send_qc_result(self,qc_results):
+        if qc_results:
+            for qc in qc_results:
+                if isinstance(qc,ins_qc):
+                    try:
+                        InsConnector.SendQC(qc)
+                    except Exception as ex:
+                        print ex                   
+
 def test():
     from DBInterface.SqliteInterface import SqliteInterface
 

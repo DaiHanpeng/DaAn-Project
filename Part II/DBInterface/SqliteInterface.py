@@ -13,6 +13,8 @@ SQLITE_DB_PATH = r'D:\DaAn\DaAn-Project\Part II\DaAn.db'
 from InsHeartHandler import InsHeartHandler
 from InsReagentInfoHandler import InsReagentInfoHandler
 from InsTestHandler import InsTestHandler
+from InsQCHandler import InsQCHandler
+
 
 class SqliteInterface(object):
     def __init__(self):
@@ -51,7 +53,22 @@ class SqliteInterface(object):
     
     def set_InsTests_as_sent(self,tests):
         return InsTestHandler.set_InsTests_as_sent(tests,self.cursor,self.connect)
+
+    #InsCalibrationResult Interface...
+    def fetch_unsent_items_from_InsCalibrationResult(self):
+        return InsTestHandler.fetch_unsent_items_from_InsCalibrationResult(self.cursor)
     
+    def set_InsCalibrationResults_as_sent(self,cal_results):
+        return InsTestHandler.set_InsCalibrationResults_as_sent(cal_results,self.cursor,self.connect)
+
+    #InsQC Interface...
+    def fetch_unsent_items_from_InsQC(self):
+        return InsQCHandler.fetch_unsent_items_from_InsQC(self.cursor)
+    
+    def set_InsQCs_as_sent(self,ins_qcs):
+        return InsQCHandler.set_InsQCs_as_sent(ins_qcs,self.cursor,self.connect)
+
+ 
     def __exit__(self,_type,value,traceback):
         self.db_disconnect()
         print 'db disconnectted...'

@@ -51,10 +51,42 @@ class MessageHandler():
                 print ex
 
     def calibration_handler(self):
-        pass
+        print 'calibration result handler is triggered...'
+        with SqliteInterface() as db_interface:
+            try:
+                cal_results = db_interface.fetch_unsent_items_from_InsCalibrationResult()
+                if cal_results:
+                    ##
+                    print 'get unsent ins calibration results info records,'
+                    for result in cal_results:
+                        if isinstance(result,ins_test):
+                            print result
+                    ## calibration result processing...
+                    daan_interface = DaAnInterface()
+                    daan_interface.send_calibration_result(cal_results)
+                    ##
+                    db_interface.set_InsCalibrationResults_as_sent(cal_results)
+            except Exception as ex:
+                print ex
 
     def control_handler(self):
-        pass
+        print 'qc result handler is triggered...'
+        with SqliteInterface() as db_interface:
+            try:
+                qc_results = db_interface.fetch_unsent_items_from_InsQC()
+                if qc_results:
+                    ##
+                    print 'get unsent ins qc results info records,'
+                    for result in qc_results:
+                        if isinstance(result,ins_qc):
+                            print result
+                    ## qc result processing...
+                    daan_interface = DaAnInterface()
+                    daan_interface.send_qc_result(qc_results)
+                    ##
+                    db_interface.set_InsQCs_as_sent(qc_results)
+            except Exception as ex:
+                print ex
 
 def test():
     server = SimpleXMLRPCServer(("localhost", 8000))

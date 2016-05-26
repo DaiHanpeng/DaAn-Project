@@ -6,7 +6,7 @@
     <ProjectGuid>{a1249fc9-539a-48b3-80e6-7e3df14e1ff5}</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>RpcInterface\RpcInterface.py</StartupFile>
+    <StartupFile>RpcInterface\RpcServer.py</StartupFile>
     <SearchPath>.</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <InterpreterId>{80659ab7-4d53-4e0c-8588-a766116cbd46}</InterpreterId>
@@ -15,6 +15,7 @@
     <OutputPath>.</OutputPath>
     <Name>DaAn Part II</Name>
     <RootNamespace>IronPythonApplication1</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -91,6 +92,9 @@
     <Compile Include="DBInterface\InsReagentInfoHandler.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DBInterface\InsTestHandler.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DBInterface\SqliteInterface.py" />
     <Compile Include="DBInterface\DBInterface.py">
       <SubType>Code</SubType>
@@ -101,7 +105,7 @@
     <Compile Include="DBInterface\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="RpcInterface\RpcInterface.py">
+    <Compile Include="RpcInterface\RpcServer.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

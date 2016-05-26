@@ -20,10 +20,16 @@ class RpcClient():
             print ex
 
     def fire_calibration_notification(self):
-        pass
+        try:
+            self.server_proxy.calibration_handler()
+        except Exception as ex:
+            print ex
 
     def fire_control_notification(self):
-        pass
+        try:
+            self.server_proxy.control_handler()
+        except Exception as ex:
+            print ex
 
 
 def test():

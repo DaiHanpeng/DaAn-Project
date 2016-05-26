@@ -12,6 +12,7 @@ SQLITE_DB_PATH = r'D:\DaAn\DaAn-Project\Part II\DaAn.db'
 
 from InsHeartHandler import InsHeartHandler
 from InsReagentInfoHandler import InsReagentInfoHandler
+from InsTestHandler import InsTestHandler
 
 class SqliteInterface(object):
     def __init__(self):
@@ -36,14 +37,20 @@ class SqliteInterface(object):
     
     def set_inshearts_as_sent(self,hearts):
         return InsHeartHandler.set_inshearts_as_sent(hearts,self.cursor,self.connect)
+
     #InsReagentInfo Interface...
     def fetch_unsent_items_from_InsReagentInfo(self):
-        print 'sqlite interface fectching ins reagent info.'
         return InsReagentInfoHandler.fetch_unsent_items_from_InsReagentInfo(self.cursor)
     
     def set_InsReagentInfos_as_sent(self,reagents):
         return InsReagentInfoHandler.set_InsReagentInfos_as_sent(reagents,self.cursor,self.connect)
 
+    #InsTest Interface...
+    def fetch_unsent_items_from_InsTest(self):
+        return InsTestHandler.fetch_unsent_items_from_InsTest(self.cursor)
+    
+    def set_InsTests_as_sent(self,tests):
+        return InsTestHandler.set_InsTests_as_sent(tests,self.cursor,self.connect)
     
     def __exit__(self,_type,value,traceback):
         self.db_disconnect()

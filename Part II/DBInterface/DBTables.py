@@ -8,8 +8,8 @@ from Daan.Instrument.Type import *
 
 class Common():
     def __init__(self):
-        self.ID = 0
-        self.Sent = 0
+        self.ID = '0'
+        self.Sent = '0'
         self.SentDate = ''
 
     def __repr__(self):

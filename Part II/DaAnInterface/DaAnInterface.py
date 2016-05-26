@@ -30,21 +30,28 @@ class DaAnInterface():
     """
     """
     def __init__(self):
-        self.instrument_connector = InsConnector()
+        pass
+        #self.instrument_connector = InsConnector()
 
     def send_reagent_info(self,reagent_list):
         if reagent_list:
             ins_reagent_status = InsReagentStatus()
-            ins_reagent_status.RunDate = datetime.datetime.now()
+            ins_reagent_status.RunDate = DateTime.Now#datetime.datetime.now()
             for reagent in reagent_list:
                 if isinstance(reagent,ins_reagent_info):
                     try:
-                        self.instrument_connector.SendReagentStatus(ins_reagent_status,reagent)
+                        InsConnector.SendReagentStatus(ins_reagent_status,reagent)
                     except Exception as ex:
                         print ex
 
     def send_order_result_info(self,order_result_list):
-        pass
+        if order_result_list:
+            for test in order_result_list:
+                if isinstance(test,ins_test):
+                    try:
+                        InsConnector.SendTest(test)
+                    except Exception as ex:
+                        print ex
 
 def test():
     from DBInterface.SqliteInterface import SqliteInterface

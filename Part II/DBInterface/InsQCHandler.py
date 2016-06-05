@@ -16,14 +16,14 @@ class InsQCHandler(object):
                 qc = ins_qc()
                 qc.Absorbance = row['Absorbance']
                 qc.Barcode = row['Barcode']
-                qc.ExpireDate = DateTime.Parse(row['ExpireDate'])
+                #qc.ExpireDate = DateTime.Parse(row['ExpireDate'])
                 qc.LotNo = row['LotNo']
                 qc.Name = row['Name']
                 qc.OneSD = row['OneSD']
-                qc.OpenDate = DateTime.Parse(row['OpenDate'])
+                #qc.OpenDate = DateTime.Parse(row['OpenDate'])
                 #qc.OpenValidDays = row['OpenValidDays']
                 qc.ReagentLotNo = row['ReagentLotNo']
-                qc.ResultDate = DateTime.Parse(row['ResultDate'])
+                qc.ResultDate = DateTime.Now
                 qc.ResultValue = row['ResultValue']
                 qc.TargetValue = row['TargetValue']
                 qc.TestCode = row['TestCode']

@@ -1,4 +1,18 @@
-import xmlrpclib
+#import xmlrpclib
+
+import sys
+import clr
+'''
+clr.AddReferenceToFileAndPath(r'C:\Program Files (x86)\IronPython 2.7')
+clr.AddReferenceToFileAndPath(r'C:\Program Files (x86)\IronPython 2.7\DLLs')
+clr.AddReferenceToFileAndPath(r'C:\Program Files (x86)\IronPython 2.7\Lib')
+clr.AddReferenceToFileAndPath(r'C:\Program Files (x86)\IronPython 2.7\Lib\site-packages')
+'''
+sys.path.append(r'C:\Program Files (x86)\IronPython 2.7')
+sys.path.append(r'C:\Program Files (x86)\IronPython 2.7\DLLs')
+sys.path.append(r'C:\Program Files (x86)\IronPython 2.7\Lib')
+
+
 from SimpleXMLRPCServer import SimpleXMLRPCServer
 
 from DBInterface.DBTables import *
@@ -28,6 +42,8 @@ class MessageHandler():
                     daan_interface.send_reagent_info(reagents)
                     ##
                     db_interface.set_InsReagentInfos_as_sent(reagents)
+
+                    print 'reagent info processing finished successfully...'
             except Exception as ex:
                 print ex
 
@@ -47,6 +63,8 @@ class MessageHandler():
                     daan_interface.send_order_result_info(tests)
                     ##
                     db_interface.set_InsTests_as_sent(tests)
+
+                    print 'patient result processing finished successfully...'
             except Exception as ex:
                 print ex
 
@@ -59,13 +77,15 @@ class MessageHandler():
                     ##
                     print 'get unsent ins calibration results info records,'
                     for result in cal_results:
-                        if isinstance(result,ins_test):
+                        if isinstance(result,ins_calibration_result):
                             print result
                     ## calibration result processing...
                     daan_interface = DaAnInterface()
                     daan_interface.send_calibration_result(cal_results)
                     ##
                     db_interface.set_InsCalibrationResults_as_sent(cal_results)
+
+                    print 'calibration result processing finished successfully...'
             except Exception as ex:
                 print ex
 
@@ -85,11 +105,13 @@ class MessageHandler():
                     daan_interface.send_qc_result(qc_results)
                     ##
                     db_interface.set_InsQCs_as_sent(qc_results)
+
+                    print 'control result processing finished successfully...'
             except Exception as ex:
                 print ex
 
 def test():
-    server = SimpleXMLRPCServer(("localhost", 8000))
+    server = SimpleXMLRPCServer(("localhost", 8000),allow_none=True)
     server.register_introspection_functions()
     server.register_instance(MessageHandler())
     server.serve_forever()

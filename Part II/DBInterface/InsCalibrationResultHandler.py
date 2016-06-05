@@ -14,16 +14,16 @@ class InsCalibrationResultHandler(object):
             rows = cursor.fetchall()
             for row in rows:
                 cal = ins_calibration_result()
-                cal.Absorbance = int(row['Absorbance'])
+                cal.Absorbance = row['Absorbance']
                 cal.Barcode = row['Barcode']
-                cal.ExpireDate = DateTime.Parse(row['ExpireDate'])
+                #cal.ExpireDate = DateTime.Parse(row['ExpireDate'])
                 cal.LotNo = row['LotNo']
                 cal.Name = row['Name']
-                cal.OpenDate = DateTime.Parse(row['OpenDate'])
+                #cal.OpenDate = DateTime.Parse(row['OpenDate'])
                 #cal.OpenValidDays = row['OpenValidDays']
                 cal.ReagentLotNo = row['ReagentLotNo']
                 cal.ResultDate = DateTime.Now
-                cal.ResultValue = float(row['ResultValue'])
+                cal.ResultValue = row['ResultValue']
                 cal.TestCode = row['TestCode']
                 #cal.Type = row['Type']
                 cal.Unit = row['Unit']

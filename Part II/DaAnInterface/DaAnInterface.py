@@ -12,6 +12,7 @@ clr.AddReferenceToFile('log4net.dll')
 clr.AddReferenceToFile('Google.ProtocolBuffers.dll')
 clr.AddReferenceToFile('Daan.Instrument.Log.dll')
 clr.AddReferenceToFile('Daan.Instrument.Connector.dll')
+clr.AddReferenceToFile('IronPython.SQLite.dll')
 
 from System.Windows.Forms import Application, Button, Form
 from System.Drawing import Point

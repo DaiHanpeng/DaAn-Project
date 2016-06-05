@@ -20,7 +20,7 @@ class CalibrationInfo():
                 'test:' + str(self.test) + '\t' +\
                 'value:' + str(self.value) + '\t' +\
                 'unit:' + str(self.unit) + '\t' +\
-                'abs_rb' + str(self.abs_rb) + '\t' +\
+                'abs_rb:' + str(self.abs_rb) + '\t' +\
                 'abs:' + str(self.abs)
 
 class CalibrationParser():
@@ -35,6 +35,8 @@ class CalibrationParser():
         self.cal_list = []
 
     def extract_cal_info(self,cal_path):
+        self.cal_list = []
+        
         lates_cal_file = GetLatestFile.get_latest_file(cal_path,'REALTIME MONITOR','.TXT')
 
         file_content_list = []

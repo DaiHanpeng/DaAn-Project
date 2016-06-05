@@ -13,6 +13,7 @@ SQLITE_DB_PATH = r'D:\DaAn\DaAn-Project\Part II\DaAn.db'
 from InsHeartHandler import InsHeartHandler
 from InsReagentInfoHandler import InsReagentInfoHandler
 from InsTestHandler import InsTestHandler
+from InsCalibrationResultHandler import InsCalibrationResultHandler
 from InsQCHandler import InsQCHandler
 
 
@@ -56,10 +57,10 @@ class SqliteInterface(object):
 
     #InsCalibrationResult Interface...
     def fetch_unsent_items_from_InsCalibrationResult(self):
-        return InsTestHandler.fetch_unsent_items_from_InsCalibrationResult(self.cursor)
+        return InsCalibrationResultHandler.fetch_unsent_items_from_InsCalibrationResult(self.cursor)
     
     def set_InsCalibrationResults_as_sent(self,cal_results):
-        return InsTestHandler.set_InsCalibrationResults_as_sent(cal_results,self.cursor,self.connect)
+        return InsCalibrationResultHandler.set_InsCalibrationResults_as_sent(cal_results,self.cursor,self.connect)
 
     #InsQC Interface...
     def fetch_unsent_items_from_InsQC(self):

@@ -16,7 +16,8 @@ class MtdResultTimingScanner(MtdResultParser):
         self.db_path = db_path
         self.timer = Timer(FILE_SCAN_INTERVAL,self.timing_exec_func)
         MtdResultParser.__init__(self)
-        self.timer.start()
+        #self.timer.start()
+        self.timing_exec_func()
 
     def timing_exec_func(self):
         #file_path = r'..\Advia2400_ScreenCapture'
@@ -26,14 +27,14 @@ class MtdResultTimingScanner(MtdResultParser):
         try:
             db_interface.db_connect_initialize(self.db_path)
             db_interface.put_mtd_result_info(self)
+
+            # notify Part II
+            rpc_client = RpcClient()
+            rpc_client.fire_order_result_notification()
         except Exception as ex:
             print ex
         finally:
             db_interface.db_disconnect()
-
-        # notify Part II
-        rpc_client = RpcClient()
-        rpc_client.fire_order_result_notification()
 
         self.timer = Timer(FILE_SCAN_INTERVAL,self.timing_exec_func)
         self.timer.start()

@@ -1,1 +1,1 @@
-ipy pyc.py /main:D:\DaAn\DaAnProject\DBInterface.py /target:exe /standalone
+ipy pyc.py /main:"D:\DaAn\DaAn-Project\Part II\RpcInterface\RpcServer.py" /target:exe /standalone /embed

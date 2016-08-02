@@ -5,7 +5,7 @@ from DatabaseInterface.DBInterface import DBInterface
 
 from RpcInterface.RpcClient import RpcClient
 
-FILE_SCAN_INTERVAL = 60 # scan control log file time interval in seconds
+FILE_SCAN_INTERVAL = 30 # scan control log file time interval in seconds
 
 class PrintedReagentTimingScanner(PrintedReagentInfoParser):
     """
@@ -16,10 +16,11 @@ class PrintedReagentTimingScanner(PrintedReagentInfoParser):
         self.db_path = db_path
         self.timer = Timer(FILE_SCAN_INTERVAL,self.timing_exec_func)
         PrintedReagentInfoParser.__init__(self)
-        self.timer.start()
+        self.timing_exec_func()
 
     def timing_exec_func(self):
         #file_path = r'..\Advia2400_ScreenCapture'
+        print 'PrintedReagentTimingScanner timer started'
         self.extract_info_from_printed_file(self.file_path)
 
         db_interface = DBInterface()
@@ -37,6 +38,7 @@ class PrintedReagentTimingScanner(PrintedReagentInfoParser):
 
         self.timer = Timer(FILE_SCAN_INTERVAL,self.timing_exec_func)
         self.timer.start()
+        print self
         print 'timer start again'
 
 

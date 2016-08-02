@@ -29,7 +29,16 @@ class PrintedReagentInfoParser():
     """
     reagent info parser for printed file.
     """
-    reagent_type_map = {'R1':0,'R2':1,'TOTAL':2}
+    reagent_type_map = {'OFF':0,'R1_HEAD':1,'R1_REAGENT':2,'R2_HEAD':3,'R2_REAGENT':4,'TOTAL_HEAD':5,'TOTAL_REAGENT':6}
+
+    #R1_HEAD_LINE = r'***** Reagent Inventory Summary for <RTT1> *****'
+    #R2_HEAD_LINE = r'***** Reagent Inventory Summary for <RTT2> *****'
+    R1_R2_HEAD_LINE = r'Deselect  Test Name         R  Posi.#   Backup   #Tests    Lot#   Exp.Date         Cal Interval  CalStatus                          QCStatus         Remaining'
+
+    TOTAL_HEAD_LINE = r'***** Total Tests Summary Table *****'
+    TOTAL_LINE = r'Test Name          Total # Tests'
+
+
     def __init__(self):
         self.date_time = ''
         self.system_id = ''
@@ -39,16 +48,16 @@ class PrintedReagentInfoParser():
         for item in self.reagent_info_list:
             if isinstance(item,PrintedReagentInfoItem):
                 if item.reagent_name == reagent_name:
-                    if self.reagent_type_map['R1'] == type:
+                    if self.reagent_type_map['R1_REAGENT'] == type:
                         item.r1_count = count
                         item.r1_position = position
                         item.r1_cal_status = cal_status
-                    elif self.reagent_type_map['R2'] == type:
+                    elif self.reagent_type_map['R2_REAGENT'] == type:
                         item.r2_count = count
                         item.r2_position = position
                         item.r2_cal_status = cal_status
                         #print item
-                    elif self.reagent_type_map['TOTAL'] == type:
+                    elif self.reagent_type_map['TOTAL_REAGENT'] == type:
                         item.total_count = count
                     return
         self.reagent_info_list.append(PrintedReagentInfoItem(reagent_name))
@@ -69,65 +78,62 @@ class PrintedReagentInfoParser():
             finally:
                 printed_file_handler.close()
 
+        #R1 Head
+        parsing_mode = PrintedReagentInfoParser.reagent_type_map['R1_HEAD']
+
         if file_content_list:
-            total_test_matching_flag = False
             for line in file_content_list:
-                if isinstance(line,str):
-                    if -1 <> line.find(r'Date/Time') and -1 <> line.find(r' : '):
-                        self.date_time = line.split(r' : ')[1]
-                    elif -1 <> line.find(r'System #') and -1 <> line.find(':'):
-                        self.system_id = line.split(':')[1]
-                    elif -1 <> line.find('R1'):
-                        info_list = line.split()
-                        if 8 == len(info_list):
-                            reagent_name = info_list[0].strip()
-                            position = info_list[2]
-                            count = info_list[4]
-                            cal_status = info_list[6]
-                        elif 6 == len(info_list):
-                            reagent_name = info_list[0].strip()
-                            position = info_list[2]
-                            count = info_list[3]
-                            cal_status = ''
-                        else:
-                            reagent_name = line.split('R1')[0].strip()
-                            info_list = line.split('R1')[1].split()
-                            position = info_list[0]
-                            count = info_list[2]
-                            cal_status = info_list[5]
-                        self.update_reagent_info(reagent_name,self.reagent_type_map['R1'],count,position,cal_status)
-                    elif -1 <> line.find('R2'):
-                        info_list = line.split('R2')
-                        reagent_name = info_list[0].replace('*','')
-                        reagent_name = reagent_name.replace('+','').strip()
-                        info_list = info_list[1].split()
-                        position = info_list[0]
-                        if -1 <> line.find('+'):
-                            count = info_list[3]
-                        else:
-                            count = info_list[2]
-                        if len(info_list) >= 6:
-                            cal_status = info_list[-2]
-                        else:
-                            cal_status = ''
-                        self.update_reagent_info(reagent_name,self.reagent_type_map['R2'],count,position,cal_status)
-                    elif -1 <> line.find(r'Test Name          Total # Tests'):
-                        total_test_matching_flag = True
-                    elif total_test_matching_flag:
-                        info_list = line.split()
-                        if len(info_list) >= 2:
-                            reagent_name = ' '.join(str(item) for item in info_list[0:-1]).strip()
-                            count = info_list[-1]
-                            self.update_reagent_info(reagent_name,self.reagent_type_map['TOTAL'],count)
+                if isinstance(line,str) and len(line.strip()) > 0:
+                    if PrintedReagentInfoParser.reagent_type_map['R1_HEAD'] == parsing_mode:
+                        # update date time and system id.
+                        if line.find(r'Date/Time :') <> -1:
+                            self.date_time = line[11:].strip()
+                        elif line.find(r'System # :') <> -1:
+                            self.system_id = line[10:].strip()
+                        #
+                        if PrintedReagentInfoParser.R1_R2_HEAD_LINE == line.strip():
+                            parsing_mode = PrintedReagentInfoParser.reagent_type_map['R1_REAGENT']
+                    elif PrintedReagentInfoParser.reagent_type_map['R1_REAGENT'] == parsing_mode:
+                        #R1 reagent item processing
+                        if r'R1' == line[28:30]:
+                            reagent_name = line[10:24].strip()
+                            count = line[48:56].strip()
+                            position = line[32:37].strip()
+                            cal_status = line[99:105].strip()
+                            self.update_reagent_info(reagent_name,self.reagent_type_map['R1_REAGENT'],count,position,cal_status)
+                    elif PrintedReagentInfoParser.reagent_type_map['R2_HEAD'] == parsing_mode:
+                        if PrintedReagentInfoParser.R1_R2_HEAD_LINE == line.strip():
+                            parsing_mode = PrintedReagentInfoParser.reagent_type_map['R2_REAGENT']
+                    elif PrintedReagentInfoParser.reagent_type_map['R2_REAGENT'] == parsing_mode:
+                        # R2 Reagent item processing
+                        if r'R2' == line[28:30]:
+                            reagent_name = line[10:24].strip()
+                            count = line[48:56].strip()
+                            position = line[32:37].strip()
+                            cal_status = line[99:105].strip()
+                            self.update_reagent_info(reagent_name,self.reagent_type_map['R2_REAGENT'],count,position,cal_status)
+                    elif PrintedReagentInfoParser.reagent_type_map['TOTAL_HEAD'] == parsing_mode:
+                        if PrintedReagentInfoParser.TOTAL_LINE == line.strip():
+                            parsing_mode = PrintedReagentInfoParser.reagent_type_map['TOTAL_REAGENT']
+                    elif PrintedReagentInfoParser.reagent_type_map['TOTAL_REAGENT'] == parsing_mode:
+                        #total reagent info processing
+                        reagent_name = line[2:20].strip()
+                        count = line[25:].strip()
+                        self.update_reagent_info(reagent_name,self.reagent_type_map['TOTAL_REAGENT'],count)
+                else:
+                    if PrintedReagentInfoParser.reagent_type_map['R1_REAGENT'] == parsing_mode:
+                        parsing_mode = PrintedReagentInfoParser.reagent_type_map['R2_HEAD']
+                    elif PrintedReagentInfoParser.reagent_type_map['R2_REAGENT'] == parsing_mode:
+                        parsing_mode = PrintedReagentInfoParser.reagent_type_map['TOTAL_HEAD']
 
     def __repr__(self):
-        return 'date time:' + str(self.date_time)+'\t'\
-            'system id:' + str(self.system_id)+'\n'\
-            ''.join(str(item) for item in self.reagent_info_list if isinstance(item,PrintedReagentInfoItem))
+        return 'date time:' + str(self.date_time)+'\t' \
+            'system id:' + str(self.system_id) + '\n' +\
+            '\n'.join(str(item) for item in self.reagent_info_list if isinstance(item,PrintedReagentInfoItem))
 
 def test():
     reagent_parser = PrintedReagentInfoParser()
-    file_path = r'..\Advia2400_ScreenCapture'
+    file_path = r'D:\01_Automation\23_Experiential_Conclusions_2016\05_DaAn\Reports\DaAn_Reports\Reports'
     reagent_parser.extract_info_from_printed_file(file_path)
     print reagent_parser
 

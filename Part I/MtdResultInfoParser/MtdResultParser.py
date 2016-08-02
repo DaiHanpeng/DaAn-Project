@@ -63,6 +63,8 @@ class MtdResultParser():
                         splitted_line_list = line.split()
                         sample_id = splitted_line_list[0]
                         sample_date_time = splitted_line_list[-2] + ' ' + splitted_line_list[-1]
+                        # Attention!
+                        # the date time format may vary...
                         date_time = datetime.datetime.strptime(sample_date_time,'%m/%d/%Y %H:%M:%S')
                         if self.last_time_stamp:
                             if date_time > self.last_time_stamp:

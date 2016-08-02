@@ -1,11 +1,12 @@
 from threading import Timer
+import os
 
 from MtdResultInfoParser.MtdResultParser import MtdResultParser
 from DatabaseInterface.DBInterface import DBInterface
 
 from RpcInterface.RpcClient import RpcClient
 
-FILE_SCAN_INTERVAL = 30 # scan control log file time interval in seconds
+FILE_SCAN_INTERVAL = 60 # scan control log file time interval in seconds
 
 class MtdResultTimingScanner(MtdResultParser):
     """
@@ -21,24 +22,35 @@ class MtdResultTimingScanner(MtdResultParser):
 
     def timing_exec_func(self):
         #file_path = r'..\Advia2400_ScreenCapture'
-        self.build_result_info_from_mtd_file(self.file_path)
+        print 'timer handler started.'
+        if os.path.exists(self.file_path):
+            try:
+                self.build_result_info_from_mtd_file(self.file_path)
+                print r'#1'
+            except Exception as ex:
+                print ex
 
-        db_interface = DBInterface()
-        try:
-            db_interface.db_connect_initialize(self.db_path)
-            db_interface.put_mtd_result_info(self)
+            db_interface = DBInterface()
+            try:
+                print r'#2'
+                db_interface.db_connect_initialize(self.db_path)
+                db_interface.put_mtd_result_info(self)
 
-            # notify Part II
-            rpc_client = RpcClient()
-            rpc_client.fire_order_result_notification()
-        except Exception as ex:
-            print ex
-        finally:
-            db_interface.db_disconnect()
+                # notify Part II
+                rpc_client = RpcClient()
+                rpc_client.fire_order_result_notification()
+            except Exception as ex:
+                print ex
+            finally:
+                db_interface.db_disconnect()
 
-        self.timer = Timer(FILE_SCAN_INTERVAL,self.timing_exec_func)
-        self.timer.start()
-        print 'timer start again'
+            print r'#3'
+            self.timer = Timer(FILE_SCAN_INTERVAL,self.timing_exec_func)
+            self.timer.start()
+            print self
+            print 'MtdResultTimingScanner timer start again'
+        else:
+            print 'mtd file not exists...'
 
 
 def test():

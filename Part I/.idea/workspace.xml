@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="692236e9-cae7-4556-8b9c-2c6550a183e4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CalibrationParser/REALTIME MONITOR_04MAY2016_223219.TXT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ControlParser/REALTIME MONITOR_04MAY2016_223204.TXT" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/File2Database.iml" afterPath="$PROJECT_DIR$/.idea/File2Database.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Part_I_Scripts/AutoIT_Scripts/ErrorReport.au3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Part_I_Scripts/AutoIT_Scripts/RTCalibration0.au3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Part_I_Scripts/AutoIT_Scripts/RTControl.au3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Part_I_Scripts/AutoIT_Scripts/reagent.au3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Part_I_Scripts/AutoIT_Scripts/test.au3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Part_I_Scripts/Main/apscheduler.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Part_I_Scripts/Main/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Part_I_Scripts/Main/main_before_31July2016.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Part_I_Scripts/Main/main_test_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Part_I_Scripts/Main/run_main.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Part_I_Scripts/Main/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CalibrationParser/CalibrationParser.py" afterPath="$PROJECT_DIR$/CalibrationParser/CalibrationParser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ControlParser/ControlParser.py" afterPath="$PROJECT_DIR$/ControlParser/ControlParser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MtdResultInfoParser/MtdResultParser.py" afterPath="$PROJECT_DIR$/MtdResultInfoParser/MtdResultParser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrintedReagentParser/PrintedReagentParser.py" afterPath="$PROJECT_DIR$/PrintedReagentParser/PrintedReagentParser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TimingScanner/CalibrationTimingScanner.py" afterPath="$PROJECT_DIR$/TimingScanner/CalibrationTimingScanner.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TimingScanner/ControlTimingScanner.py" afterPath="$PROJECT_DIR$/TimingScanner/ControlTimingScanner.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TimingScanner/MtdResultTimingScanner.py" afterPath="$PROJECT_DIR$/TimingScanner/MtdResultTimingScanner.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TimingScanner/PrintedReagentTimingScanner.py" afterPath="$PROJECT_DIR$/TimingScanner/PrintedReagentTimingScanner.py" />
     </list>
     <ignored path="File2Database.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +47,8 @@
       <file leaf-file-name="PrintedReagentParser.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PrintedReagentParser/PrintedReagentParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.0094337">
-              <caret line="118" column="54" selection-start-line="118" selection-start-column="54" selection-end-line="118" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.18828452">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -185,49 +184,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TimingScanner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="File2Database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Part I" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrintedReagentParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="File2Database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Part I" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ControlParser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="File2Database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Part I" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CalibrationParser" />
+              <option name="myItemId" value="Part_I_Scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -524,16 +481,16 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1320" height="784" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22301587" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2633997" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18070444" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -961,8 +918,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PrintedReagentParser/PrintedReagentParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.0094337">
-          <caret line="118" column="54" selection-start-line="118" selection-start-column="54" selection-end-line="118" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.18828452">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
           <folding />
         </state>
       </provider>

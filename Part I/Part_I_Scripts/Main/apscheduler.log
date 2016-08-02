@@ -1,0 +1,1547 @@
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 17:57:38.361000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 17:58:38.361000+08:00 (in 59.992000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 17:58:38 CST)" (scheduled at 2016-06-09 17:57:38.361000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 17:58:38 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 17:58:38 CST)" (scheduled at 2016-06-09 17:58:38.361000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 17:59:38.361000+08:00 (in 59.996000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 17:59:38 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 17:59:38 CST)" (scheduled at 2016-06-09 17:59:38.361000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 18:00:38.361000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 18:00:38 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 18:00:38 CST)" (scheduled at 2016-06-09 18:00:38.361000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 18:01:38.361000+08:00 (in 59.993000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 18:01:38 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 18:01:38 CST)" (scheduled at 2016-06-09 18:01:38.361000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 18:02:38.361000+08:00 (in 59.987000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 18:02:38 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 18:02:38 CST)" (scheduled at 2016-06-09 18:02:38.361000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 18:03:38.361000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 18:03:38 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 18:03:38 CST)" (scheduled at 2016-06-09 18:03:38.361000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 18:04:38.361000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 18:04:38 CST)" executed successfully
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:04:04.209000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:04:04 CST)" (scheduled at 2016-06-09 20:04:04.209000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:05:04.209000+08:00 (in 59.998000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:05:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:05:04 CST)" (scheduled at 2016-06-09 20:05:04.209000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:06:04.209000+08:00 (in 59.989000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:06:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:06:04 CST)" (scheduled at 2016-06-09 20:06:04.209000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:07:04.209000+08:00 (in 59.991000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:07:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:07:04 CST)" (scheduled at 2016-06-09 20:07:04.209000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:08:04.209000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:08:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:08:04 CST)" (scheduled at 2016-06-09 20:08:04.209000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:09:04.209000+08:00 (in 59.987000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:14:09.416000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:15:09.416000+08:00 (in 59.990000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:15:09 CST)" (scheduled at 2016-06-09 20:14:09.416000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:15:09 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:15:09 CST)" (scheduled at 2016-06-09 20:15:09.416000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:16:09.416000+08:00 (in 59.996000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:16:09 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:16:09 CST)" (scheduled at 2016-06-09 20:16:09.416000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:17:09.416000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:17:09 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:17:09 CST)" (scheduled at 2016-06-09 20:17:09.416000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:18:09.416000+08:00 (in 59.982000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:18:09 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:18:09 CST)" (scheduled at 2016-06-09 20:18:09.416000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:19:09.416000+08:00 (in 59.995000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:37:37.514000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:38:37.514000+08:00 (in 59.996000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:38:37 CST)" (scheduled at 2016-06-09 20:37:37.514000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:38:37 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:38:37 CST)" (scheduled at 2016-06-09 20:38:37.514000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:39:37.514000+08:00 (in 59.990000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:39:37 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:39:37 CST)" (scheduled at 2016-06-09 20:39:37.514000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:40:37.514000+08:00 (in 59.989000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:40:37 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:40:37 CST)" (scheduled at 2016-06-09 20:40:37.514000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:41:37.514000+08:00 (in 59.993000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:41:37 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:41:37 CST)" (scheduled at 2016-06-09 20:41:37.514000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-09 20:42:37.514000+08:00 (in 59.982000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-09 20:42:37 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 10:39:37.514000+08:00 (in 58.813000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 10:39:37 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 10:39:37 CST)" (scheduled at 2016-06-13 10:39:37.514000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 10:40:37.514000+08:00 (in 59.969000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 10:40:37 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 10:40:37 CST)" (scheduled at 2016-06-13 10:40:37.514000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 10:41:37.514000+08:00 (in 59.993000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 10:41:37 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 10:41:37 CST)" (scheduled at 2016-06-13 10:41:37.514000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 10:42:37.514000+08:00 (in 59.996000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 10:42:37 CST)" executed successfully
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:46:41.478000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:47:41.478000+08:00 (in 59.991000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:47:41 CST)" (scheduled at 2016-06-13 12:46:41.478000+08:00)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:47:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:48:41.478000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:48:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:49:41.478000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:49:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:50:41.478000+08:00 (in 59.998000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:50:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:51:41.478000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:51:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:52:41.478000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:52:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:53:41.478000+08:00 (in 59.992000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:53:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:54:41.478000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:54:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:55:41.478000+08:00 (in 59.995000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:55:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:56:41.478000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:56:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:57:41.478000+08:00 (in 59.989000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:57:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:58:41.478000+08:00 (in 59.998000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:58:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 12:59:41.478000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 12:59:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:00:41.478000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:00:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:01:41.478000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:01:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:02:41.478000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:02:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:03:41.478000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:03:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:04:41.478000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:04:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:05:41.478000+08:00 (in 59.991000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:05:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:06:41.478000+08:00 (in 59.998000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:06:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:07:41.478000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:07:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:08:41.478000+08:00 (in 59.992000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:08:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:09:41.478000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:09:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:10:41.478000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:10:41 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:11:41.478000+08:00 (in 59.993000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:12:33.092000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:12:33 CST)" (scheduled at 2016-06-13 13:12:33.092000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:13:33.092000+08:00 (in 59.995000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:13:33 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:14:33.092000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:14:33 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:15:33.092000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:15:33 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:16:33.092000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:16:33 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:17:33.092000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:17:33 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:18:33.092000+08:00 (in 59.995000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:18:33 CST)" executed successfully
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:19:29.694000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:21:24.889000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:22:24.889000+08:00 (in 59.992000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:22:24 CST)" (scheduled at 2016-06-13 13:21:24.889000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:22:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:22:24 CST)" (scheduled at 2016-06-13 13:22:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:23:24.889000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:23:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:23:24 CST)" (scheduled at 2016-06-13 13:23:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:24:24.889000+08:00 (in 59.988000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:24:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:24:24 CST)" (scheduled at 2016-06-13 13:24:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:25:24.889000+08:00 (in 59.988000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:25:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:25:24 CST)" (scheduled at 2016-06-13 13:25:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:26:24.889000+08:00 (in 59.996000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:26:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:26:24 CST)" (scheduled at 2016-06-13 13:26:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:27:24.889000+08:00 (in 59.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:27:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:27:24 CST)" (scheduled at 2016-06-13 13:27:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:28:24.889000+08:00 (in 59.996000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:28:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:28:24 CST)" (scheduled at 2016-06-13 13:28:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:29:24.889000+08:00 (in 59.983000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:29:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:29:24 CST)" (scheduled at 2016-06-13 13:29:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:30:24.889000+08:00 (in 59.989000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:30:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:30:24 CST)" (scheduled at 2016-06-13 13:30:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:31:24.889000+08:00 (in 59.988000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:31:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:31:24 CST)" (scheduled at 2016-06-13 13:31:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:32:24.889000+08:00 (in 59.995000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:32:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:32:24 CST)" (scheduled at 2016-06-13 13:32:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:33:24.889000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:33:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:33:24 CST)" (scheduled at 2016-06-13 13:33:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:34:24.889000+08:00 (in 59.989000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:34:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:35:24.889000+08:00 (in 59.995000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:35:24 CST)" (scheduled at 2016-06-13 13:34:24.889000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:35:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:35:24 CST)" (scheduled at 2016-06-13 13:35:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:36:24.889000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:36:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:36:24 CST)" (scheduled at 2016-06-13 13:36:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:37:24.889000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:37:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:37:24 CST)" (scheduled at 2016-06-13 13:37:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:38:24.889000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:38:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:38:24 CST)" (scheduled at 2016-06-13 13:38:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:39:24.889000+08:00 (in 59.995000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:39:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:39:24 CST)" (scheduled at 2016-06-13 13:39:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:40:24.889000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:40:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:41:24.889000+08:00 (in 59.984000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:41:24 CST)" (scheduled at 2016-06-13 13:40:24.889000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:41:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:42:24.889000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:42:24 CST)" (scheduled at 2016-06-13 13:41:24.889000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:42:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:42:24 CST)" (scheduled at 2016-06-13 13:42:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:43:24.889000+08:00 (in 59.990000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:43:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:44:24.889000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:44:24 CST)" (scheduled at 2016-06-13 13:43:24.889000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:44:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:44:24 CST)" (scheduled at 2016-06-13 13:44:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:45:24.889000+08:00 (in 59.995000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:45:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:45:24 CST)" (scheduled at 2016-06-13 13:45:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:46:24.889000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:46:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:47:24.889000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:47:24 CST)" (scheduled at 2016-06-13 13:46:24.889000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:47:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:48:24.889000+08:00 (in 59.995000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:48:24 CST)" (scheduled at 2016-06-13 13:47:24.889000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:48:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:49:24.889000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:49:24 CST)" (scheduled at 2016-06-13 13:48:24.889000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:49:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:49:24 CST)" (scheduled at 2016-06-13 13:49:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:50:24.889000+08:00 (in 59.990000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:50:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:51:24.889000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:51:24 CST)" (scheduled at 2016-06-13 13:50:24.889000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:51:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:52:24.889000+08:00 (in 59.998000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:52:24 CST)" (scheduled at 2016-06-13 13:51:24.889000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:52:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:52:24 CST)" (scheduled at 2016-06-13 13:52:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:53:24.889000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:53:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:54:24.889000+08:00 (in 59.993000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:54:24 CST)" (scheduled at 2016-06-13 13:53:24.889000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:54:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:55:24.889000+08:00 (in 59.996000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:55:24 CST)" (scheduled at 2016-06-13 13:54:24.889000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:55:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:55:24 CST)" (scheduled at 2016-06-13 13:55:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:56:24.889000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:56:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:57:24.889000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:57:24 CST)" (scheduled at 2016-06-13 13:56:24.889000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:57:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:57:24 CST)" (scheduled at 2016-06-13 13:57:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:58:24.889000+08:00 (in 59.991000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:58:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:58:24 CST)" (scheduled at 2016-06-13 13:58:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 13:59:24.889000+08:00 (in 59.995000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:59:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 13:59:24 CST)" (scheduled at 2016-06-13 13:59:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 14:00:24.889000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 14:00:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 14:00:24 CST)" (scheduled at 2016-06-13 14:00:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 14:01:24.889000+08:00 (in 59.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 14:01:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 14:01:24 CST)" (scheduled at 2016-06-13 14:01:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 14:02:24.889000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 14:02:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 14:02:24 CST)" (scheduled at 2016-06-13 14:02:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 14:03:24.889000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 14:03:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 14:03:24 CST)" (scheduled at 2016-06-13 14:03:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 14:04:24.889000+08:00 (in 59.990000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 14:04:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 14:04:24 CST)" (scheduled at 2016-06-13 14:04:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 14:05:24.889000+08:00 (in 59.993000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 14:05:24 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-13 14:05:24 CST)" (scheduled at 2016-06-13 14:05:24.889000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-13 14:06:24.889000+08:00 (in 59.991000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:11:56.988000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:12:56.988000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:12:56 CST)" (scheduled at 2016-06-14 11:11:56.988000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:12:56 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:12:56 CST)" (scheduled at 2016-06-14 11:12:56.988000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:13:56.988000+08:00 (in 59.989000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:13:56 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:13:56 CST)" (scheduled at 2016-06-14 11:13:56.988000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:14:56.988000+08:00 (in 59.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:14:56 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:14:56 CST)" (scheduled at 2016-06-14 11:14:56.988000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:15:56.988000+08:00 (in 59.983000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:15:56 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:15:56 CST)" (scheduled at 2016-06-14 11:15:56.988000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:16:56.988000+08:00 (in 59.991000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:16:56 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:16:56 CST)" (scheduled at 2016-06-14 11:16:56.988000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:17:56.988000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:17:56 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:17:56 CST)" (scheduled at 2016-06-14 11:17:56.988000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:18:56.988000+08:00 (in 59.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:18:56 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:18:56 CST)" (scheduled at 2016-06-14 11:18:56.988000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:19:56.988000+08:00 (in 59.985000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:19:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:20:56.988000+08:00 (in 59.984000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:20:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:21:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:21:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:22:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:22:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:23:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:23:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:24:56.988000+08:00 (in 59.990000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:24:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:25:56.988000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:25:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:26:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:26:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:27:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:27:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:28:56.988000+08:00 (in 59.991000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:28:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:29:56.988000+08:00 (in 59.995000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:29:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:30:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:30:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:31:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:31:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:32:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:32:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:33:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:33:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:34:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:34:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:35:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:35:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:36:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:36:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:37:56.988000+08:00 (in 59.991000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:37:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:38:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:38:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:39:56.988000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:39:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:40:56.988000+08:00 (in 59.991000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:40:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:41:56.988000+08:00 (in 59.995000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:41:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:42:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:42:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:43:56.988000+08:00 (in 59.992000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:43:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:44:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:44:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:45:56.988000+08:00 (in 59.992000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:45:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:46:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:46:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:47:56.988000+08:00 (in 59.990000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:47:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:48:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:48:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:49:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:49:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:50:56.988000+08:00 (in 59.990000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:50:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:51:56.988000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:51:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:52:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:52:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:53:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:53:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:54:56.988000+08:00 (in 59.998000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:54:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:55:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:55:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:56:56.988000+08:00 (in 59.991000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:56:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:57:56.988000+08:00 (in 59.998000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:57:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:58:56.988000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:58:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 11:59:56.988000+08:00 (in 59.995000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 11:59:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:00:56.988000+08:00 (in 59.998000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:00:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:01:56.988000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:01:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:02:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:02:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:03:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:03:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:04:56.988000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:04:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:05:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:05:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:06:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:06:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:07:56.988000+08:00 (in 59.991000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:07:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:08:56.988000+08:00 (in 59.991000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:08:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:09:56.988000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:09:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:10:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:10:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:11:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:11:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:12:56.988000+08:00 (in 59.998000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:12:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:13:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:13:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:14:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:14:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:15:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:15:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:16:56.988000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:16:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:17:56.988000+08:00 (in 59.990000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:17:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:18:56.988000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:18:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:19:56.988000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:19:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:20:56.988000+08:00 (in 59.992000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:20:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:21:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:21:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:22:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:22:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:23:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:23:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:24:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:24:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:25:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:25:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:26:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:26:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:27:56.988000+08:00 (in 59.992000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:27:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:28:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:28:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:29:56.988000+08:00 (in 59.995000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:29:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:30:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:30:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:31:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:31:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:32:56.988000+08:00 (in 59.995000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:32:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:33:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:33:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:34:56.988000+08:00 (in 59.995000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:34:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:35:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:35:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:36:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:36:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:37:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:37:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:38:56.988000+08:00 (in 59.998000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:38:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:39:56.988000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:39:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:40:56.988000+08:00 (in 59.991000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:40:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:41:56.988000+08:00 (in 59.992000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:41:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:42:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:42:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:43:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:43:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:44:56.988000+08:00 (in 59.992000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:44:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:45:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:45:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:46:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:46:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:47:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:47:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:48:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:48:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:49:56.988000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:49:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:50:56.988000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:50:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:51:56.988000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:51:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:52:56.988000+08:00 (in 59.998000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:52:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:53:56.988000+08:00 (in 59.998000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:53:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:54:56.988000+08:00 (in 59.992000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:54:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:55:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:55:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:56:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:56:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:57:56.988000+08:00 (in 59.992000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:57:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:58:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:58:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 12:59:56.988000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 12:59:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:00:56.988000+08:00 (in 59.998000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:00:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:01:56.988000+08:00 (in 59.992000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:01:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:02:56.988000+08:00 (in 59.987000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:02:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:03:56.988000+08:00 (in 59.995000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:03:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:04:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:04:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:05:56.988000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:05:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:06:56.988000+08:00 (in 59.991000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:06:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:07:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:07:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:08:56.988000+08:00 (in 59.990000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:08:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:09:56.988000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:09:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:10:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:10:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:11:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:11:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:12:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:12:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:13:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:13:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:14:56.988000+08:00 (in 59.994000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:14:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:15:56.988000+08:00 (in 59.992000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:15:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:16:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:16:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:17:56.988000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:17:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:18:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:18:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:19:56.988000+08:00 (in 59.995000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:19:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:20:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:20:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:21:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:21:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:22:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:22:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:23:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:23:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:24:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:24:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:25:56.988000+08:00 (in 59.990000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:25:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:26:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:26:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:27:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:27:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:28:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:28:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:29:56.988000+08:00 (in 59.990000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:29:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:30:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:30:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:31:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:31:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:32:56.988000+08:00 (in 59.991000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:32:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:33:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:33:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:34:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:34:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:35:56.988000+08:00 (in 59.991000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:35:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:36:56.988000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:36:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:37:56.988000+08:00 (in 59.999000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:37:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:38:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:38:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:39:56.988000+08:00 (in 59.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:39:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:40:56.988000+08:00 (in 59.991000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:40:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:41:56.988000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:41:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:42:56.988000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:42:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:43:56.988000+08:00 (in 59.996000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:43:56 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:44:56.988000+08:00 (in 59.990000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:54:28.629000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:55:28.629000+08:00 (in 59.996000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:55:28 CST)" (scheduled at 2016-06-14 13:54:28.629000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:55:28 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:55:28 CST)" (scheduled at 2016-06-14 13:55:28.629000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:56:28.629000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 13:56:28 CST)" executed successfully
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 13:59:43.234000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:00:43.234000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:00:43 CST)" (scheduled at 2016-06-14 13:59:43.234000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:00:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:00:43 CST)" (scheduled at 2016-06-14 14:00:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:01:43.234000+08:00 (in 59.998000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:01:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:01:43 CST)" (scheduled at 2016-06-14 14:01:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:02:43.234000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:02:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:02:43 CST)" (scheduled at 2016-06-14 14:02:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:03:43.234000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:03:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:03:43 CST)" (scheduled at 2016-06-14 14:03:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:04:43.234000+08:00 (in 59.998000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:04:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:04:43 CST)" (scheduled at 2016-06-14 14:04:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:05:43.234000+08:00 (in 59.990000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:05:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:05:43 CST)" (scheduled at 2016-06-14 14:05:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:06:43.234000+08:00 (in 59.995000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:06:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:06:43 CST)" (scheduled at 2016-06-14 14:06:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:07:43.234000+08:00 (in 59.998000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:07:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:07:43 CST)" (scheduled at 2016-06-14 14:07:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:08:43.234000+08:00 (in 59.982000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:08:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:08:43 CST)" (scheduled at 2016-06-14 14:08:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:09:43.234000+08:00 (in 59.985000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:09:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:09:43 CST)" (scheduled at 2016-06-14 14:09:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:10:43.234000+08:00 (in 59.988000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:10:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:10:43 CST)" (scheduled at 2016-06-14 14:10:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:11:43.234000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:11:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:11:43 CST)" (scheduled at 2016-06-14 14:11:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:12:43.234000+08:00 (in 59.995000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:12:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:12:43 CST)" (scheduled at 2016-06-14 14:12:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:13:43.234000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:13:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:13:43 CST)" (scheduled at 2016-06-14 14:13:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:14:43.234000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:14:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:14:43 CST)" (scheduled at 2016-06-14 14:14:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:15:43.234000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:15:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:15:43 CST)" (scheduled at 2016-06-14 14:15:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:16:43.234000+08:00 (in 59.998000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:16:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:16:43 CST)" (scheduled at 2016-06-14 14:16:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:17:43.234000+08:00 (in 59.993000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:17:43 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-06-14 14:17:43 CST)" (scheduled at 2016-06-14 14:17:43.234000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:18:43.234000+08:00 (in 59.993000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:44:21.063000+08:00 (in 180.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:47:21.063000+08:00 (in 180.000000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 14:47:21 CST)" (scheduled at 2016-06-14 14:44:21.063000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 14:47:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 14:47:21 CST)" (scheduled at 2016-06-14 14:47:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:50:21.063000+08:00 (in 179.998000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 14:50:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 14:50:21 CST)" (scheduled at 2016-06-14 14:50:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:53:21.063000+08:00 (in 179.984000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 14:53:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 14:53:21 CST)" (scheduled at 2016-06-14 14:53:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:56:21.063000+08:00 (in 179.985000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 14:56:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 14:56:21 CST)" (scheduled at 2016-06-14 14:56:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 14:59:21.063000+08:00 (in 179.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 14:59:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 14:59:21 CST)" (scheduled at 2016-06-14 14:59:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:02:21.063000+08:00 (in 179.984000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:02:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:02:21 CST)" (scheduled at 2016-06-14 15:02:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:05:21.063000+08:00 (in 179.993000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:05:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:05:21 CST)" (scheduled at 2016-06-14 15:05:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:08:21.063000+08:00 (in 179.983000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:08:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:08:21 CST)" (scheduled at 2016-06-14 15:08:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:11:21.063000+08:00 (in 179.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:11:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:11:21 CST)" (scheduled at 2016-06-14 15:11:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:14:21.063000+08:00 (in 179.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:14:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:17:21.063000+08:00 (in 179.988000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:17:21 CST)" (scheduled at 2016-06-14 15:14:21.063000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:17:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:20:21.063000+08:00 (in 179.999000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:20:21 CST)" (scheduled at 2016-06-14 15:17:21.063000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:20:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:20:21 CST)" (scheduled at 2016-06-14 15:20:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:23:21.063000+08:00 (in 179.993000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:23:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:23:21 CST)" (scheduled at 2016-06-14 15:23:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:26:21.063000+08:00 (in 179.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:26:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:26:21 CST)" (scheduled at 2016-06-14 15:26:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:29:21.063000+08:00 (in 179.986000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:29:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:29:21 CST)" (scheduled at 2016-06-14 15:29:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:32:21.063000+08:00 (in 179.993000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:32:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:32:21 CST)" (scheduled at 2016-06-14 15:32:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:35:21.063000+08:00 (in 179.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:35:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:35:21 CST)" (scheduled at 2016-06-14 15:35:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:38:21.063000+08:00 (in 179.991000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:38:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:38:21 CST)" (scheduled at 2016-06-14 15:38:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:41:21.063000+08:00 (in 179.996000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:41:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:41:21 CST)" (scheduled at 2016-06-14 15:41:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:44:21.063000+08:00 (in 179.998000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:44:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:44:21 CST)" (scheduled at 2016-06-14 15:44:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:47:21.063000+08:00 (in 179.998000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:47:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:47:21 CST)" (scheduled at 2016-06-14 15:47:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:50:21.063000+08:00 (in 180.000000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:50:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:50:21 CST)" (scheduled at 2016-06-14 15:50:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:53:21.063000+08:00 (in 179.996000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:53:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:53:21 CST)" (scheduled at 2016-06-14 15:53:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:56:21.063000+08:00 (in 179.993000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:56:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:56:21 CST)" (scheduled at 2016-06-14 15:56:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 15:59:21.063000+08:00 (in 179.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:59:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 15:59:21 CST)" (scheduled at 2016-06-14 15:59:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:02:21.063000+08:00 (in 179.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:02:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:02:21 CST)" (scheduled at 2016-06-14 16:02:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:05:21.063000+08:00 (in 179.995000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:05:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:05:21 CST)" (scheduled at 2016-06-14 16:05:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:08:21.063000+08:00 (in 179.997000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:08:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:08:21 CST)" (scheduled at 2016-06-14 16:08:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:11:21.063000+08:00 (in 179.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:11:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:11:21 CST)" (scheduled at 2016-06-14 16:11:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:14:21.063000+08:00 (in 179.996000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:14:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:14:21 CST)" (scheduled at 2016-06-14 16:14:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:17:21.063000+08:00 (in 179.997000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:17:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:20:21.063000+08:00 (in 179.994000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:20:21 CST)" (scheduled at 2016-06-14 16:17:21.063000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:20:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:20:21 CST)" (scheduled at 2016-06-14 16:20:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:23:21.063000+08:00 (in 179.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:23:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:23:21 CST)" (scheduled at 2016-06-14 16:23:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:26:21.063000+08:00 (in 179.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:26:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:29:21.063000+08:00 (in 179.999000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:29:21 CST)" (scheduled at 2016-06-14 16:26:21.063000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:29:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:29:21 CST)" (scheduled at 2016-06-14 16:29:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:32:21.063000+08:00 (in 179.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:32:21 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:32:21 CST)" (scheduled at 2016-06-14 16:32:21.063000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:35:21.063000+08:00 (in 179.991000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:38:22.443000+08:00 (in 180.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:41:22.443000+08:00 (in 179.995000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:41:22 CST)" (scheduled at 2016-06-14 16:38:22.443000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:41:22 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:41:22 CST)" (scheduled at 2016-06-14 16:41:22.443000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:44:22.443000+08:00 (in 179.997000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:44:22 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:47:22.443000+08:00 (in 179.990000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:47:22 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:50:22.443000+08:00 (in 179.995000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:03:00], next run at: 2016-06-14 16:50:22 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-06-14 16:53:22.443000+08:00 (in 179.992000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:19:22.725000+08:00 (in 180.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:03:00], next run at: 2016-07-07 16:19:22 CST)" (scheduled at 2016-07-07 16:19:22.725000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:22:22.725000+08:00 (in 179.992000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:26:30.985000+08:00 (in 180.000000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:31:23.405000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:31:23 CST)" (scheduled at 2016-07-07 16:31:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:32:23.405000+08:00 (in 59.990000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:32:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:32:23 CST)" (scheduled at 2016-07-07 16:32:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:33:23.405000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:33:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:33:23 CST)" (scheduled at 2016-07-07 16:33:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:34:23.405000+08:00 (in 59.996000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:34:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:34:23 CST)" (scheduled at 2016-07-07 16:34:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:35:23.405000+08:00 (in 59.983000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:35:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:35:23 CST)" (scheduled at 2016-07-07 16:35:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:36:23.405000+08:00 (in 59.981000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:36:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:36:23 CST)" (scheduled at 2016-07-07 16:36:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:37:23.405000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:37:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:37:23 CST)" (scheduled at 2016-07-07 16:37:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:38:23.405000+08:00 (in 59.986000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:38:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:38:23 CST)" (scheduled at 2016-07-07 16:38:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:39:23.405000+08:00 (in 59.985000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:39:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:39:23 CST)" (scheduled at 2016-07-07 16:39:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:40:23.405000+08:00 (in 59.982000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:40:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:40:23 CST)" (scheduled at 2016-07-07 16:40:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:41:23.405000+08:00 (in 59.982000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:41:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:42:23.405000+08:00 (in 59.990000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:42:23 CST)" (scheduled at 2016-07-07 16:41:23.405000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:42:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:42:23 CST)" (scheduled at 2016-07-07 16:42:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:43:23.405000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:43:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:43:23 CST)" (scheduled at 2016-07-07 16:43:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:44:23.405000+08:00 (in 59.995000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:44:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:44:23 CST)" (scheduled at 2016-07-07 16:44:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:45:23.405000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:45:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:45:23 CST)" (scheduled at 2016-07-07 16:45:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:46:23.405000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:46:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:46:23 CST)" (scheduled at 2016-07-07 16:46:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:47:23.405000+08:00 (in 59.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:47:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:47:23 CST)" (scheduled at 2016-07-07 16:47:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:48:23.405000+08:00 (in 59.990000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:48:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:48:23 CST)" (scheduled at 2016-07-07 16:48:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:49:23.405000+08:00 (in 59.996000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:49:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:49:23 CST)" (scheduled at 2016-07-07 16:49:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:50:23.405000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:50:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:50:23 CST)" (scheduled at 2016-07-07 16:50:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:51:23.405000+08:00 (in 59.998000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:51:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:51:23 CST)" (scheduled at 2016-07-07 16:51:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:52:23.405000+08:00 (in 59.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:52:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:52:23 CST)" (scheduled at 2016-07-07 16:52:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:53:23.405000+08:00 (in 59.996000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:53:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:54:23.405000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:54:23 CST)" (scheduled at 2016-07-07 16:53:23.405000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:54:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:55:23.405000+08:00 (in 59.993000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:55:23 CST)" (scheduled at 2016-07-07 16:54:23.405000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:55:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:55:23 CST)" (scheduled at 2016-07-07 16:55:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:56:23.405000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:56:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:57:23.405000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:57:23 CST)" (scheduled at 2016-07-07 16:56:23.405000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:57:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:58:23.405000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:58:23 CST)" (scheduled at 2016-07-07 16:57:23.405000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:58:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:58:23 CST)" (scheduled at 2016-07-07 16:58:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 16:59:23.405000+08:00 (in 59.998000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 16:59:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:00:23.405000+08:00 (in 59.992000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:00:23 CST)" (scheduled at 2016-07-07 16:59:23.405000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:00:23 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:00:23 CST)" (scheduled at 2016-07-07 17:00:23.405000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:01:23.405000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:02:07.950000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:03:07.950000+08:00 (in 59.993000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:03:07 CST)" (scheduled at 2016-07-07 17:02:07.950000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:03:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:03:07 CST)" (scheduled at 2016-07-07 17:03:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:04:07.950000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:04:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:04:07 CST)" (scheduled at 2016-07-07 17:04:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:05:07.950000+08:00 (in 59.998000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:05:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:05:07 CST)" (scheduled at 2016-07-07 17:05:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:06:07.950000+08:00 (in 59.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:06:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:06:07 CST)" (scheduled at 2016-07-07 17:06:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:07:07.950000+08:00 (in 59.996000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:07:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:07:07 CST)" (scheduled at 2016-07-07 17:07:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:08:07.950000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:08:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:08:07 CST)" (scheduled at 2016-07-07 17:08:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:09:07.950000+08:00 (in 59.993000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:09:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:09:07 CST)" (scheduled at 2016-07-07 17:09:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:10:07.950000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:10:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:10:07 CST)" (scheduled at 2016-07-07 17:10:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:11:07.950000+08:00 (in 59.991000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:11:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:11:07 CST)" (scheduled at 2016-07-07 17:11:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:12:07.950000+08:00 (in 59.984000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:12:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:12:07 CST)" (scheduled at 2016-07-07 17:12:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:13:07.950000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:13:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:13:07 CST)" (scheduled at 2016-07-07 17:13:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:14:07.950000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:14:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:14:07 CST)" (scheduled at 2016-07-07 17:14:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:15:07.950000+08:00 (in 59.991000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:15:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:16:07.950000+08:00 (in 59.991000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:16:07 CST)" (scheduled at 2016-07-07 17:15:07.950000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:16:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:16:07 CST)" (scheduled at 2016-07-07 17:16:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:17:07.950000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:17:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:17:07 CST)" (scheduled at 2016-07-07 17:17:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:18:07.950000+08:00 (in 59.996000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:18:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:18:07 CST)" (scheduled at 2016-07-07 17:18:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:19:07.950000+08:00 (in 59.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:19:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:19:07 CST)" (scheduled at 2016-07-07 17:19:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:20:07.950000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:20:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:20:07 CST)" (scheduled at 2016-07-07 17:20:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:21:07.950000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:21:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:21:07 CST)" (scheduled at 2016-07-07 17:21:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:22:07.950000+08:00 (in 59.991000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:22:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:22:07 CST)" (scheduled at 2016-07-07 17:22:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:23:07.950000+08:00 (in 59.998000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:23:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:23:07 CST)" (scheduled at 2016-07-07 17:23:07.950000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:24:07.950000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:24:07 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:25:07.950000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:25:07 CST)" (scheduled at 2016-07-07 17:24:07.950000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:25:07 CST)" executed successfully
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:31:22.575000+08:00 (in 59.990000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:32:22.575000+08:00 (in 59.993000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:32:22 CST)" (scheduled at 2016-07-07 17:31:22.575000+08:00)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+WARNING:apscheduler.scheduler:Execution of job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:32:22 CST)" skipped: maximum number of running instances reached (1)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:33:22.575000+08:00 (in 59.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:33:22 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:33:22 CST)" (scheduled at 2016-07-07 17:33:22.575000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:34:22.575000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:36:36.866000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:37:36.866000+08:00 (in 59.995000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:37:36 CST)" (scheduled at 2016-07-07 17:36:36.866000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:37:36 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:37:36 CST)" (scheduled at 2016-07-07 17:37:36.866000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:38:36.866000+08:00 (in 59.989000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:38:36 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:38:36 CST)" (scheduled at 2016-07-07 17:38:36.866000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:39:36.866000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:39:36 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:39:36 CST)" (scheduled at 2016-07-07 17:39:36.866000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:40:36.866000+08:00 (in 59.988000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:40:36 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:40:36 CST)" (scheduled at 2016-07-07 17:40:36.866000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:41:36.866000+08:00 (in 59.992000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:41:36 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-07 17:41:36 CST)" (scheduled at 2016-07-07 17:41:36.866000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-07 17:42:36.866000+08:00 (in 59.991000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:09:28.013000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:10:21.239000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:11:21.708000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:12:42.998000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:13:42.998000+08:00 (in 59.997000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:13:42 CST)" (scheduled at 2016-07-31 11:12:42.998000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:13:42 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:13:42 CST)" (scheduled at 2016-07-31 11:13:42.998000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:14:42.998000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:14:42 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:14:42 CST)" (scheduled at 2016-07-31 11:14:42.998000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:14:42 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:15:42.998000+08:00 (in 59.993000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:15:42 CST)" (scheduled at 2016-07-31 11:15:42.998000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:16:42.998000+08:00 (in 59.969000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:16:42 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:16:42 CST)" (scheduled at 2016-07-31 11:16:42.998000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:16:42 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:17:42.998000+08:00 (in 59.960000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:17:42 CST)" (scheduled at 2016-07-31 11:17:42.998000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:18:42.998000+08:00 (in 59.954000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:18:42 CST)" executed successfully
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:33:24.184000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:33:16.168000+08:00 (in 30.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:33:46.168000+08:00 (in 29.980000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:00:30], next run at: 2016-07-31 11:33:46 CST)" (scheduled at 2016-07-31 11:33:16.168000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:00:30], next run at: 2016-07-31 11:33:46 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:00:30], next run at: 2016-07-31 11:33:46 CST)" (scheduled at 2016-07-31 11:33:46.168000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:34:16.168000+08:00 (in 29.993000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:00:30], next run at: 2016-07-31 11:34:16 CST)" executed successfully
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "processChecker" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:36:04.532000+08:00 (in 60.000000 seconds)
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:37:04.532000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:37:04 CST)" (scheduled at 2016-07-31 11:36:04.532000+08:00)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:37:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:37:04 CST)" (scheduled at 2016-07-31 11:37:04.532000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:38:04.532000+08:00 (in 59.998000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:38:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:38:04 CST)" (scheduled at 2016-07-31 11:38:04.532000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:39:04.532000+08:00 (in 59.999000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:39:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:39:04 CST)" (scheduled at 2016-07-31 11:39:04.532000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:40:04.532000+08:00 (in 59.995000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:40:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:40:04 CST)" (scheduled at 2016-07-31 11:40:04.532000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:41:04.532000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:41:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:41:04 CST)" (scheduled at 2016-07-31 11:41:04.532000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:42:04.532000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:42:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:42:04 CST)" (scheduled at 2016-07-31 11:42:04.532000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:43:04.532000+08:00 (in 59.983000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:43:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:43:04 CST)" (scheduled at 2016-07-31 11:43:04.532000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:44:04.532000+08:00 (in 59.994000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:44:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:44:04 CST)" (scheduled at 2016-07-31 11:44:04.532000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:45:04.532000+08:00 (in 59.986000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:45:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:45:04 CST)" (scheduled at 2016-07-31 11:45:04.532000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:46:04.532000+08:00 (in 59.990000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:46:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:46:04 CST)" (scheduled at 2016-07-31 11:46:04.532000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:47:04.532000+08:00 (in 59.990000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:47:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:47:04 CST)" (scheduled at 2016-07-31 11:47:04.532000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:48:04.532000+08:00 (in 60.000000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:48:04 CST)" executed successfully
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+INFO:apscheduler.executors.default:Running job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:48:04 CST)" (scheduled at 2016-07-31 11:48:04.532000+08:00)
+DEBUG:apscheduler.scheduler:Next wakeup is due at 2016-07-31 11:49:04.532000+08:00 (in 59.985000 seconds)
+INFO:apscheduler.executors.default:Job "processChecker (trigger: interval[0:01:00], next run at: 2016-07-31 11:49:04 CST)" executed successfully

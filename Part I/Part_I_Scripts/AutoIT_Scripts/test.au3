@@ -1,0 +1,1 @@
+FileDelete("C:\test\Control_*.txt")

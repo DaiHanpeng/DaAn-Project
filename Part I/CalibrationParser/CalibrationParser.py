@@ -27,9 +27,12 @@ class CalibrationParser():
     """
     calibration data parser from printed file.
     """
-    parsing_mode = {'OFF':0,'SECTION':1,'TEST':2}
+    SECTION_LINE_MIN_LENGTH = 110
+    RESULT_LINE_LENGTH = 91
+
+    parsing_mode = {'OFF':0,'SECTION':1,'HEAD':2,'RESULT':3}
     section_start_flag = r'BLANK'
-    test_start_flag = r'Test Name      Conc.  Unit        Mark            ABS-RB       ABS  R1 LOT#  R2 LOT#'
+    HEAD_LINE = r'Test Name      Conc.  Unit        Mark            ABS-RB       ABS  R1 LOT#  R2 LOT#'
 
     def __init__(self):
         self.cal_list = []
@@ -37,7 +40,9 @@ class CalibrationParser():
     def extract_cal_info(self,cal_path):
         self.cal_list = []
         
-        lates_cal_file = GetLatestFile.get_latest_file(cal_path,'REALTIME MONITOR','.TXT')
+        lates_cal_file = GetLatestFile.get_latest_file(cal_path,'Calibration_','.TXT')
+
+        print lates_cal_file
 
         file_content_list = []
         if lates_cal_file:
@@ -50,34 +55,51 @@ class CalibrationParser():
             finally:
                 cal_file_handler.close()
 
-        parsing_mode = CalibrationParser.parsing_mode['OFF']
+        #1, matching a section
+        #2, matching a head
+        #3, matching calibration results...
+        #4, matching an empty line
+        # ,matching next section...
+        parsing_mode = CalibrationParser.parsing_mode['SECTION']
         cal_lot = ''
         date_time = ''
+
         if file_content_list:
             for line in file_content_list:
-                if isinstance(line,str):
-                    if CalibrationParser.section_start_flag == line.strip():
-                        parsing_mode = CalibrationParser.parsing_mode['SECTION']
-                    elif CalibrationParser.test_start_flag == line.strip():
-                        parsing_mode = CalibrationParser.parsing_mode['TEST']
-                    elif CalibrationParser.parsing_mode['SECTION'] == parsing_mode:
-                        info_list = line.split()
-                        cal_lot = info_list[0]
-                        date_time = ' '.join(str(item) for item in info_list[-4:])
-                    elif CalibrationParser.parsing_mode['TEST'] == parsing_mode:
-                        info_list = line.split()
-                        if len(info_list) >= 4:
-                            #print info_list
-                            test = info_list[0]
-                            value = info_list[1]
-                            abs_rb = info_list[-2]
-                            abs = info_list[-1]
-                            unit = ''
-                            if len(info_list) > 4:
-                                unit = info_list[2]
-                            self.cal_list.append(CalibrationInfo(cal_lot,date_time,test,value,unit,abs_rb,abs))
-                    else:
-                        parsing_mode = CalibrationParser.parsing_mode['OFF']
+                if isinstance(line,str) and len(line.strip()) > 0:
+                    #SECTION mode
+                    if CalibrationParser.parsing_mode['SECTION'] == parsing_mode:
+                        #SECTION matched, turn to HEAD.
+                        if CalibrationParser.SECTION_LINE_MIN_LENGTH < len(line.strip()):
+                            parsing_mode = CalibrationParser.parsing_mode['HEAD']
+                            #
+                            cal_lot = line[0:14]
+                            date_time = line[98:].strip()
+                            #print cal_lot, date_time
+                    #HEAD mode
+                    elif CalibrationParser.parsing_mode['HEAD'] == parsing_mode:
+                        # HEAD matched, turn to calibration results.
+                        if CalibrationParser.HEAD_LINE == line.strip():
+                            parsing_mode = CalibrationParser.parsing_mode['RESULT']
+                    #RESULT mode
+                    elif CalibrationParser.parsing_mode['RESULT'] == parsing_mode:
+                        #
+                        if CalibrationParser.RESULT_LINE_LENGTH == len(line):
+                            test = line[0:10].strip()
+                            value = line[10:22].strip()
+                            unit = line[22:30].strip()
+                            abs_rb = line[46:58].strip()
+                            abs = line[58:68].strip()
+
+                            if cal_lot and date_time:
+                                cal_info = CalibrationInfo(cal_lot,date_time,test,value,unit,abs_rb,abs)
+                                self.cal_list.append(cal_info)
+                else:
+                    #empty line, must match next SECTION.
+                    cal_lot = ''
+                    date_time = ''
+                    parsing_mode = CalibrationParser.parsing_mode['SECTION']
+
 
     def __repr__(self):
         return 'calibration info list:\n' +\
@@ -85,7 +107,8 @@ class CalibrationParser():
 
 def test():
     cal_parser = CalibrationParser()
-    cal_parser.extract_cal_info('.')
+    cal_path = r'D:\01_Automation\23_Experiential_Conclusions_2016\05_DaAn\Reports\Training_Center_2400_Reports\Reports'
+    cal_parser.extract_cal_info(cal_path)
     print cal_parser
 
 if __name__ == '__main__':

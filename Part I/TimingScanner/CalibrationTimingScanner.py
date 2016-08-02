@@ -6,7 +6,7 @@ from GetLatestFile.GetLatestFile import GetLatestFile
 
 from RpcInterface.RpcClient import RpcClient
 
-FILE_SCAN_INTERVAL = 3 # scan control log file time interval in seconds
+FILE_SCAN_INTERVAL = 30 # scan control log file time interval in seconds
 
 class CalibrationTimingScanner(CalibrationParser):
     """
@@ -22,9 +22,9 @@ class CalibrationTimingScanner(CalibrationParser):
         self.timing_exec_func()
 
     def timing_exec_func(self):
-        print 'timing function execute start...'
+        print 'CalibrationTimingScanner timing function execute start...'
         #file_path = r'..\Advia2400_ScreenCapture'
-        latest_cal_file_name = GetLatestFile.get_latest_file(self.file_path,'REALTIME MONITOR','.TXT')
+        latest_cal_file_name = GetLatestFile.get_latest_file(self.file_path,'Calibration_','.TXT')
         if latest_cal_file_name and self.latest_cal_file_name <> latest_cal_file_name:
 
             #update latest calibration file name.

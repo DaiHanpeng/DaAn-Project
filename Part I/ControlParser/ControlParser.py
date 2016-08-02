@@ -27,15 +27,18 @@ class ControlParser():
     parser for control data from printed file.
     """
 
-    parsing_mode = {'OFF':0,'SECTION':1,'ISE':2,'NORMAL':3}
-    ise_test_start_flag = r'Test Name      Conc.  Unit        Mark            SAMPLE    BUFFER  Electrode/Refrence Lot  UserCode'
-    normal_test_start_flag = r'Test Name      Conc.  Unit        Mark            ABS-RB       ABS  R1 LOT#  R2 LOT#  UserCode'
+    parsing_mode = {'OFF':0,'SECTION':1,'HEAD':2,'REAULT':3}
+
+    SECTION_LINE_MIN_LENGTH = 110
+    ISE_HEAD_LINE = r'Test Name      Conc.  Unit        Mark            SAMPLE    BUFFER  Electrode/Refrence Lot  UserCode'
+    NORMAL_HEAD_LINE = r'Test Name      Conc.  Unit        Mark            ABS-RB       ABS  R1 LOT#  R2 LOT#  UserCode'
+
 
     def __init__(self):
         self.qc_list = []
 
     def extract_qc_info(self,qc_file_path):
-        lates_control_file = GetLatestFile.get_latest_file(qc_file_path,'REALTIME MONITOR','.TXT')
+        lates_control_file = GetLatestFile.get_latest_file(qc_file_path,'Control_','.TXT')
 
         file_content_list = []
         if lates_control_file:
@@ -48,40 +51,39 @@ class ControlParser():
             finally:
                 control_file_handler.close()
 
-        parsing_mode = ControlParser.parsing_mode['OFF']
+        parsing_mode = ControlParser.parsing_mode['SECTION']
         qc_lot = ''
         date_time = ''
         if file_content_list:
             for line in file_content_list:
-                if isinstance(line,str) and '' <> line.strip():
-                    info_list = line.split()
-                    if 2 == len(info_list):
-                        parsing_mode = ControlParser.parsing_mode['SECTION']
-                    elif ControlParser.ise_test_start_flag == line.strip():
-                        parsing_mode = ControlParser.parsing_mode['ISE']
-                    elif ControlParser.normal_test_start_flag == line.strip():
-                        parsing_mode = ControlParser.parsing_mode['NORMAL']
-                    elif ControlParser.parsing_mode['SECTION'] == parsing_mode:
-                        qc_lot = info_list[3]
-                        date_time = ' '.join(str(item) for item in info_list[-4:])
-                    elif ControlParser.parsing_mode['ISE'] == parsing_mode:
-                        #print info_list
-                        test = info_list[0]
-                        value = info_list[1]
-                        unit = ''
-                        abs_rb = info_list[2]
-                        abs = info_list[3]
-                        self.qc_list.append(ControlInfo(qc_lot,date_time,test,value,unit,abs_rb,abs))
-                    elif ControlParser.parsing_mode['NORMAL'] == parsing_mode:
-                        #print info_list
-                        test = info_list[0]
-                        value = info_list[1]
-                        unit = info_list[2]
-                        abs_rb = info_list[-3]
-                        abs = info_list[-2]
-                        self.qc_list.append(ControlInfo(qc_lot,date_time,test,value,unit,abs_rb,abs))
-                    else:
-                        parsing_mode = ControlParser.parsing_mode['OFF']
+                if isinstance(line,str) and len(line.strip()) > 0:
+                    # SECTION mode
+                    if ControlParser.parsing_mode['SECTION'] == parsing_mode:
+                        if ControlParser.SECTION_LINE_MIN_LENGTH < len(line.strip()):
+                            parsing_mode = ControlParser.parsing_mode['HEAD']
+
+                            qc_lot = line[22:32].strip()
+                            date_time = line[98:].strip()
+                    # HEAD mode
+                    elif ControlParser.parsing_mode['HEAD'] == parsing_mode:
+                        if ControlParser.ISE_HEAD_LINE == line.strip() or\
+                            ControlParser.NORMAL_HEAD_LINE == line.strip():
+                            parsing_mode = ControlParser.parsing_mode['REAULT']
+                    #RESULT mode
+                    elif ControlParser.parsing_mode['REAULT'] == parsing_mode:
+                        if qc_lot and date_time:
+                            test = line[0:10].strip()
+                            value = line[12:21].strip()
+                            unit = line[22:33].strip()
+                            abs_rb = line[46:57].strip()
+                            abs = line[58:67].strip()
+
+                            qc_info = ControlInfo(qc_lot,date_time,test,value,unit,abs_rb,abs)
+                            self.qc_list.append(qc_info)
+                else:
+                    qc_lot = ''
+                    date_time = ''
+                    parsing_mode = ControlParser.parsing_mode['SECTION']
 
     def __repr__(self):
         return 'control info list:\n'+\
@@ -89,7 +91,8 @@ class ControlParser():
 
 def test():
     qc_parser = ControlParser()
-    qc_parser.extract_qc_info('.')
+    qc_path = r'D:\01_Automation\23_Experiential_Conclusions_2016\05_DaAn\Reports\DaAn_Reports\Reports'
+    qc_parser.extract_qc_info(qc_path)
     print qc_parser
 
 if __name__ == '__main__':

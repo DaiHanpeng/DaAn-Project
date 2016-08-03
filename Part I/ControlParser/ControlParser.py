@@ -27,7 +27,7 @@ class ControlParser():
     parser for control data from printed file.
     """
 
-    parsing_mode = {'OFF':0,'SECTION':1,'HEAD':2,'REAULT':3}
+    PARSING_MODE = {'OFF':0, 'SECTION':1, 'HEAD':2, 'REAULT':3}
 
     SECTION_LINE_MIN_LENGTH = 110
     ISE_HEAD_LINE = r'Test Name      Conc.  Unit        Mark            SAMPLE    BUFFER  Electrode/Refrence Lot  UserCode'
@@ -51,26 +51,26 @@ class ControlParser():
             finally:
                 control_file_handler.close()
 
-        parsing_mode = ControlParser.parsing_mode['SECTION']
+        parsing_mode = ControlParser.PARSING_MODE['SECTION']
         qc_lot = ''
         date_time = ''
         if file_content_list:
             for line in file_content_list:
                 if isinstance(line,str) and len(line.strip()) > 0:
                     # SECTION mode
-                    if ControlParser.parsing_mode['SECTION'] == parsing_mode:
+                    if ControlParser.PARSING_MODE['SECTION'] == parsing_mode:
                         if ControlParser.SECTION_LINE_MIN_LENGTH < len(line.strip()):
-                            parsing_mode = ControlParser.parsing_mode['HEAD']
+                            parsing_mode = ControlParser.PARSING_MODE['HEAD']
 
                             qc_lot = line[22:32].strip()
                             date_time = line[98:].strip()
                     # HEAD mode
-                    elif ControlParser.parsing_mode['HEAD'] == parsing_mode:
+                    elif ControlParser.PARSING_MODE['HEAD'] == parsing_mode:
                         if ControlParser.ISE_HEAD_LINE == line.strip() or\
                             ControlParser.NORMAL_HEAD_LINE == line.strip():
-                            parsing_mode = ControlParser.parsing_mode['REAULT']
+                            parsing_mode = ControlParser.PARSING_MODE['REAULT']
                     #RESULT mode
-                    elif ControlParser.parsing_mode['REAULT'] == parsing_mode:
+                    elif ControlParser.PARSING_MODE['REAULT'] == parsing_mode:
                         if qc_lot and date_time:
                             test = line[0:10].strip()
                             value = line[12:21].strip()
@@ -83,7 +83,7 @@ class ControlParser():
                 else:
                     qc_lot = ''
                     date_time = ''
-                    parsing_mode = ControlParser.parsing_mode['SECTION']
+                    parsing_mode = ControlParser.PARSING_MODE['SECTION']
 
     def __repr__(self):
         return 'control info list:\n'+\

@@ -8,10 +8,9 @@ from PdfResultInfoMiner.OrderResultStruct import *
 from PrintedReagentParser.PrintedReagentParser import PrintedReagentInfoItem,PrintedReagentInfoParser
 from CalibrationParser.CalibrationParser import CalibrationParser,CalibrationInfo
 from ControlParser.ControlParser import ControlParser,ControlInfo
+from ErrorReportParser.ErrorReportParser import ErrorReportParser,InstrumentLogInfo,InstrumentStatusInfo
 
 from DBTables import *
-
-SQLITE_DB_PATH = r'D:\DaAn\DaAn-Project\DaAn.db'
 
 class DBInterface(object):
     """
@@ -93,11 +92,29 @@ class DBInterface(object):
                     self.cursor.execute(db_insert, [qc_item.test,qc_item.qc_lot,qc_item.value,qc_item.unit,qc_item.abs])
                     self.connect.commit()
 
+    def put_instrument_log_info(self,err_report_parser):
+        if isinstance(err_report_parser,ErrorReportParser):
+            for instr_log in err_report_parser.instrment_log_list:
+                if isinstance(instr_log,InstrumentLogInfo):
+                    db_insert = "insert into InsLog (Content,LogType,RunDate,Sent) values (?,?,?,0)"
+                    self.cursor.execute(db_insert, [instr_log.log_content,instr_log.log_type,instr_log.date_time])
+                    self.connect.commit()
+
+    def put_instrument_status_info(self,err_report_parser):
+        if isinstance(err_report_parser,ErrorReportParser):
+            instr_status = err_report_parser.instrment_status
+            if isinstance(instr_status,InstrumentStatusInfo):
+                db_insert = "insert into InsStatus (RunDate,StatusCode,Sent) values (?,?,0)"
+                self.cursor.execute(db_insert, [instr_status.date_time,instr_status.status_type])
+                self.connect.commit()
+
     def db_disconnect(self):
         if self.connect:
             self.connect.close()
 
 def test():
+    SQLITE_DB_PATH = r'D:\01_Automation\23_Experiential_Conclusions_2016\05_DaAn\Git_0801\DaAn-Project\Part II\DaAn.db'
+
     db_interface = DBInterface()
 
     db_interface.db_connect_initialize(SQLITE_DB_PATH)
@@ -155,11 +172,20 @@ def test():
         print cal_parser
         '''
 
+        '''
         file_path = r'D:\DaAn\DaAn-Project\Part I\ControlParser'
         qc_parser = ControlParser()
         qc_parser.extract_qc_info(file_path)
         db_interface.put_control_info(qc_parser)
         print qc_parser
+        '''
+
+        file_path = r'D:\01_Automation\23_Experiential_Conclusions_2016\05_DaAn\Git_0801\DaAn-Project\Part I\ErrorReportParser'
+        err_report_parser = ErrorReportParser()
+        err_report_parser.extract_error_report_info(file_path)
+        db_interface.put_instrument_log_info(err_report_parser)
+        db_interface.put_instrument_status_info(err_report_parser)
+        print err_report_parser
 
     except Exception as ex:
         print ex

@@ -31,6 +31,17 @@ class RpcClient():
         except Exception as ex:
             print ex
 
+    def fire_instrument_log_notificaion(self):
+        try:
+            self.server_proxy.instrument_log_handler()
+        except Exception as ex:
+            print ex
+
+    def fire_instrument_status_notificaion(self):
+        try:
+            self.server_proxy.instrument_status_handler()
+        except Exception as ex:
+            print ex
 
 def test():
     rpc_client = RpcClient()

@@ -15,15 +15,18 @@ class InsReagentInfoHandler(object):
             for row in rows:
                 reagent = ins_reagent_info()
                 reagent.AuthorizeCount = row['AuthorizeCount']
-                reagent.LotNo = row['LotNo']
+                reagent.LotNo = row['LotNo']                   
                 reagent.Position = row['Position']
-                reagent.RemainderCount = int(row['RemainderCount'])
+                if row['RemainderCount']:
+                    reagent.RemainderCount = int(row['RemainderCount'])
+                else:
+                    reagent.RemainderCount = 0
                 reagent.RemainderValue = row['RemainderValue']
                 reagent.TestCode = row['TestCode']
                 reagent.TestName = row['TestName']
                 reagent.Type = row['Type']
-                reagent.Sent = str(row['Sent'])
-                reagent.ID = str(row['ID'])
+                reagent.Sent = row['Sent']
+                reagent.ID = row['ID']
                 unsent_ins_reagents.append(reagent)
         return unsent_ins_reagents
 

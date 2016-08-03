@@ -110,8 +110,52 @@ class MessageHandler():
             except Exception as ex:
                 print ex
 
+    def instrument_log_handler(self):
+        print 'instrument log handler is triggered...'
+        with SqliteInterface() as db_interface:
+            try:
+                instr_logs = db_interface.fetch_unsent_items_from_InsLog()
+                if instr_logs:
+                    ##
+                    print 'get unsent ins log info records,'
+                    for item in instr_logs:
+                        if isinstance(item,ins_log):
+                            print item
+                    ## instrument log processing...
+                    daan_interface = DaAnInterface()
+                    daan_interface.send_instrument_log(instr_logs)
+                    ##
+                    db_interface.set_InsLogs_as_sent(instr_logs)
+
+                    print 'instrument log processing finished successfully...'
+            except Exception as ex:
+                print ex
+
+    def instrument_status_handler(self):
+        print 'instrument status handler is triggered...'
+        with SqliteInterface() as db_interface:
+            try:
+                instr_status = db_interface.fetch_unsent_items_from_InsStatus()
+                if instr_status:
+                    ##
+                    print 'get unsent ins status info records,'
+                    for item in instr_status:
+                        if isinstance(item,ins_status):
+                            print item
+                    ## instrument log processing...
+                    daan_interface = DaAnInterface()
+                    daan_interface.send_instrument_status(instr_status)
+                    ##
+                    db_interface.set_InsStatus_as_sent(instr_status)
+
+                    print 'instrument status processing finished successfully...'
+            except Exception as ex:
+                print ex
+
+
 def test():
-    server = SimpleXMLRPCServer(("localhost", 8000),allow_none=True)
+    #server = SimpleXMLRPCServer(("10.10.10.200", 8000),allow_none=True)
+    server = SimpleXMLRPCServer(("127.0.0.1", 8000),allow_none=True)
     server.register_introspection_functions()
     server.register_instance(MessageHandler())
     server.serve_forever()

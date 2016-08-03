@@ -70,7 +70,26 @@ class DaAnInterface():
                     try:
                         InsConnector.SendQC(qc)
                     except Exception as ex:
-                        print ex                   
+                        print ex  
+                        
+    def send_instrument_log(self,instr_logs):
+        if instr_logs:
+            for log in instr_logs:
+                if isinstance(log,ins_log):
+                    try:
+                        InsConnector.SendLog(log)
+                    except Exception as ex:
+                        print ex  
+                        
+                        
+    def send_instrument_status(self,instr_status):
+        if instr_status:
+            for item in instr_status:
+                if isinstance(item,ins_status):
+                    try:
+                        InsConnector.SendState(item)
+                    except Exception as ex:
+                        print ex                                        
 
 def test():
     from DBInterface.SqliteInterface import SqliteInterface

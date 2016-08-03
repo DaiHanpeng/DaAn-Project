@@ -8,13 +8,15 @@ clr.AddReferenceToFileAndPath('IronPython.SQLite.dll')
 
 #Attention:
 #The SQLITE_DB_PATH is related to path of <IronPython.SQLite.dll>.
-SQLITE_DB_PATH = r'D:\DaAn\DaAn-Project\Part II\DaAn.db'
+SQLITE_DB_PATH = r'S:\DaAn.db'
 
 from InsHeartHandler import InsHeartHandler
 from InsReagentInfoHandler import InsReagentInfoHandler
 from InsTestHandler import InsTestHandler
 from InsCalibrationResultHandler import InsCalibrationResultHandler
 from InsQCHandler import InsQCHandler
+from InsLogHandler import InsLogHandler
+from InsStatusHandler import InsStatusHandler
 
 
 class SqliteInterface(object):
@@ -68,6 +70,21 @@ class SqliteInterface(object):
     
     def set_InsQCs_as_sent(self,ins_qcs):
         return InsQCHandler.set_InsQCs_as_sent(ins_qcs,self.cursor,self.connect)
+
+    #InsLog Interface...
+    def fetch_unsent_items_from_InsLog(self):
+        return InsLogHandler.fetch_unsent_items_from_InsLog(self.cursor)
+    
+    def set_InsLogs_as_sent(self,ins_logs):
+        return InsLogHandler.set_InsLogs_as_sent(ins_logs,self.cursor,self.connect)
+
+    #InsStatus Interface...
+    def fetch_unsent_items_from_InsStatus(self):
+        return InsStatusHandler.fetch_unsent_items_from_InsStatus(self.cursor)
+    
+    def set_InsStatus_as_sent(self,ins_status):
+        return InsStatusHandler.set_InsStatus_as_sent(ins_status,self.cursor,self.connect)
+
 
  
     def __exit__(self,_type,value,traceback):

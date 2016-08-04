@@ -7,7 +7,7 @@ from ErrorReportParser.ErrorReportParser import ErrorReportParser
 from DatabaseInterface.DBInterface import DBInterface
 from RpcInterface.RpcClient import RpcClient
 
-FILE_SCAN_INTERVAL = 30 # scan control log file time interval in seconds
+FILE_SCAN_INTERVAL = 200 # scan control log file time interval in seconds
 
 class ErrorReportTimingScanner(ErrorReportParser):
     """
@@ -16,7 +16,7 @@ class ErrorReportTimingScanner(ErrorReportParser):
     def __init__(self,file_path,db_path):
         self.file_path = file_path
         self.db_path = db_path
-        self.latest_err_report_file_name = r''
+        self.latest_err_report_file_name = r'first file'
         self.timer = Timer(FILE_SCAN_INTERVAL,self.timing_exec_func)
         ErrorReportParser.__init__(self)
         #self.timer.start()
@@ -45,13 +45,21 @@ class ErrorReportTimingScanner(ErrorReportParser):
 
             # notify Part II
             rpc_client = RpcClient()
-            rpc_client.fire_control_notification()
-
-            print self
+            rpc_client.fire_instrument_log_notificaion()
+            rpc_client.fire_instrument_status_notificaion()
 
         self.timer = Timer(FILE_SCAN_INTERVAL,self.timing_exec_func)
         self.timer.start()
         print 'timer start again'
+
+def test():
+    file_path = r'D:\DaAn\DaAnGit\DaAn-Project\Part I\ErrorReportParser'
+    db_path = r'D:\DaAn\DaAnGit\DaAn-Project\Part II\DaAn.db'
+    timing_scanner = ErrorReportTimingScanner(file_path,db_path)
+
+if __name__ == '__main__':
+    test()
+
 
 
 

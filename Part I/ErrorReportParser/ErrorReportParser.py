@@ -1,4 +1,6 @@
 from GetLatestFile.GetLatestFile import GetLatestFile
+import os
+import time
 
 class InstrumentLogInfo():
     """
@@ -59,6 +61,8 @@ class ErrorReportParser():
         lates_err_report_file = GetLatestFile.get_latest_file(error_report_path,'Error_','.TXT')
 
         file_content_list = []
+        self.instrment_log_list = []
+
         if lates_err_report_file:
             # read file content into list.
             try:
@@ -83,6 +87,15 @@ class ErrorReportParser():
                             parsing_mode = ErrorReportParser.PARSING_MODE["LOG_ITEM"]
                     elif ErrorReportParser.PARSING_MODE["LOG_ITEM"] == parsing_mode:
                         date_time = line[5:18].strip()
+
+                        year = time.strftime("%Y",time.localtime(time.time()))
+                        month = date_time[:2]
+                        day = date_time[3:5]
+                        hour = date_time[6:8]
+                        minute = date_time[9:]
+
+                        #"2006-1-16 2:28:22"
+                        date_time = year+'-'+month+'-'+day+' '+hour+':'+minute+':'+'00'
 
                         #update the latest log time stamp.
                         if latest_update_date_time < date_time:

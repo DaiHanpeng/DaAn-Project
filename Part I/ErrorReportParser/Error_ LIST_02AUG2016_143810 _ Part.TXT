@@ -1,0 +1,257 @@
+**********  Error Report List  **********
+
+
+Date/Time : 8/2/2016 14:38:20
+System # : CA1258001770177
+
+
+ No.    Date    Section     Mode           Samp.ID     Test     Safe.No.    Contents                            Measures
+    1 08/02 13:23 ANALYZ READY                                  9012 Pure Water Bottle is empty                WARNING
+
+    2 08/02 10:44 ANALYZ READY                                  9903 READY system mode                              26
+
+    3 08/02 10:43 ANALYZ INITIALIZE                             9902 Start Initialize operation.                    26
+
+    4 08/02 10:43 ANALYZ INIT. ACCEPT                           9917 Accept INITIAL operation start                 26
+
+    5 08/02 10:37 ANALYZ WAIT                                   9901 WAIT (HALT) system mode                        26
+
+    6 08/02 10:37 PC     WAIT                                   1303 RF Pos R2(34) Reagent pack has expired.   WARNING
+
+    7 08/02 10:37 PC     WAIT                                   1303 ALPAMP Pos R2(32) Reagent pack has expir  WARNING
+
+    8 08/02 10:37 PC     WAIT                                   1303 UA Pos R2(28) Reagent pack has expired.   WARNING
+
+    9 08/02 10:37 PC     WAIT                                   1303 DBIL_2 Pos R2(22) Reagent pack has expir  WARNING
+
+   10 08/02 10:37 PC     WAIT                                   1303 TP Pos R2(21) Reagent pack has expired.   WARNING
+
+   11 08/02 10:37 PC     WAIT                                   1303 APO A1 Pos R2(16) Reagent pack has expir  WARNING
+
+   12 08/02 10:37 PC     WAIT                                   1303 APO B Pos R2(12) Reagent pack has expire  WARNING
+
+   13 08/02 10:37 PC     WAIT                                   1303 TP Pos R1(44) Reagent pack has expired.   WARNING
+
+   14 08/02 10:37 PC     WAIT                                   1303 UA Pos R1(30) Reagent pack has expired.   WARNING
+
+   15 08/02 10:37 PC     WAIT                                   1303 ALB Pos R1(29) Reagent pack has expired.  WARNING
+
+   16 08/02 10:37 PC     WAIT                                   1303 DBIL_2 Pos R1(25) Reagent pack has expir  WARNING
+
+   17 08/02 10:37 PC     WAIT                                   1303 APO A1 Pos R1(20) Reagent pack has expir  WARNING
+
+   18 08/02 10:37 PC     WAIT                                   1303 RF Pos R1(12) Reagent pack has expired.   WARNING
+
+   19 08/02 10:37 PC     WAIT                                   1303 APO B Pos R1(8) Reagent pack has expired  WARNING
+
+   20 08/02 10:37 PC     WAIT                                   1303 ALPAMP Pos R1(5) Reagent pack has expire  WARNING
+
+   21 08/02 10:37 ANALYZ WAIT                                   9911 Pre-WAIT system mode                           26
+
+   22 08/02 10:37 ANALYZ SYSTEM INIT.                           9990 Processing start up of the system.             26
+
+   23 08/02 10:36 PC     SYSTEM INIT.                           1903 System to PC communication is lost           STOP
+
+   24 08/02 10:36 PC     SYSTEM INIT.                           1903 System to PC communication is lost           STOP
+
+   25 08/02 10:36 PC     SYSTEM INIT.                           1522 System error - cannot create the mailslo  WARNING
+
+   26 08/02 10:36 PC     SYSTEM INIT.                           0021 All current tasks were completed.              44
+
+   27 08/02 10:35 ANALYZ WAIT                                   9570 Stop/interrupt is not allowed in the cur  WARNING
+
+   28 08/02 10:35 ANALYZ WAIT                                   9570 Stop/interrupt is not allowed in the cur  WARNING
+
+   29 08/02 10:35 ANALYZ WAIT                                   9570 Stop/interrupt is not allowed in the cur  WARNING
+
+   30 08/02 10:35 ANALYZ WAIT                                   9570 Stop/interrupt is not allowed in the cur  WARNING
+
+   31 08/02 10:35 ANALYZ WAIT                                   9570 Stop/interrupt is not allowed in the cur  WARNING
+
+   32 08/02 10:18 ANALYZ WAIT                                   9901 WAIT (HALT) system mode                        26
+
+   33 08/02 10:17 PC     WAIT                                   1303 RF Pos R2(34) Reagent pack has expired.   WARNING
+
+   34 08/02 10:17 PC     WAIT                                   1303 ALPAMP Pos R2(32) Reagent pack has expir  WARNING
+
+   35 08/02 10:17 PC     WAIT                                   1303 UA Pos R2(28) Reagent pack has expired.   WARNING
+
+   36 08/02 10:17 PC     WAIT                                   1303 DBIL_2 Pos R2(22) Reagent pack has expir  WARNING
+
+   37 08/02 10:17 PC     WAIT                                   1303 TP Pos R2(21) Reagent pack has expired.   WARNING
+
+   38 08/02 10:17 PC     WAIT                                   1303 APO A1 Pos R2(16) Reagent pack has expir  WARNING
+
+   39 08/02 10:17 PC     WAIT                                   1303 APO B Pos R2(12) Reagent pack has expire  WARNING
+
+   40 08/02 10:17 PC     WAIT                                   1303 TP Pos R1(44) Reagent pack has expired.   WARNING
+
+   41 08/02 10:17 PC     WAIT                                   1303 UA Pos R1(30) Reagent pack has expired.   WARNING
+
+   42 08/02 10:17 PC     WAIT                                   1303 ALB Pos R1(29) Reagent pack has expired.  WARNING
+
+   43 08/02 10:17 PC     WAIT                                   1303 DBIL_2 Pos R1(25) Reagent pack has expir  WARNING
+
+   44 08/02 10:17 PC     WAIT                                   1303 APO A1 Pos R1(20) Reagent pack has expir  WARNING
+
+   45 08/02 10:17 PC     WAIT                                   1303 RF Pos R1(12) Reagent pack has expired.   WARNING
+
+   46 08/02 10:17 PC     WAIT                                   1303 APO B Pos R1(8) Reagent pack has expired  WARNING
+
+   47 08/02 10:17 PC     WAIT                                   1303 ALPAMP Pos R1(5) Reagent pack has expire  WARNING
+
+   48 08/02 10:17 ANALYZ WAIT                                   9911 Pre-WAIT system mode                           26
+
+   49 08/02 10:17 ANALYZ SYSTEM INIT.                           9990 Processing start up of the system.             26
+
+   50 07/28 11:05 PC     READY                                  1903 System to PC communication is lost           STOP
+
+   51 07/28 11:05 PC     READY                                  1903 System to PC communication is lost           STOP
+
+   52 07/28 11:05 PC     READY                                  1903 System to PC communication is lost           STOP
+
+   53 07/28 11:05 PC     READY                                  1522 System error - cannot create the mailslo  WARNING
+
+   54 07/28 11:05 PC     READY                                  0021 All current tasks were completed.              44
+
+   55 07/28 11:05 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   56 07/28 11:05 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   57 07/28 11:03 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   58 07/28 11:03 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   59 07/28 11:03 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   60 07/28 11:03 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   61 07/28 11:02 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   62 07/28 11:02 ANALYZ READY                                  9903 READY system mode                              26
+
+   63 07/28 11:01 ANALYZ INITIALIZE                             9902 Start Initialize operation.                    26
+
+   64 07/28 11:01 ANALYZ INIT. ACCEPT                           9917 Accept INITIAL operation start                 26
+
+   65 07/28 11:01 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   66 07/28 11:00 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   67 07/28 10:56 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   68 07/28 10:55 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   69 07/28 10:53 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   70 07/28 10:53 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   71 07/28 10:24 ONLINE READY                                  3022 Loop-back test completed with an error    WARNING
+
+   72 07/28 10:24 ANALYZ READY                                  9903 READY system mode                              26
+
+   73 07/28 10:24 PC     INITIALIZE                             0716 Socket connected to LAS.                         
+
+   74 07/28 10:24 PC     INITIALIZE                             0717 Socket disconnected from LAS.             WARNING
+
+   75 07/28 10:23 ANALYZ INITIALIZE                             9902 Start Initialize operation.                    26
+
+   76 07/28 10:23 ANALYZ INIT. ACCEPT                           9917 Accept INITIAL operation start                 26
+
+   77 07/28 10:23 ANALYZ WAIT                                   9901 WAIT (HALT) system mode                        26
+
+   78 07/28 10:23 PC     WAIT                                   1303 RF Pos R2(34) Reagent pack has expired.   WARNING
+
+   79 07/28 10:23 PC     WAIT                                   1303 ALPAMP Pos R2(32) Reagent pack has expir  WARNING
+
+   80 07/28 10:23 PC     WAIT                                   1303 UA Pos R2(28) Reagent pack has expired.   WARNING
+
+   81 07/28 10:23 PC     WAIT                                   1303 DBIL_2 Pos R2(22) Reagent pack has expir  WARNING
+
+   82 07/28 10:23 PC     WAIT                                   1303 TP Pos R2(21) Reagent pack has expired.   WARNING
+
+   83 07/28 10:23 PC     WAIT                                   1303 APO A1 Pos R2(16) Reagent pack has expir  WARNING
+
+   84 07/28 10:23 PC     WAIT                                   1303 TP Pos R1(44) Reagent pack has expired.   WARNING
+
+   85 07/28 10:23 PC     WAIT                                   1303 UA Pos R1(30) Reagent pack has expired.   WARNING
+
+   86 07/28 10:23 PC     WAIT                                   1303 DBIL_2 Pos R1(25) Reagent pack has expir  WARNING
+
+   87 07/28 10:23 PC     WAIT                                   1303 APO A1 Pos R1(20) Reagent pack has expir  WARNING
+
+   88 07/28 10:23 PC     WAIT                                   1303 RF Pos R1(12) Reagent pack has expired.   WARNING
+
+   89 07/28 10:23 PC     WAIT                                   1303 APO B Pos R1(8) Reagent pack has expired  WARNING
+
+   90 07/28 10:23 PC     WAIT                                   1303 ALPAMP Pos R1(5) Reagent pack has expire  WARNING
+
+   91 07/28 10:23 ANALYZ WAIT                                   9911 Pre-WAIT system mode                           26
+
+   92 07/28 10:23 ANALYZ SYSTEM INIT.                           9990 Processing start up of the system.             26
+
+   93 07/28 10:23 PC     SYSTEM INIT.                           0716 Socket connected to LAS.                         
+
+   94 07/28 10:20 PC     READY                                  1903 System to PC communication is lost           STOP
+
+   95 07/28 10:20 PC     READY                                  1903 System to PC communication is lost           STOP
+
+   96 07/28 10:20 PC     READY                                  0021 All current tasks were completed.              44
+
+   97 07/28 10:20 ANALYZ READY                                  9903 READY system mode                              26
+
+   98 07/28 10:18 ANALYZ END                                    9909 END system mode                                26
+
+   99 07/28 10:18 ANALYZ Processing                             9906 STOP system mode (Aspiration stop)             26
+
+  100 07/28 10:18 ANALYZ Proces. SHIFT                          9908 STOP-Transition system mode (Aspiration        26
+
+  101 07/28 10:18 ONLINE WATCH                                  3022 Loop-back test completed with an error    WARNING
+
+  102 07/28 10:15 ONLINE WATCH                                  3022 Loop-back test completed with an error    WARNING
+
+  103 07/28 10:15 ONLINE WATCH                                  3022 Loop-back test completed with an error    WARNING
+
+  104 07/28 10:14 ONLINE WATCH                                  3022 Loop-back test completed with an error    WARNING
+
+  105 07/28 10:14 ONLINE WATCH                                  3022 Loop-back test completed with an error    WARNING
+
+  106 07/28 10:13 ONLINE WATCH                                  3001 LIS (Host) communication time-out         WARNING
+
+  107 07/28 10:05 ONLINE WATCH                                  3021 Loop-back test completed without error    WARNING
+
+  108 07/28 10:04 ONLINE WATCH                                  3022 Loop-back test completed with an error    WARNING
+
+  109 07/28 10:04 ONLINE WATCH                                  3022 Loop-back test completed with an error    WARNING
+
+  110 07/28 10:00 ONLINE WATCH                                  3021 Loop-back test completed without error    WARNING
+
+  111 07/28 10:00 ONLINE WATCH                                  3021 Loop-back test completed without error    WARNING
+
+  112 07/28 09:59 ONLINE WATCH                                  3022 Loop-back test completed with an error    WARNING
+
+  113 07/27 16:22 ONLINE WATCH                                  3001 LIS (Host) communication time-out         WARNING
+
+  114 07/27 16:04 ONLINE WATCH                                  3022 Loop-back test completed with an error    WARNING
+
+  115 07/27 16:03 ONLINE WATCH                                  3001 LIS (Host) communication time-out         WARNING
+
+  116 07/27 16:02 ONLINE WATCH                                  3001 LIS (Host) communication time-out         WARNING
+
+  117 07/27 16:01 ONLINE WATCH                                  3022 Loop-back test completed with an error    WARNING
+
+  118 07/27 16:01 ONLINE WATCH                                  3022 Loop-back test completed with an error    WARNING
+
+  119 07/27 16:00 ONLINE WATCH                                  3022 Loop-back test completed with an error    WARNING
+
+  120 07/27 15:59 ONLINE WATCH                                  3022 Loop-back test completed with an error    WARNING
+
+  121 07/27 15:53 ONLINE WATCH                                  3001 LIS (Host) communication time-out         WARNING
+
+  122 07/27 15:50 ANALYZ WATCH                                  9919 VP OFF was completed by the state of the       26
+
+  123 07/27 15:50 ANALYZ WATCH                                  9916 WATCH system mode (Aspiration standby)         26
+
+  124 07/27 15:50 ANALYZ HOLD                                   9914 HOLD system mode (Aspiration standby)          26
+
+  125 07/27 15:50 ANALYZ HOLD SHIFT                             9915 HOLD-Transition system mode (Aspiration        26

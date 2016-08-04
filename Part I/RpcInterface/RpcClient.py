@@ -46,6 +46,8 @@ class RpcClient():
 def test():
     rpc_client = RpcClient()
     rpc_client.fire_order_result_notification()
+    rpc_client.fire_instrument_status_notificaion()
+    rpc_client.fire_instrument_log_notificaion()
 
 if __name__ == '__main__':
     test()

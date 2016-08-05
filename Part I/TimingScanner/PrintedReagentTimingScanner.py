@@ -1,7 +1,7 @@
 from threading import Timer
 
 from PrintedReagentParser.PrintedReagentParser import PrintedReagentInfoParser
-from DatabaseInterface.DBInterface import DBInterface
+from DatabaseInterface.MySqlInterface import DBInterface
 
 from RpcInterface.RpcClient import RpcClient
 
@@ -43,8 +43,8 @@ class PrintedReagentTimingScanner(PrintedReagentInfoParser):
 
 
 def test():
-    file_path = r'..\Advia2400_ScreenCapture'
-    db_path = r'D:\DaAn\DaAn-Project\Part II\DaAn.db'
+    file_path = r'C:\A002\Reports'
+    db_path = r'DaAn'
     timing_scanner = PrintedReagentTimingScanner(file_path,db_path)
 
 if __name__ == '__main__':

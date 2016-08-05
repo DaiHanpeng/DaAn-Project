@@ -4,10 +4,10 @@ import sys
 
 from GetLatestFile.GetLatestFile import GetLatestFile
 from ErrorReportParser.ErrorReportParser import ErrorReportParser
-from DatabaseInterface.DBInterface import DBInterface
+from DatabaseInterface.MySqlInterface import DBInterface
 from RpcInterface.RpcClient import RpcClient
 
-FILE_SCAN_INTERVAL = 200 # scan control log file time interval in seconds
+FILE_SCAN_INTERVAL = 100 # scan control log file time interval in seconds
 
 class ErrorReportTimingScanner(ErrorReportParser):
     """
@@ -44,17 +44,23 @@ class ErrorReportTimingScanner(ErrorReportParser):
                 db_interface.db_disconnect()
 
             # notify Part II
-            rpc_client = RpcClient()
-            rpc_client.fire_instrument_log_notificaion()
-            rpc_client.fire_instrument_status_notificaion()
+            try:
+                print 'fire rpc notification.'
+                rpc_client = RpcClient()
+                rpc_client.fire_instrument_log_notificaion()
+                rpc_client.fire_instrument_status_notificaion()
+            except Exception as ex:
+                print ex
+            finally:
+                print 'rpc processing finished'
 
         self.timer = Timer(FILE_SCAN_INTERVAL,self.timing_exec_func)
         self.timer.start()
         print 'timer start again'
 
 def test():
-    file_path = r'D:\DaAn\DaAnGit\DaAn-Project\Part I\ErrorReportParser'
-    db_path = r'D:\DaAn\DaAnGit\DaAn-Project\Part II\DaAn.db'
+    file_path = r'C:\A002\Reports'
+    db_path = r'DaAn'
     timing_scanner = ErrorReportTimingScanner(file_path,db_path)
 
 if __name__ == '__main__':

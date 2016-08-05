@@ -2,7 +2,7 @@ from threading import Timer
 import os
 
 from MtdResultInfoParser.MtdResultParser import MtdResultParser
-from DatabaseInterface.DBInterface import DBInterface
+from DatabaseInterface.MySqlInterface import DBInterface
 
 from RpcInterface.RpcClient import RpcClient
 
@@ -54,8 +54,8 @@ class MtdResultTimingScanner(MtdResultParser):
 
 
 def test():
-    file_path = r'D:\DaAn\DaAn-Project\Part I\A002\DATA'
-    db_path = r'D:\DaAn\DaAn-Project\Part II\DaAn.db'
+    file_path = r'C:\A002\DATA'
+    db_path = r'DaAn'
     timing_scanner = MtdResultTimingScanner(file_path,db_path)
 
 if __name__ == '__main__':

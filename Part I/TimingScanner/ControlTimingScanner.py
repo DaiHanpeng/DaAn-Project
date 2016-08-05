@@ -4,7 +4,7 @@ import sys
 
 from GetLatestFile.GetLatestFile import GetLatestFile
 from ControlParser.ControlParser import ControlParser,ControlInfo
-from DatabaseInterface.DBInterface import DBInterface
+from DatabaseInterface.MySqlInterface import DBInterface
 from RpcInterface.RpcClient import RpcClient
 
 FILE_SCAN_INTERVAL = 30 # scan control log file time interval in seconds
@@ -54,9 +54,9 @@ class ControlTimingScanner(ControlParser):
 
 
 def test():
-    file_path = r'..\Advia2400_ScreenCapture\QC'
-    db_path = r'D:\DaAn\DaAn-Project\Part II\DaAn.db'
-    timing_scanner = CalibrationTimingScanner(file_path,db_path)
+    file_path = r'C:\A002\Reports'
+    db_path = r'DaAn'
+    timing_scanner = ControlTimingScanner(file_path,db_path)
 
 if __name__ == '__main__':
     test()

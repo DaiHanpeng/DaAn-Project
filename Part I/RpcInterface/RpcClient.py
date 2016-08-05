@@ -5,7 +5,7 @@ class RpcClient():
     rpc framework client.
     """
     def __init__(self):
-        self.server_proxy = xmlrpclib.ServerProxy(uri='http://localhost:8000',allow_none=True)
+        self.server_proxy = xmlrpclib.ServerProxy(uri='http://10.10.10.200:8000',allow_none=True)
 
     def fire_reagent_notification(self):
         try:

@@ -1,7 +1,7 @@
 from threading import Timer
 
 from CalibrationParser.CalibrationParser import CalibrationParser
-from DatabaseInterface.DBInterface import DBInterface
+from DatabaseInterface.MySqlInterface import DBInterface
 from GetLatestFile.GetLatestFile import GetLatestFile
 
 from RpcInterface.RpcClient import RpcClient
@@ -53,8 +53,8 @@ class CalibrationTimingScanner(CalibrationParser):
 
 
 def test():
-    file_path = r'..\Advia2400_ScreenCapture\Calibration'
-    db_path = r'D:\DaAn\DaAn-Project\Part II\DaAn.db'
+    file_path = r'C:\A002\Reports'
+    db_path = r'DaAn'
     timing_scanner = CalibrationTimingScanner(file_path,db_path)
 
 if __name__ == '__main__':

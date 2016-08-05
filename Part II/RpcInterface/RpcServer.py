@@ -154,8 +154,8 @@ class MessageHandler():
 
 
 def test():
-    #server = SimpleXMLRPCServer(("10.10.10.200", 8000),allow_none=True)
-    server = SimpleXMLRPCServer(("127.0.0.1", 8000),allow_none=True)
+    server = SimpleXMLRPCServer(("10.10.10.200", 8000),allow_none=True)
+    #server = SimpleXMLRPCServer(("127.0.0.1", 8000),allow_none=True)
     server.register_introspection_functions()
     server.register_instance(MessageHandler())
     server.serve_forever()

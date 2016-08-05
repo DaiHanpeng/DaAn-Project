@@ -87,7 +87,7 @@ class DaAnInterface():
             for item in instr_status:
                 if isinstance(item,ins_status):
                     try:
-                        InsConnector.SendState(item)
+                        InsConnector.SendStatus(item)
                     except Exception as ex:
                         print ex                                        
 

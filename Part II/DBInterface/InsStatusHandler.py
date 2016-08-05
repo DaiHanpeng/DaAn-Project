@@ -15,12 +15,24 @@ class InsStatusHandler(object):
             for row in rows:
                 try:
                     instr_status = ins_status()
-                    instr_status.RunDate = DateTime.Parse(row['RunDate'])
-                    instr_status.StatusCode = row['StatusCode']
+                    #instr_status.RunDate = DateTime.Parse(row['RunDate'])
+                    instr_status.RunDate = DateTime.Now
+                    if "0" == row['StatusCode']:
+                        instr_status.StatusCode = StatusType.START
+                    elif "1" == row['StatusCode']:
+                        instr_status.StatusCode = StatusType.PAUSE
+                    elif "2" == row['StatusCode']:
+                        instr_status.StatusCode = StatusType.STOP
+                    elif "3" == row['StatusCode']:
+                        instr_status.StatusCode = StatusType.FINISHED
+                    elif "4" == row['StatusCode']:
+                        instr_status.StatusCode = StatusType.POWER_ON
+                    elif "5" == row['StatusCode']:
+                        instr_status.StatusCode = StatusType.POWER_OFF
                     instr_status.ID = row['ID']
                     instr_status.Sent = row['Sent']
                     # add to unsent list
-                    unsent_ins_logs.append(instr_log)
+                    unsent_ins_status.append(instr_status)
                 except Exception as ex:
                     print ex
         return unsent_ins_status

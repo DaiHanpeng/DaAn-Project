@@ -9,6 +9,7 @@ clr.AddReferenceToFileAndPath('IronPython.SQLite.dll')
 #Attention:
 #The SQLITE_DB_PATH is related to path of <IronPython.SQLite.dll>.
 SQLITE_DB_PATH = r'S:\DaAn.db'
+#SQLITE_DB_PATH = r'D:\DaAn\DaAnGit\DaAn-Project\Part II\DaAn.db'
 
 from InsHeartHandler import InsHeartHandler
 from InsReagentInfoHandler import InsReagentInfoHandler

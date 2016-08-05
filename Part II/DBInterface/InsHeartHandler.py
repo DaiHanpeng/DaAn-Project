@@ -14,7 +14,8 @@ class InsHeartHandler(object):
             rows = cursor.fetchall()
             for row in rows:
                 heart = ins_heart()
-                heart.RunDate =  DateTime.Parse(row['RunDate'])
+                #heart.RunDate =  DateTime.Parse(row['RunDate'])
+                heart.RunDate =  DateTime.Now
                 heart.TempReagent = row['TempReagent']
                 heart.TempIncubation = row['TempIncubation']
                 heart.CleaningFluid = row['CleaningFluid']

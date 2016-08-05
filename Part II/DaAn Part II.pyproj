@@ -107,6 +107,9 @@
     <Compile Include="DBInterface\InsTestHandler.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DBInterface\MySqlInterface.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DBInterface\SqliteInterface.py" />
     <Compile Include="DBInterface\DBInterface.py">
       <SubType>Code</SubType>

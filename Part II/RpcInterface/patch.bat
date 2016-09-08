@@ -1,0 +1,1 @@
+ipy.exe "C:\Program Files (x86)\IronPython 2.7\Tools\Scripts\pyc.py" /main:"D:\DaAn\DaAn-Project\Part II\RpcInterface\RpcServer.py" /target:exe

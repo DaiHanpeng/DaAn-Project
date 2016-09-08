@@ -4,20 +4,61 @@
         <name>Daan.Instrument.Connector</name>
     </assembly>
     <members>
-        <!-- 对于成员“T:Daan.Instrument.Communication.WorkListOriginalData”忽略有格式错误的 XML 注释 -->
-        <!-- 对于成员“T:Daan.Instrument.Communication.InsLog”忽略有格式错误的 XML 注释 -->
-        <!-- 对于成员“T:Daan.Instrument.Communication.InsCalibrationResult”忽略有格式错误的 XML 注释 -->
-        <member name="T:Daan.Instrument.Entity.InsStatus">
-            <summary>
-            仪器状态数据格式
-            </summary>
-        </member>
-        <!-- 对于成员“T:Daan.Instrument.Communication.InsCalibrationStatus”忽略有格式错误的 XML 注释 -->
         <member name="T:Daan.Instrument.Type.QCType">
             <summary>
             质控物水平类型,高中低
             </summary>
         </member>
+        <member name="T:Daan.Instrument.Entity.InsStatus">
+            <summary>
+            仪器状态数据格式
+            </summary>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsReagentStatus”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Entity.InsQC">
+            <summary>
+            质控数据结果格式
+            </summary>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsQualitativeData”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsLog”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Type.YinYangCompareType">
+            <summary>
+            阴阳性对照类别
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Entity.InsHeart">
+            <summary>
+            心跳包数据格式
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Entity.InsQualitativeData">
+            <summary>
+            定性参考结果数据结构
+            </summary>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.WorkListOriginalData”忽略有格式错误的 XML 注释 -->
+        <member name="F:Daan.Instrument.Communication.WorkListOriginalData.doctor">
+            新添加字段
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsTestR”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsMessageCode”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsCalibrationResult”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsState”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsQC”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsCalibrationStatus”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsTest”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Type.MessageType">
+            <summary>
+            数据包的类型
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Type.CalibrationType">
+            <summary>
+            定标点的类型
+            </summary>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.WorkListQuery”忽略有格式错误的 XML 注释 -->
         <member name="T:Daan.Instrument.Connector.Encrypt.Des3">
             <summary>
             DES3加密解密
@@ -59,9 +100,19 @@
             <param name="str">密文的byte数组</param>
             <returns>明文的byte数组</returns>
         </member>
-        <member name="T:Daan.Instrument.Type.StatusType">
+        <member name="T:Daan.Instrument.Entity.InsLog">
             <summary>
-            仪器状态类别
+            日志数据包格式
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Entity.InsReagent">
+            <summary>
+            试剂消耗数据格式
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Type.ReagentUsageType">
+            <summary>
+            试剂使用类别
             </summary>
         </member>
         <member name="T:Daan.Instrument.Type.LogType">
@@ -69,48 +120,51 @@
             日志分级
             </summary>
         </member>
-        <member name="T:Daan.Instrument.Entity.InsCalibrationResult">
+        <member name="T:Daan.Instrument.Entity.InsTest">
             <summary>
-            定标结果数据格式
+            常规标本结果数据格式
             </summary>
         </member>
-        <!-- 对于成员“T:Daan.Instrument.Communication.InsTest”忽略有格式错误的 XML 注释 -->
+        <member name="M:Daan.Instrument.Connector.Utility.ByteService.ByteMerge(System.Byte[],System.Byte[])">
+            <summary>
+            byte数组合并，为数据包加入结束码
+            </summary>
+            <param name="Message">原始消息数组</param>
+            <param name="EndCode">结束码byte</param>
+            <returns></returns>
+        </member>
+        <member name="M:Daan.Instrument.Connector.Utility.ByteService.DeleteEndCode(System.Byte[],System.Byte[])">
+            <summary>
+            删除多余的结束码
+            </summary>
+            <param name="Message">原始消息</param>
+            <param name="EndCode">结束码</param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.ReagentInfoS”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsAdjustmentResult”忽略有格式错误的 XML 注释 -->
         <member name="T:Daan.Instrument.Type.CalibrationStateType">
             <summary>
             定标是否通过类型
             </summary>
         </member>
-        <member name="T:Daan.Instrument.Entity.InsLog">
+        <member name="M:Daan.Instrument.Connector.InsConnector.Respornse(Daan.Instrument.Entity.InsMessageResponse)">
             <summary>
-            日志数据包格式
+            异步传输处理的应答信息返回一个InsMessageResponse对象
             </summary>
+            <param name="messageResponse"></param>
         </member>
-        <member name="T:Daan.Instrument.Entity.InsCalibrationStatus">
-            <summary>
-            定标状态数据格式
-            </summary>
-        </member>
-        <!-- 对于成员“T:Daan.Instrument.Communication.InsHeart”忽略有格式错误的 XML 注释 -->
-        <member name="T:Daan.Instrument.Type.CommunicationType">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:Daan.Instrument.Type.CalibrationType">
-            <summary>
-            定标点的类型
-            </summary>
-        </member>
-        <!-- 对于成员“T:Daan.Instrument.Communication.TestR”忽略有格式错误的 XML 注释 -->
-        <member name="T:Daan.Instrument.Type.ReagentUsageType">
-            <summary>
-            试剂使用类别
-            </summary>
-        </member>
-        <member name="M:Daan.Instrument.Connector.InsConnector.InitConnector">
+        <member name="F:Daan.Instrument.Connector.InsConnector.isStarting">
             <summary>
             初始化传输对象
             </summary>
+            
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.NewGuid">
+            <summary>
+            用于获取message的唯一编码
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:Daan.Instrument.Connector.InsConnector.SendStatus(Daan.Instrument.Entity.InsStatus)">
             <summary>
@@ -161,6 +215,37 @@
             <para>　　　}</para>
             </summary>
             <param name="adjustmentResult">参数是InsAdjustmentResult实体类型,使用前需要赋值</param>
+        </member>
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendQualitativeData(Daan.Instrument.Entity.InsQualitativeData)">
+            <summary>
+            <para>示例代码可通过【引用】-->选中"Daan.Instrument.Connector"-->【在对象浏览器中查看】</para>
+            <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para> 
+            <para>发送校准结果【无返回值】，抛异常时请尝试重发，示例调用代码如下：</para>
+            <para>　　　try</para>
+            <para>　　　{</para>
+            <para>　　　　　InsQualitativeData qualitativeData = new InsQualitativeData();</para>
+            <para>　　　　　qualitativeData.Absorbance = getAbsorbance();</para>
+            <para>　　　　　qualitativeData.Barcode = "440103128800";</para>
+            <para>　　　　　qualitativeData.Unit = "g/L";</para>
+            <para>　　　　　qualitativeData.ResultValue = "20";</para>
+            <para>　　　　　qualitativeData.ResultDate = DateTime.Now;</para>
+            <para>　　　　　qualitativeData.TestCode = "38";</para>
+            <para>　　　　　qualitativeData.ReagentLotNo = "160209";</para>
+            <para>　　　　　qualitativeData.LotNo = "160301";</para>
+            <para>　　　　　qualitativeData.Name = "谷草转氨酶";</para>
+            <para>　　　　　qualitativeData.ExpireDate = DateTime.Parse("2016-09-01 00:00:00");</para>
+            <para>　　　　　qualitativeData.OpenDate = DateTime.Parse("2016-03-01 00:00:00");</para>
+            <para>　　　　　qualitativeData.OpenValidDays = 30;</para>
+            <para>　　　　　qualitativeData.RefValue = "21";</para>
+            <para>　　　　　qualitativeData.DeviationRange = "3";</para>
+            <para>　　　　　InsConnector.SendQualitativeData(qualitativeData);</para>
+            <para>　　　}</para>
+            <para>　　　catch (Exception ex)</para>
+            <para>　　　{</para>
+            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
+            <para>　　　}</para>
+            </summary>
+            <param name="qualitativeData">参数是InsQualitativeData实体类型,使用前需要赋值</param>
         </member>
         <member name="M:Daan.Instrument.Connector.InsConnector.SendTest(Daan.Instrument.Entity.InsTest)">
             <summary>
@@ -287,23 +372,6 @@
             <para>选择"Daan.Instrument.Connector"-->"InsConnector",找到对应的方法复制示例代码</para>
             <para>发送定标状态和曲线，可单发曲线信息或曲线+N个结果信息【无返回值】，抛异常时请尝试重发，示例调用代码如下：</para>
             <para>发送定标状态和曲线示例：</para>
-            <para>　　　try</para>
-            <para>　　　{</para>
-            <para>　　　　　InsCalibrationStatus calibrationStatus = new InsCalibrationStatus();</para>
-            <para>　　　　　calibrationStatus.LotNo = strLotNo;</para>
-            <para>　　　　　calibrationStatus.TtlNums = 6;</para>
-            <para>　　　　　calibrationStatus.FitRate = "0.995";</para>
-            <para>　　　　　calibrationStatus.State =  CalibrationStateType.Pass;</para>
-            <para>　　　　　calibrationStatus.ResultDate = DateTime.Now;</para>
-            <para>　　　　　calibrationStatus.ReagentLotNo = "201602169988";</para>
-            <para>　　　　　calibrationStatus.TestCode = strTestCode;</para>
-            <para>　　　　　calibrationStatus.Curve = "y=ax+b";</para>
-            <para>　　　　　InsConnector.SendCalibrationResult(calibrationStatus);</para>
-            <para>　　　}</para>
-            <para>　　　catch (Exception ex)</para>
-            <para>　　　{</para>
-            <para> 　　　　　//发生异常时，表示数据未能成功发送到服务器，请填写处理代码</para>
-            <para>　　　}</para>
             <para>发送多个定标结果示例：</para>
             <para>　　　try</para>
             <para>　　　{</para>
@@ -423,6 +491,15 @@
             <para>　　　　　heart.RunDate = DateTime.Parse("2016-03-08 08:11:12");</para>
             <para>　　　　　heart.TempReagent = "4.3";</para>
             <para>　　　　　heart.TempIncubation = "36.5";</para>
+            <para>　　　　　heart.TempReagent = "4.3";</para>
+            <para>　　　　　heart.CleaningFluid = "102";</para>
+            <para>　　　　　heart.Detergent = "532";</para>
+            <para>　　　　　heart.Effluent = "843";</para>
+            <para>　　　　　heart.Temperature = "37.1";</para>
+            <para>　　　　　heart.SubstrateA = "80";</para>
+            <para>　　　　　heart.SubstrateB = "85";</para>
+            <para>　　　　　heart.PositivePressure = "4A";</para>
+            <para>　　　　　heart.NegativePressure = "60";</para>
             <para>　　　　　InsConnector.SendHeart(heart);</para>
             <para>　　　}</para>
             <para>　　　catch (Exception ex)</para>
@@ -474,6 +551,7 @@
             <para>　　　　　log.RunDate=DateTime.Parse("2016-02-16 08:11:12");</para>
             <para>　　　　　log.Content="试剂仓温度过高！";</para>
             <para>　　　　　log.LogType=LogType.Exception;</para>
+            <para>　　　　　log.Status = "1";</para>
             <para>　　　　　InsConnector.SendLog(log);</para> 
             <para>　　　}</para>
             <para>　　　catch (Exception ex)</para>
@@ -512,7 +590,7 @@
             <param name="workListRequest">参数是InsWorkListRequest实体类型,使用前需要赋值</param>
             <returns>返回值InsWorkListResponse实体类，包含病人基本信息和项目信息</returns>
         </member>
-        <member name="M:Daan.Instrument.Connector.InsConnector.PostMessage(Daan.Instrument.Type.CommunicationType,System.String)">
+        <member name="M:Daan.Instrument.Connector.InsConnector.PostMessage(Daan.Instrument.Type.CommunicationType,System.String,System.String)">
             <summary>
             消息投递函数，异步传输模式，【无返回】,仅供内部调用使用
             </summary>
@@ -521,7 +599,7 @@
             <param name="listMessage">消息列表</param>
             <returns>返回bool</returns>
         </member>
-        <member name="M:Daan.Instrument.Connector.InsConnector.SendMessage(Daan.Instrument.Type.CommunicationType,System.String)">
+        <member name="M:Daan.Instrument.Connector.InsConnector.SendMessage(Daan.Instrument.Type.CommunicationType,System.String,System.String)">
             <summary>
             消息投递函数，同步传输模式，【有返回】,返回值为Group对象,仅供内部调用使用
             </summary>
@@ -530,78 +608,64 @@
             <param name="listMessage">消息列表</param>
             <returns>返回Group</returns>
         </member>
-        <member name="T:Daan.Instrument.Entity.InsWorkListRequest">
+        <member name="T:Daan.Instrument.Entity.InsWorkListResponse">
             <summary>
-            工单WorkList的查询格式
+            服务器返回工单内容的数据格式
             </summary>
         </member>
-        <!-- 对于成员“T:Daan.Instrument.Communication.ReagentInfoS”忽略有格式错误的 XML 注释 -->
-        <!-- 对于成员“T:Daan.Instrument.Communication.InsYinYangCompare”忽略有格式错误的 XML 注释 -->
-        <!-- 对于成员“T:Daan.Instrument.Communication.InsQC”忽略有格式错误的 XML 注释 -->
-        <!-- 对于成员“T:Daan.Instrument.Communication.InsAdjustmentResult”忽略有格式错误的 XML 注释 -->
-        <member name="T:Daan.Instrument.Entity.InsHeart">
-            <summary>
-            心跳包数据格式
-            </summary>
+        <member name="F:Daan.Instrument.Entity.InsWorkListResponse.doctor">
+            新添加字段
         </member>
         <member name="T:Daan.Instrument.Entity.InsAdjustmentResult">
             <summary>
             校准结果数据结构
             </summary>
         </member>
-        <!-- 对于成员“T:Daan.Instrument.Communication.InsReagent”忽略有格式错误的 XML 注释 -->
-        <member name="T:Daan.Instrument.Entity.InsWorkListResponse">
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsHeart”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Type.CommunicationType">
             <summary>
-            服务器返回工单内容的数据格式
+            
             </summary>
         </member>
-        <!-- 对于成员“T:Daan.Instrument.Communication.InsReagentStatus”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsReagent”忽略有格式错误的 XML 注释 -->
+        <member name="T:Daan.Instrument.Type.StatusType">
+            <summary>
+            仪器状态类别
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Entity.InsWorkListRequest">
+            <summary>
+            工单WorkList的查询格式
+            </summary>
+        </member>
+        <member name="T:Daan.Instrument.Entity.InsCalibrationResult">
+            <summary>
+            定标结果数据格式
+            </summary>
+        </member>
+        <member name="M:Daan.Instrument.Connector.Encrypt.Security.Encrypt(System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Daan.Instrument.Connector.Encrypt.Security.Decrypt(System.Byte[])">
+            <summary>
+            解密
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“T:Daan.Instrument.Communication.InsYinYangCompare”忽略有格式错误的 XML 注释 -->
         <member name="T:Daan.Instrument.Entity.InsYinYangCompare">
             <summary>
             阴阳性对照结果的数据格式
             </summary>
         </member>
-        <member name="T:Daan.Instrument.Entity.InsTest">
+        <member name="T:Daan.Instrument.Entity.InsCalibrationStatus">
             <summary>
-            常规标本结果数据格式
-            </summary>
-        </member>
-        <member name="T:Daan.Instrument.Entity.InsQC">
-            <summary>
-            质控数据结果格式
-            </summary>
-        </member>
-        <member name="T:Daan.Instrument.Entity.InsReagent">
-            <summary>
-            试剂消耗数据格式
-            </summary>
-        </member>
-        <member name="M:Daan.Instrument.Connector.Utility.ByteService.ByteMerge(System.Byte[],System.Byte[])">
-            <summary>
-            byte数组合并，为数据包加入结束码
-            </summary>
-            <param name="Message">原始消息数组</param>
-            <param name="EndCode">结束码byte</param>
-            <returns></returns>
-        </member>
-        <member name="M:Daan.Instrument.Connector.Utility.ByteService.DeleteEndCode(System.Byte[],System.Byte[])">
-            <summary>
-            删除多余的结束码
-            </summary>
-            <param name="Message">原始消息</param>
-            <param name="EndCode">结束码</param>
-            <returns></returns>
-        </member>
-        <!-- 对于成员“T:Daan.Instrument.Communication.WorkListQuery”忽略有格式错误的 XML 注释 -->
-        <!-- 对于成员“T:Daan.Instrument.Communication.InsState”忽略有格式错误的 XML 注释 -->
-        <member name="T:Daan.Instrument.Type.YinYangCompareType">
-            <summary>
-            阴阳性对照类别
-            </summary>
-        </member>
-        <member name="T:Daan.Instrument.Type.MessageType">
-            <summary>
-            数据包的类型
+            定标状态数据格式
             </summary>
         </member>
     </members>

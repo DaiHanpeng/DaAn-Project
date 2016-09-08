@@ -60,10 +60,10 @@ class ins_adjustment_result(Common,InsAdjustmentResult):
         return 'not implemented yet...'
 
 
-class ins_calibration_result(Common,InsCalibrationResult):
+class ins_calibration_result(InsCalibrationResult,Common):
     def __init__(self):
-        Common.__init__(self)
         InsCalibrationResult.__init__(self)
+        Common.__init__(self)
 
     def __repr__(self):
         return 'Absorbance:'+str(self.Absorbance)+'\t'+\

@@ -10,6 +10,7 @@ from InsCalibrationResultHandler import InsCalibrationResultHandler
 from InsQCHandler import InsQCHandler
 from InsLogHandler import InsLogHandler
 from InsStatusHandler import InsStatusHandler
+from InsCalibrationStatusHandler import InsCalibrationStatusHandler
 
 MYSQL_DB_NAME = r'DaAn'
 
@@ -52,6 +53,19 @@ class MySqlInterface(object):
     
     def set_InsTests_as_sent(self,tests):
         return InsTestHandler.set_InsTests_as_sent(tests,self.cursor,self.connect)
+
+    #InsCalibrationStatus Interface...
+    def fetch_unsent_items_from_InsCalibrationStatus(self):
+        return InsCalibrationStatusHandler.fetch_unsent_items_from_InsCalibrationStatus(self.cursor)
+    
+    def set_InsCalibrationStatus_as_sent(self,cal_status):
+        return InsCalibrationStatusHandler.set_InsCalibrationStatus_as_sent(cal_status,self.cursor,self.connect)
+
+    def fetch_unsent_items_from_InsCalibrationResult_by_uuid(self,uuid):
+        return InsCalibrationResultHandler.fetch_unsent_items_from_InsCalibrationResult_by_uuid(self.cursor,uuid)
+    
+    def set_InsCalibrationResults_as_sent_by_uuid(self,uuid):
+        return InsCalibrationResultHandler.set_InsCalibrationResults_as_sent_by_uuid(uuid,self.cursor,self.connect)
 
     #InsCalibrationResult Interface...
     def fetch_unsent_items_from_InsCalibrationResult(self):

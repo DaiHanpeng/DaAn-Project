@@ -70,6 +70,51 @@ class MessageHandler():
             except Exception as ex:
                 print ex
 
+    def calibration_curve_handler(self):
+        print 'calibration curve handler is triggered...'
+        with MySqlInterface() as db_interface:
+            try:
+                cal_status = db_interface.fetch_unsent_items_from_InsCalibrationStatus()
+                if cal_status:
+                    ##
+                    print 'get unsent ins calibration status info records,'
+                    for status in cal_status:
+                        if isinstance(status,ins_calibration_status):
+                            #print status
+                            result_list = []
+                            result_list = db_interface.fetch_unsent_items_from_InsCalibrationResult_by_uuid(status.uuid)
+                            if not result_list:
+                                result_list = []
+                            ## calibration status processing...
+                            
+                            daan_result_list = []
+                            for result in result_list:
+                                if isinstance(result,ins_calibration_result):
+                                    daan_result = InsCalibrationResult()
+                                    daan_result.Absorbance = result.Absorbance
+                                    daan_result.Barcode = result.Barcode
+                                    daan_result.LotNo = result.LotNo
+                                    daan_result.Name = result.Name
+                                    daan_result.OpenDate = result.OpenDate
+                                    daan_result.OpenValidDays = result.OpenValidDays
+                                    daan_result.ReagentLotNo = result.ReagentLotNo
+                                    daan_result.ResultDate = result.ResultDate
+                                    daan_result.ResultValue = result.ResultValue
+                                    daan_result.TestCode = result.TestCode
+                                    daan_result.Unit = result.Unit
+                                    #daan_result_list.append(daan_result)
+                                    status.calibrationResults.Add(daan_result)
+                            print 'status: '
+                            print status
+                            daan_interface = DaAnInterface()
+                            daan_interface.send_one_calibration_curve(status)
+                            ##
+                            db_interface.set_InsCalibrationResults_as_sent_by_uuid(status.uuid)
+                        db_interface.set_InsCalibrationStatus_as_sent(cal_status)
+                    print 'calibration curve processing finished successfully...'+str(len(cal_status))
+            except Exception as ex:
+                print ex
+
     def calibration_handler(self):
         print 'calibration result handler is triggered...'
         with MySqlInterface() as db_interface:

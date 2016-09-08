@@ -54,6 +54,13 @@ class DaAnInterface():
                     except Exception as ex:
                         print ex
 
+    def send_one_calibration_curve(self,cal_status):
+        if cal_status and isinstance(cal_status,ins_calibration_status):
+            try:
+                InsConnector.SendCalibrationResult(cal_status)
+            except Exception as ex:
+                print ex
+
     def send_calibration_result(self,cal_results):
         if cal_results:
             for result in cal_results:

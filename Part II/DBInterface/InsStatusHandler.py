@@ -41,6 +41,8 @@ class InsStatusHandler(object):
     def set_InsStatus_as_sent(instr_status,cursor,connect):
         for status_item in instr_status:
             if cursor and connect and isinstance(status_item,ins_status):
+                print 'instrument status record sent:'
+                print status_item
                 cursor.execute("UPDATE InsStatus SET Sent = 1 WHERE ID = {0}".format(status_item.ID))
                 connect.commit()
 

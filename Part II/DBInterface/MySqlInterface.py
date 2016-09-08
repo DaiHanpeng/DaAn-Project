@@ -1,4 +1,3 @@
-
 import pymysql
 
 from DBTables import *
@@ -14,7 +13,7 @@ from InsStatusHandler import InsStatusHandler
 
 MYSQL_DB_NAME = r'DaAn'
 
-class SqliteInterface(object):
+class MySqlInterface(object):
     def __init__(self):
         self.connect = None
         self.cursor = None
@@ -26,7 +25,8 @@ class SqliteInterface(object):
 
     def db_connect_initialize(self):
         #self.connect = sqlite3.connect(SQLITE_DB_PATH)
-        self.connect = pymysql.connect(host='10.10.10.222',user='root', passwd='root', db=MYSQL_DB_NAME, cursorclass=pymysql.cursors.DictCursor)
+       # self.connect = pymysql.connect(host='10.10.10.222',user='root', passwd='root', db=MYSQL_DB_NAME, cursorclass=pymysql.cursors.DictCursor)
+        self.connect = pymysql.connect(host='10.10.10.101',user='root', passwd='root', db=MYSQL_DB_NAME, cursorclass=pymysql.cursors.DictCursor)
         if self.connect:
             print 'DB connected OK?'
             #self.connect.row_factory = sqlite3.Row
@@ -90,7 +90,7 @@ class SqliteInterface(object):
             return self.connect.close()
 
 if __name__ == '__main__':  
-    with SqliteInterface() as db_interface:
+    with MySqlInterface() as db_interface:
         print 'testing start...'
         print db_interface
         try:

@@ -42,6 +42,8 @@ class InsLogHandler(object):
     def set_InsLogs_as_sent(instr_logs,cursor,connect):
         for log_item in instr_logs:
             if cursor and connect and isinstance(log_item,ins_log):
+                print 'instrument log record sent:'
+                print log_item
                 cursor.execute("UPDATE InsLog SET Sent = 1 WHERE ID = {0}".format(log_item.ID))
                 connect.commit()
 

@@ -11,12 +11,13 @@ clr.AddReferenceToFileAndPath(r'C:\Program Files (x86)\IronPython 2.7\Lib\site-p
 sys.path.append(r'C:\Program Files (x86)\IronPython 2.7')
 sys.path.append(r'C:\Program Files (x86)\IronPython 2.7\DLLs')
 sys.path.append(r'C:\Program Files (x86)\IronPython 2.7\Lib')
+sys.path.append(r'C:\Program Files (x86)\IronPython 2.7\Lib\site-packages')
 
 
 from SimpleXMLRPCServer import SimpleXMLRPCServer
 
 from DBInterface.DBTables import *
-from DBInterface.SqliteInterface import SqliteInterface
+from DBInterface.MySqlInterface import MySqlInterface
 from DaAnInterface.DaAnInterface import DaAnInterface
 
 
@@ -28,7 +29,7 @@ class MessageHandler():
 
     def reagent_handler(self):
         print 'reagent handler is triggered...'
-        with SqliteInterface() as db_interface:
+        with MySqlInterface() as db_interface:
             try:
                 reagents = db_interface.fetch_unsent_items_from_InsReagentInfo()
                 if reagents:
@@ -40,16 +41,17 @@ class MessageHandler():
                     ## reagent info processing...
                     daan_interface = DaAnInterface()
                     daan_interface.send_reagent_info(reagents)
+                   
                     ##
                     db_interface.set_InsReagentInfos_as_sent(reagents)
 
-                    print 'reagent info processing finished successfully...'
+                    print 'reagent info processing finished successfully...'+str((reagents))
             except Exception as ex:
                 print ex
 
     def order_result_handler(self):
         print 'order result handler is triggered...'
-        with SqliteInterface() as db_interface:
+        with MySqlInterface() as db_interface:
             try:
                 tests = db_interface.fetch_unsent_items_from_InsTest()
                 if tests:
@@ -64,13 +66,13 @@ class MessageHandler():
                     ##
                     db_interface.set_InsTests_as_sent(tests)
 
-                    print 'patient result processing finished successfully...'
+                    print 'patient result processing finished successfully...'+str(len(tests))
             except Exception as ex:
                 print ex
 
     def calibration_handler(self):
         print 'calibration result handler is triggered...'
-        with SqliteInterface() as db_interface:
+        with MySqlInterface() as db_interface:
             try:
                 cal_results = db_interface.fetch_unsent_items_from_InsCalibrationResult()
                 if cal_results:
@@ -85,13 +87,13 @@ class MessageHandler():
                     ##
                     db_interface.set_InsCalibrationResults_as_sent(cal_results)
 
-                    print 'calibration result processing finished successfully...'
+                    print 'calibration result processing finished successfully...'+str(len(cal_results))
             except Exception as ex:
                 print ex
 
     def control_handler(self):
         print 'qc result handler is triggered...'
-        with SqliteInterface() as db_interface:
+        with MySqlInterface() as db_interface:
             try:
                 qc_results = db_interface.fetch_unsent_items_from_InsQC()
                 if qc_results:
@@ -106,13 +108,13 @@ class MessageHandler():
                     ##
                     db_interface.set_InsQCs_as_sent(qc_results)
 
-                    print 'control result processing finished successfully...'
+                    print 'control result processing finished successfully...'+str(len(qc_results))
             except Exception as ex:
                 print ex
 
     def instrument_log_handler(self):
         print 'instrument log handler is triggered...'
-        with SqliteInterface() as db_interface:
+        with MySqlInterface() as db_interface:
             try:
                 instr_logs = db_interface.fetch_unsent_items_from_InsLog()
                 if instr_logs:
@@ -127,13 +129,13 @@ class MessageHandler():
                     ##
                     db_interface.set_InsLogs_as_sent(instr_logs)
 
-                    print 'instrument log processing finished successfully...'
+                    print 'instrument log processing finished successfully...'+str(len(instr_logs))
             except Exception as ex:
                 print ex
 
     def instrument_status_handler(self):
         print 'instrument status handler is triggered...'
-        with SqliteInterface() as db_interface:
+        with MySqlInterface() as db_interface:
             try:
                 instr_status = db_interface.fetch_unsent_items_from_InsStatus()
                 if instr_status:
@@ -148,14 +150,14 @@ class MessageHandler():
                     ##
                     db_interface.set_InsStatus_as_sent(instr_status)
 
-                    print 'instrument status processing finished successfully...'
+                    print 'instrument status processing finished successfully...'+str(len(instr_status))
             except Exception as ex:
                 print ex
 
 
 def test():
-    server = SimpleXMLRPCServer(("10.10.10.200", 8000),allow_none=True)
-    #server = SimpleXMLRPCServer(("127.0.0.1", 8000),allow_none=True)
+    server = SimpleXMLRPCServer(("", 17788),allow_none=True)
+    #server = SimpleXMLRPCServer(("10.10.10.200", 8000),allow_none=True)
     server.register_introspection_functions()
     server.register_instance(MessageHandler())
     server.serve_forever()

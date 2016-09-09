@@ -97,7 +97,7 @@ class PrintedReagentInfoParser():
                         #R1 reagent item processing
                         if r'R1' == line[28:30]:
                             reagent_name = line[10:24].strip()
-                            count = line[48:56].strip()
+                            count = line[50:56].strip()
                             position = line[32:37].strip()
                             cal_status = line[99:105].strip()
                             self.update_reagent_info(reagent_name,self.reagent_type_map['R1_REAGENT'],count,position,cal_status)
@@ -108,7 +108,7 @@ class PrintedReagentInfoParser():
                         # R2 Reagent item processing
                         if r'R2' == line[28:30]:
                             reagent_name = line[10:24].strip()
-                            count = line[48:56].strip()
+                            count = line[50:56].strip()
                             position = line[32:37].strip()
                             cal_status = line[99:105].strip()
                             self.update_reagent_info(reagent_name,self.reagent_type_map['R2_REAGENT'],count,position,cal_status)

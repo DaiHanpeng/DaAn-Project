@@ -1,5 +1,6 @@
 #import sqlite3
 import MySQLdb
+import pymysql
 import os,sys
 
 from ReagentLogParser.ReagentDef import ReagentDict
@@ -10,6 +11,7 @@ from PrintedReagentParser.PrintedReagentParser import PrintedReagentInfoItem,Pri
 from CalibrationParser.CalibrationParser import CalibrationParser,CalibrationInfo
 from ControlParser.ControlParser import ControlParser,ControlInfo
 from ErrorReportParser.ErrorReportParser import ErrorReportParser,InstrumentLogInfo,InstrumentStatusInfo
+from CalibrationCurveParser.CalibrationCurveParser import CalibrationCurveParser,CalibrationResult,CalibrationCurveInfo
 
 from DBTables import *
 
@@ -23,7 +25,9 @@ class DBInterface(object):
 
     def db_connect_initialize(self,db_path):
         #elf.connect = sqlite3.connect(db_path)
-        self.connect = MySQLdb.connect(host='10.10.10.222', user='root',passwd='root')
+        #self.connect = MySQLdb.connect(host='10.10.10.222', user='root',passwd='root')
+        #self.connect = MySQLdb.connect(host='192.168.2.106', user='root',passwd='root')
+        self.connect = pymysql.connect(host='172.20.10.3', user='root',passwd='root')
         self.connect.select_db(db_path)
 
         with self.connect:
@@ -63,6 +67,8 @@ class DBInterface(object):
         if isinstance(result_info,MtdResultParser):
             for result in result_info.result_list:
                 if isinstance(result,ResultInfo):
+                    print 'insert result info into db:'
+                    print result
                     db_insert = "insert into InsTest (Barcode,TestCode,ResultValue,Unit,Absorbance,Sent) values (%s,%s,%s,%s,%s,0)"
                     self.cursor.execute(db_insert, [result.sample_id, result.test_name, result.value, result.unit, result.abs])
                     self.connect.commit()
@@ -84,15 +90,43 @@ class DBInterface(object):
         if isinstance(cal_parser,CalibrationParser):
             for cal_item in cal_parser.cal_list:
                 if isinstance(cal_item,CalibrationInfo):
+                    print 'insert calibration log into db:'
+                    print cal_item
                     db_insert = "insert into InsCalibrationResult (Name,LotNo,Unit,Absorbance,Sent) values (%s,%s,%s,%s,0)"
                     self.cursor.execute(db_insert, [cal_item.test, cal_item.cal_lot, cal_item.unit,cal_item.abs])
                     self.connect.commit()
+
+
+    def put_calibration_curve_info(self,calibration_curve_info):
+        if isinstance(calibration_curve_info,CalibrationCurveParser):
+            for cal_curve in calibration_curve_info.cal_curve_info_list:
+                if isinstance(cal_curve,CalibrationCurveInfo):
+                    print 'insert calibration curve info into db:'
+                    print cal_curve.uuid, cal_curve.test_code
+                    db_insert = "insert into InsCalibrationStatus \
+                    (Curve,FitRate,LotNo,ReagentLotNo,ResultDate,State,TestCode,TtlNums,Sent,uuid)\
+                    values (%s,%s,%s,%s,%s,%s,%s,%s,0,%s)"
+                    self.cursor.execute(db_insert,\
+                    [cal_curve.curve,cal_curve.fit_rate,cal_curve.lot,cal_curve.reagent_lot,\
+                     cal_curve.result_date,cal_curve.status,cal_curve.test_code,cal_curve.points,cal_curve.uuid])
+                    #self.connect.commit()
+                    for result_item in cal_curve.cal_results:
+                        if isinstance(result_item,CalibrationResult):
+                            db_result_insert = "insert into InsCalibrationResult (LotNo,TestCode,ResultValue,Absorbance,Sent,ID)\
+                             values (%s,%s,%s,%s,0,%s)"
+                            self.cursor.execute(db_result_insert,\
+                                [cal_curve.lot,cal_curve.test_code,result_item.fv,result_item.r,cal_curve.uuid])
+                            #self.connect.commit()
+                    self.connect.commit()
+        print 'insert calibration curve info ended...'
 
     def put_control_info(self,control_info):
         if isinstance(control_info,ControlParser):
             for qc_item in control_info.qc_list:
                 #print qc_item
                 if isinstance(qc_item,ControlInfo):
+                    print 'insert control log into db:'
+                    print qc_item
                     db_insert = "insert into InsQC (Name,LotNo,ResultValue,Unit,Absorbance,Sent) values (%s,%s,%s,%s,%s,0)"
                     self.cursor.execute(db_insert, [qc_item.test,qc_item.qc_lot,qc_item.value,qc_item.unit,qc_item.abs])
                     self.connect.commit()
@@ -101,6 +135,8 @@ class DBInterface(object):
         if isinstance(err_report_parser,ErrorReportParser):
             for instr_log in err_report_parser.instrment_log_list:
                 if isinstance(instr_log,InstrumentLogInfo):
+                    print 'insert instrument log into db:'
+                    print instr_log
                     db_insert = "insert into InsLog (Content,LogType,RunDate,Sent) values (%s,%s,%s,0)"
                     self.cursor.execute(db_insert, [instr_log.log_content,instr_log.log_type,instr_log.date_time])
                     self.connect.commit()
@@ -109,6 +145,8 @@ class DBInterface(object):
         if isinstance(err_report_parser,ErrorReportParser):
             instr_status = err_report_parser.instrment_status
             if isinstance(instr_status,InstrumentStatusInfo):
+                print 'insert instrument status into db:'
+                print instr_status
                 db_insert = "insert into InsStatus (RunDate,StatusCode,Sent) values (%s,%s,0)"
                 self.cursor.execute(db_insert, [instr_status.date_time,instr_status.status_type])
                 self.connect.commit()

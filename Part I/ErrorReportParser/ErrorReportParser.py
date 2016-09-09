@@ -60,6 +60,7 @@ class ErrorReportParser():
     def extract_error_report_info(self,error_report_path):
         lates_err_report_file = GetLatestFile.get_latest_file(error_report_path,'Error_','.TXT')
 
+
         file_content_list = []
         self.instrment_log_list = []
 
@@ -103,6 +104,7 @@ class ErrorReportParser():
 
                         #only new record should be updated.
                         if self.last_update_date_time >= date_time:
+
                             print 'parser breaked!!!'
                             break;#return from the for loop...
 
@@ -134,11 +136,8 @@ class ErrorReportParser():
                                 status_type = InstrumentStatusInfo.STATUS_TYPE["FINISHED"]
 
                             #update instrument status if status changed.
-                            if self.instrment_status.status_type <> status_type:
-                                self.instrment_status.status_type = status_type
-                                self.instrment_status.date_time = date_time
-
-        self.last_update_date_time = latest_update_date_time
+                            self.instrment_status.status_type = status_type
+                            self.instrment_status.date_time = date_time
 
     def __repr__(self):
         return 'instrument info list:\n'+\

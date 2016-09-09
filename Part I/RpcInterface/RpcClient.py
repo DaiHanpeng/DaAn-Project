@@ -24,6 +24,11 @@ class RpcClient():
             self.server_proxy.calibration_handler()
         except Exception as ex:
             print ex
+    def fire_calibration_curve_notification(self):
+        try:
+            self.server_proxy.calibration_curve_handler()
+        except Exception as ex:
+            print ex
 
     def fire_control_notification(self):
         try:

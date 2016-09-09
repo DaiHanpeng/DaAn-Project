@@ -38,6 +38,8 @@ class ControlParser():
         self.qc_list = []
 
     def extract_qc_info(self,qc_file_path):
+        self.qc_list = []
+
         lates_control_file = GetLatestFile.get_latest_file(qc_file_path,'Control_','.TXT')
 
         file_content_list = []

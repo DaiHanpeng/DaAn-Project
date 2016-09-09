@@ -1,0 +1,253 @@
+**********  Calibration Curve  **********
+Date/Time : 8/27/2016 21:28:58
+System # : CA1258001770177
+
+
+Test name : ALT-3
+Calc.mthd : ABS          Blank : Zero                  Axis conv. : No conv.    Formula :                Points : 1
+Date/Time : 1/7/2016 10:16:16   Cal Kit Lot Number : 20160104   R1 Lot Number : 123   R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = -1.000000  C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+
+BLK :                 1.0000              0.7985            0.000000           1    adv
+
+Test name : CO2_L
+Calc.mthd : ABS          Blank : Zero                  Axis conv. : No conv.    Formula :                Points : 1
+Date/Time : 1/20/2016 16:00:08   Cal Kit Lot Number : 20160104   R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = -1.000000  C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                       mmol/L
+BLK :                 1.0000              0.0001            0.000275           3    adv
+
+Test name : MG
+Calc.mthd : ABS          Blank : Zero                  Axis conv. : No conv.    Formula :                Points : 1
+Date/Time : 1/18/2016 17:05:38   Cal Kit Lot Number : 20160104   R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = 0.840336   C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                       mmol/L
+BLK :                 1.1900             -0.0001            0.000019           3    adv
+
+Test name : TEST-MK
+Calc.mthd : ABS          Blank : Zero                  Axis conv. : No conv.    Formula :                Points : 1
+Date/Time : 8/10/2016 11:39:40   Cal Kit Lot Number :    R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = -0.000239  C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+
+BLK :                4180.00              0.0000            0.000000           0
+
+Test name : TBA-M
+Calc.mthd : 1-point      Blank : Zero                  Axis conv. : No conv.    Formula : Linear         Points : 2
+Date/Time : 8/10/2016 18:12:42   Cal Kit Lot Number :    R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = 0.001167   C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+
+BLK :                 0.0000              0.0046            0.000037           2    adv
+STD :                50.0000              0.0584            0.000560           2
+F :                                   856.730047
+
+Test name : HCY-M
+Calc.mthd : Multi-point  Blank : Zero                  Axis conv. : No conv.    Formula : Spline         Points : 6
+Date/Time : 8/10/2016 17:45:55   Cal Kit Lot Number : 20161212   R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = 0.000000   C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 1.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                          g/L
+BLK :                 0.0000              ------            0.000000           0
+STD :                 1.0000              ------            0.000000           0
+BLK :                 0.0000             -0.0002            0.000725           2    adv
+STD-1 :               4.5000             -0.0153            0.000197           2    adv
+STD-2 :               8.9200             -0.0256            0.000278           2    adv
+STD-3 :              18.5400             -0.0395            0.000340           2    adv
+STD-4 :              34.0200             -0.0539            0.000292           2    adv
+STD-5 :              54.1400             -0.0632            0.000141           2    adv
+SD :  0.021805                Sr :  0.000000                r :   1.000000
+
+Test name : ADA-M
+Calc.mthd : 1-point      Blank : Zero                  Axis conv. : No conv.    Formula : Linear         Points : 2
+Date/Time : 8/11/2016 17:48:28   Cal Kit Lot Number :    R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = 0.000539   C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                          U/L
+BLK :                 0.0000              0.0023            0.000044           2    adv
+STD :                42.8000              0.0231            0.000073           2
+F :                                  1854.297661
+
+Test name : AFU-M
+Calc.mthd : 1-point      Blank : Zero                  Axis conv. : No conv.    Formula : Linear         Points : 2
+Date/Time : 8/10/2016 18:12:22   Cal Kit Lot Number :    R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = 0.000651   C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                          U/L
+BLK :                 0.0000              0.0001            0.000016           2    adv
+STD :                60.0000              0.0391            0.000325           2
+F :                                  1534.976171
+
+Test name : CKMB-M
+Calc.mthd : 1-point      Blank : Zero                  Axis conv. : No conv.    Formula : Linear         Points : 2
+Date/Time : 8/10/2016 18:12:30   Cal Kit Lot Number :    R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = 0.000103   C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                          U/L
+BLK :                 0.0000              0.0001            0.000103           2    adv
+STD :                112.500              0.0115            0.000025           2
+F :                                  9744.836088
+
+Test name : HFABP-M
+Calc.mthd : Multi-point  Blank : Zero                  Axis conv. : No conv.    Formula : Spline         Points : 6
+Date/Time : 8/10/2016 16:54:41   Cal Kit Lot Number : 20161212   R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = 0.000000   C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 1.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                        ng/mL
+BLK :                 0.0000              ------            0.000000           0
+STD :                 1.0000              ------            0.000000           0
+BLK :                 0.0000              0.0010            0.001010           2    adv
+STD-1 :               5.0000              0.0106            0.001456           2    adv
+STD-2 :              10.0000              0.0230            0.000465           2    adv
+STD-3 :              20.0000              0.0566            0.003531           2    adv
+STD-4 :              80.0000              0.2903            0.001646           2    adv
+STD-5 :              160.000              0.4916            0.006499           2    adv
+SD :  0.183940                Sr :  0.000000                r :   1.000000
+
+Test name : HBDH-M
+Calc.mthd : 1-point      Blank : Zero                  Axis conv. : No conv.    Formula : Linear         Points : 2
+Date/Time : 8/10/2016 18:12:34   Cal Kit Lot Number :    R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = -0.000107  C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                          U/L
+BLK :                 0.0000             -0.0001            0.000085           2    adv
+STD :                390.200             -0.0416            0.000451           2
+F :                                 -9371.280844
+
+Test name : NGAL-M
+Calc.mthd : Multi-point  Blank : Zero                  Axis conv. : No conv.    Formula : Spline         Points : 6
+Date/Time : 8/10/2016 16:55:29   Cal Kit Lot Number : 20161212   R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = 0.000000   C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 1.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                      mEq/day
+BLK :                 0.0000              ------            0.000000           0
+STD :                 1.0000              ------            0.000000           0
+BLK :                 0.0000              0.0023            0.000155           2    adv
+STD-1 :              75.0000              0.0113            0.001040           2    adv
+STD-2 :              150.000              0.0201            0.000146           2    adv
+STD-3 :              600.000              0.0570            0.000315           2    adv
+STD-4 :              1500.00              0.0846            0.000052           2    adv
+STD-5 :              5000.00              0.1486            0.000169           2    adv
+SD :  0.051297                Sr :  0.000000                r :   1.000000
+
+Test name : NEFA-M
+Calc.mthd : 1-point      Blank : Zero                  Axis conv. : No conv.    Formula : Linear         Points : 2
+Date/Time : 8/10/2016 18:12:38   Cal Kit Lot Number :    R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = 0.119130   C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                        IU/mL
+BLK :                 0.0000              0.0211            0.000083           2    adv
+STD :                 1.0000              0.1191            0.000037           2
+F :                                     8.394204
+
+Test name : BUN-M
+Calc.mthd : 1-point      Blank : Zero                  Axis conv. : No conv.    Formula : Linear         Points : 2
+Date/Time : 8/10/2016 18:12:26   Cal Kit Lot Number :    R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = -0.003958  C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+
+BLK :                 0.0000             -0.0026            0.000285           2    adv
+STD :                 7.1400             -0.0283            0.000645           2
+F :                                  -252.635190
+
+Test name : UN
+Calc.mthd : ABS          Blank : Zero                  Axis conv. : No conv.    Formula :                Points : 1
+Date/Time : 1/18/2016 17:05:45   Cal Kit Lot Number : 20160104   R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = -0.046729  C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                       mmol/L
+BLK :                21.4000              0.0037            0.000644           3    adv
+
+Test name : GLUH_3
+Calc.mthd : ABS          Blank : Zero                  Axis conv. : No conv.    Formula :                Points : 1
+Date/Time : 7/14/2016 13:09:27   Cal Kit Lot Number : 20160104   R1 Lot Number : 069   R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = 0.001000   C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                       mmol/L
+BLK :                1000.00             -0.0386            0.003299           3    adv
+
+Test name : TP
+Calc.mthd : 1-point      Blank : Zero                  Axis conv. : No conv.    Formula : Linear         Points : 2
+Date/Time : 7/22/2016 16:37:05   Cal Kit Lot Number :    R1 Lot Number : 123   R2 Lot Number : 124
+Status : Fail
+A  = 0.000000   B  = 0.000579   C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                          g/L
+BLK :                 0.0000              0.0906            0.002493           3    adv
+STD :                73.0000              0.0423            0.000176           3
+F :                                  1726.426181
+
+Test name : ALB
+Calc.mthd : 1-point      Blank : Zero                  Axis conv. : No conv.    Formula : Linear         Points : 2
+Date/Time : 7/22/2016 16:09:50   Cal Kit Lot Number :    R1 Lot Number : 069   R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = 0.009930   C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                          g/L
+BLK :                 0.0000              0.1545            0.000246           3    adv
+STD :                38.0000              0.3773            0.005588           3
+F :                                   100.703299
+
+Test name : UA
+Calc.mthd : 1-point      Blank : Zero                  Axis conv. : No conv.    Formula : Linear         Points : 2
+Date/Time : 7/23/2016 09:36:55   Cal Kit Lot Number :    R1 Lot Number : 121   R2 Lot Number : 122
+Status : Pass
+A  = 0.000000   B  = 0.000436   C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                       umol/L
+BLK :                 0.0000              0.0135            0.000230           3    adv
+STD :                472.000              0.2057            0.000783           3
+F :                                  2295.073192
+
+Test name : ALT
+Calc.mthd : ABS          Blank : Zero                  Axis conv. : No conv.    Formula :                Points : 1
+Date/Time : 7/23/2016 09:09:25   Cal Kit Lot Number : 20160104   R1 Lot Number : 169   R2 Lot Number : 170
+Status : Pass
+A  = 0.000000   B  = -0.000236  C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                          U/L
+BLK :                4239.00              0.0003            0.000041           3    adv
+
+Test name : AST
+Calc.mthd : ABS          Blank : Zero                  Axis conv. : No conv.    Formula :                Points : 1
+Date/Time : 1/18/2016 17:06:21   Cal Kit Lot Number : 20160104   R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = -0.000236  C  = 0.000000   D  = 0.000000   E  = 0.000000   u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                          U/L
+BLK :                4239.00              0.0004            0.000098           3    adv
+
+Test name : APO A1
+Calc.mthd : Multi-point  Blank : Zero                  Axis conv. : Log.-linear Formula : LOGIT-LOG-3    Points : 5
+Date/Time : 7/23/2016 10:53:00   Cal Kit Lot Number :    R1 Lot Number :    R2 Lot Number :
+Status : Pass
+A  = 0.000000   B  = 1.214436   C  = 1.736005   D  = 0.425440   E  = -0.508987  u1 = 0.000000   u2 = 0.000000
+                      <FV>               <MEAN>               <R>            <N>    <User>
+                          g/L
+BLK :                 0.0000              0.0000            0.000000           0
+STD :                 1.0000              0.0000            0.000000           0
+BLK :                 0.0000              0.0000            0.000000           0
+STD-1 :               0.3580              0.0090            0.000000           0    adv
+STD-2 :               0.7150              0.0300            0.000000           0    adv
+STD-3 :               1.4300              0.0600            0.000000           0    adv
+STD-4 :               2.8600              0.1000            0.000000           0    adv
+SD :  0.036499                Sr :  0.001071                r :   0.999570

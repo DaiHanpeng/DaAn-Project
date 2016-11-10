@@ -28,7 +28,7 @@ class MtdResultParser():
     """
     parser for test result information from .mtd file.
     """
-    result_type_map = {'OFF':0,'START':1,'ISE':2,'HIL':3,'NORMAL':4}
+    result_type_map = {'OFF':0,'START':1,'ISE':2,'HIL':3,'NORMAL':4,'CALCULTED':5}
 
     def __init__(self):
         self.result_list = []
@@ -58,6 +58,7 @@ class MtdResultParser():
                     ISE_RESULT_HEADER = 'Test Name      Conc.  Unit        Mark            SAMPLE    BUFFER  Electrode/Refrence Lot  UserCode'
                     HIL_RESULT_HEADER = 'Test Name      Conc.  Mark          UserCode    ABS-RB       ABS  Measurement test name'
                     NORMAL_RESULT_HEADER = 'Test Name      Conc.  Unit        Mark            ABS-RB       ABS  R1 LOT#  R2 LOT#  UserCode'
+                    CALCULATED_RESULT_HEADER = r'Test Name      Conc.  Unit        Mark          UserCode'
                     RESULT_FLAG = 'XYZ'
                     if -1 <> line.find('Year') and -1 <> line.find(':') and -1 <> line.find('/'):
                         splitted_line_list = line.split()
@@ -84,6 +85,9 @@ class MtdResultParser():
                     elif -1 <> line.find(NORMAL_RESULT_HEADER):
                         if matching_status <> self.result_type_map['OFF']:
                             matching_status = self.result_type_map['NORMAL']
+                    elif -1 <> line.find(CALCULATED_RESULT_HEADER):
+                        if matching_status <> self.result_type_map['OFF']:
+                            matching_status = self.result_type_map['CALCULTED']
                     elif -1 <> line.find(RESULT_FLAG):
                         splitted_line_list = line.split()
                         test_name = splitted_line_list[0]
@@ -101,6 +105,9 @@ class MtdResultParser():
                             abs_rb = splitted_line_list[-3]
                             abs = splitted_line_list[-2]
                             self.result_list.append(ResultInfo(sample_id,str(date_time),test_name,value,unit,abs_rb,abs))
+                        elif self.result_type_map['CALCULTED'] == matching_status:
+                            unit = r'%'
+                            self.result_list.append(ResultInfo(sample_id,str(date_time),test_name,value,unit))
                         else:
                             matching_status = self.result_type_map['OFF']
                     else:
@@ -114,8 +121,9 @@ def test_result_info():
     print ResultInfo('12345','4/28/2016 08:00:31','Alb','12.3','g/L','0.123','0.234')
 
 def test():
+    mtd_folder = r'G:\05_DaAn\Mtd_Calculated_Result'
     mtd_parser = MtdResultParser()
-    mtd_parser.build_result_info_from_mtd_file('.')
+    mtd_parser.build_result_info_from_mtd_file(mtd_folder)
     print mtd_parser
 
 if __name__ == '__main__':

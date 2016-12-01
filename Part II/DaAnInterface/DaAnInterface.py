@@ -38,12 +38,15 @@ class DaAnInterface():
         if reagent_list:
             ins_reagent_status = InsReagentStatus()
             ins_reagent_status.RunDate = DateTime.Now#datetime.datetime.now()
+            ins_reagent_info_list = []
             for reagent in reagent_list:
                 if isinstance(reagent,ins_reagent_info):
-                    try:
-                        InsConnector.SendReagentStatus(ins_reagent_status,reagent)
-                    except Exception as ex:
-                        print ex
+                    ins_reagent_info_list.append(reagent)
+            #send 
+            try:
+                InsConnector.SendReagentStatus(ins_reagent_status,Array[InsReagentInfo](ins_reagent_info_list))
+            except Exception as ex:
+                print 'exception encounteered during sending reagent status... ', ex
 
     def send_order_result_info(self,order_result_list):
         if order_result_list:

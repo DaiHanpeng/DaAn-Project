@@ -1,6 +1,7 @@
 from GetLatestFile.GetLatestFile import GetLatestFile
 import datetime
 
+from DatabaseInterface.MySqlTimestampInterface import TableTimestampInterface,MYSQL_DB_SCHEMA
 
 class ResultInfo():
     """
@@ -28,11 +29,21 @@ class MtdResultParser():
     """
     parser for test result information from .mtd file.
     """
-    result_type_map = {'OFF':0,'START':1,'ISE':2,'HIL':3,'NORMAL':4,'CALCULTED':5}
+    MODULE_NAME = r'MtdResult'
+    result_type_map = {'OFF':0,'START':1,'ISE':2,'HIL':3,'NORMAL':4}
 
     def __init__(self):
         self.result_list = []
-        self.last_time_stamp = None
+        self.last_updated_timestamp = None
+        try:
+            db_interface = TableTimestampInterface()
+            db_interface.db_connect_initialize(MYSQL_DB_SCHEMA)
+            self.last_updated_timestamp = db_interface.get_table_last_updated_timestamp(self.MODULE_NAME)
+            print self.MODULE_NAME,' last updated timestamp: ', self.last_updated_timestamp
+        except Exception as e:
+            print 'db timestamp initialize failed!', e
+        finally:
+            db_interface.db_disconnect()
 
     def build_result_info_from_mtd_file(self,mtd_folder_path):
         lates_mtd_file = GetLatestFile.get_latest_file(mtd_folder_path,'','.MTD')
@@ -49,6 +60,8 @@ class MtdResultParser():
             finally:
                 mtd_file_handler.close()
 
+        last_updated_timestamp = self.last_updated_timestamp
+
         if file_content_list:
             matching_status = self.result_type_map['OFF']
             for line in file_content_list:
@@ -58,24 +71,26 @@ class MtdResultParser():
                     ISE_RESULT_HEADER = 'Test Name      Conc.  Unit        Mark            SAMPLE    BUFFER  Electrode/Refrence Lot  UserCode'
                     HIL_RESULT_HEADER = 'Test Name      Conc.  Mark          UserCode    ABS-RB       ABS  Measurement test name'
                     NORMAL_RESULT_HEADER = 'Test Name      Conc.  Unit        Mark            ABS-RB       ABS  R1 LOT#  R2 LOT#  UserCode'
-                    CALCULATED_RESULT_HEADER = r'Test Name      Conc.  Unit        Mark          UserCode'
                     RESULT_FLAG = 'XYZ'
-                    if -1 <> line.find('Year') and -1 <> line.find(':') and -1 <> line.find('/'):
+                    #bug fixed:
+                    #calibration results and control results are all contained in the mtd file
+                    #to exclude them, just avoid 'CTT-' in the very first matching line.
+                    if -1 <> line.find('Year') and -1 <> line.find(':') and -1 <> line.find('/') and -1 == line.find(r'CTT-'):
                         splitted_line_list = line.split()
                         sample_id = splitted_line_list[0]
                         sample_date_time = splitted_line_list[-2] + ' ' + splitted_line_list[-1]
                         # Attention!
                         # the date time format may vary...
                         date_time = datetime.datetime.strptime(sample_date_time,'%m/%d/%Y %H:%M:%S')
-                        if self.last_time_stamp:
-                            if date_time > self.last_time_stamp:
+                        if self.last_updated_timestamp:
+                            if date_time > self.last_updated_timestamp:
                                 matching_status = self.result_type_map['START']
-                                self.last_time_stamp = date_time
+                                self.last_updated_timestamp = date_time
                             else:
                                 matching_status = self.result_type_map['OFF']
                         else:
                             matching_status = self.result_type_map['START']
-                            self.last_time_stamp = date_time
+                            self.last_updated_timestamp = date_time
                     elif -1 <> line.find(ISE_RESULT_HEADER):
                         if matching_status <> self.result_type_map['OFF']:
                             matching_status = self.result_type_map['ISE']
@@ -85,9 +100,6 @@ class MtdResultParser():
                     elif -1 <> line.find(NORMAL_RESULT_HEADER):
                         if matching_status <> self.result_type_map['OFF']:
                             matching_status = self.result_type_map['NORMAL']
-                    elif -1 <> line.find(CALCULATED_RESULT_HEADER):
-                        if matching_status <> self.result_type_map['OFF']:
-                            matching_status = self.result_type_map['CALCULTED']
                     elif -1 <> line.find(RESULT_FLAG):
                         splitted_line_list = line.split()
                         test_name = splitted_line_list[0]
@@ -105,13 +117,20 @@ class MtdResultParser():
                             abs_rb = splitted_line_list[-3]
                             abs = splitted_line_list[-2]
                             self.result_list.append(ResultInfo(sample_id,str(date_time),test_name,value,unit,abs_rb,abs))
-                        elif self.result_type_map['CALCULTED'] == matching_status:
-                            unit = r'%'
-                            self.result_list.append(ResultInfo(sample_id,str(date_time),test_name,value,unit))
                         else:
                             matching_status = self.result_type_map['OFF']
                     else:
                         matching_status = self.result_type_map['OFF']
+        #write update timestamp to database.
+        if self.last_updated_timestamp > last_updated_timestamp:
+            try:
+                db_interface = TableTimestampInterface()
+                db_interface.db_connect_initialize(MYSQL_DB_SCHEMA)
+                db_interface.update_table_timestamp(self.MODULE_NAME,self.last_updated_timestamp)
+            except Exception as e:
+                print 'db update timestamp failed!', e
+            finally:
+                db_interface.db_disconnect()
 
     def __repr__(self):
         return '\n'.join(repr(item) for item in self.result_list)
@@ -121,9 +140,8 @@ def test_result_info():
     print ResultInfo('12345','4/28/2016 08:00:31','Alb','12.3','g/L','0.123','0.234')
 
 def test():
-    mtd_folder = r'G:\05_DaAn\Mtd_Calculated_Result'
     mtd_parser = MtdResultParser()
-    mtd_parser.build_result_info_from_mtd_file(mtd_folder)
+    mtd_parser.build_result_info_from_mtd_file('.')
     print mtd_parser
 
 if __name__ == '__main__':

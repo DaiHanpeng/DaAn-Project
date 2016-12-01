@@ -103,6 +103,13 @@ class ins_yingyang_compare(Common):
     def __init__(self):
         Common.__init__(self)
 
+#to keep every time the record in other tables updated.
+class table_last_update_timestamp():
+    def __init__(self,id,table_name,updated_timestamp):
+        self.id = id
+        self.table_name = table_name
+        self.updated_timestamp = updated_timestamp
+
 if __name__ == '__main__':
     print 'just for testing!'
 

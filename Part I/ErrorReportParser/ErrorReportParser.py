@@ -1,6 +1,9 @@
-from GetLatestFile.GetLatestFile import GetLatestFile
 import os
 import time
+import datetime
+
+from GetLatestFile.GetLatestFile import GetLatestFile
+from DatabaseInterface.MySqlTimestampInterface import TableTimestampInterface,MYSQL_DB_SCHEMA
 
 class InstrumentLogInfo():
     """
@@ -39,6 +42,8 @@ class ErrorReportParser():
     parser for printed error file.
     extracting info of instrument log instrument status.
     """
+    MODULE_NAME = r'ErrorReport'
+
     PARSING_MODE = {"LOG_HEAD":1,"LOG_ITEM":2}
 
     LOG_HEAD = r'No.    Date    Section     Mode           Samp.ID     Test     Safe.No.    Contents                            Measures'
@@ -50,16 +55,26 @@ class ErrorReportParser():
     #INSTRUMENT_POWER_ON = r""
     #INSTRUMENT_POWER_OFF = r""
 
-
     def __init__(self):
         self.instrment_status = InstrumentStatusInfo(date_time='',status_type=InstrumentStatusInfo.STATUS_TYPE["POWER_OFF"])
         self.instrment_log_list = []
         self.first_launch_flag = True
-        self.last_update_date_time = r''
+        self.last_updated_timestamp = r''
+
+        try:
+            db_interface = TableTimestampInterface()
+            db_interface.db_connect_initialize(MYSQL_DB_SCHEMA)
+            self.last_updated_timestamp = db_interface.get_table_last_updated_timestamp(self.MODULE_NAME)
+            print self.MODULE_NAME,' last updated timestamp: ', self.last_updated_timestamp
+        except Exception as e:
+            print 'db timestamp initialize failed!', e
+        finally:
+            db_interface.db_disconnect()
 
     def extract_error_report_info(self,error_report_path):
         lates_err_report_file = GetLatestFile.get_latest_file(error_report_path,'Error_','.TXT')
-
+        print 'latest err report file:'
+        print lates_err_report_file
 
         file_content_list = []
         self.instrment_log_list = []
@@ -77,7 +92,7 @@ class ErrorReportParser():
         parsing_mode = ErrorReportParser.PARSING_MODE["LOG_HEAD"]
         instrument_status_parsered = False
 
-        latest_update_date_time = self.last_update_date_time
+        last_update_timestamp = self.last_updated_timestamp
 
         if file_content_list:
             for line in file_content_list:
@@ -97,14 +112,18 @@ class ErrorReportParser():
 
                         #"2006-1-16 2:28:22"
                         date_time = year+'-'+month+'-'+day+' '+hour+':'+minute+':'+'00'
+                        f_date_time = datetime.datetime.strptime(date_time,'%Y-%m-%d %H:%M:%S')
 
                         #update the latest log time stamp.
-                        if latest_update_date_time < date_time:
-                            latest_update_date_time = date_time
+                        if last_update_timestamp < f_date_time:
+                            last_update_timestamp = f_date_time
 
                         #only new record should be updated.
-                        if self.last_update_date_time >= date_time:
-
+                        if self.last_updated_timestamp >= f_date_time:
+                            print 'matched date time:'
+                            print f_date_time
+                            print 'previous date time:'
+                            print self.last_updated_timestamp
                             print 'parser breaked!!!'
                             break;#return from the for loop...
 
@@ -138,6 +157,19 @@ class ErrorReportParser():
                             #update instrument status if status changed.
                             self.instrment_status.status_type = status_type
                             self.instrment_status.date_time = date_time
+
+            print 'last_updated_timestamp updated:'
+            print last_update_timestamp
+            if self.last_updated_timestamp < last_update_timestamp:
+                self.last_updated_timestamp = last_update_timestamp
+                try:
+                    db_interface = TableTimestampInterface()
+                    db_interface.db_connect_initialize(MYSQL_DB_SCHEMA)
+                    db_interface.update_table_timestamp(self.MODULE_NAME,self.last_updated_timestamp)
+                except Exception as e:
+                    print 'db update timestamp failed!', e
+                finally:
+                    db_interface.db_disconnect()
 
     def __repr__(self):
         return 'instrument info list:\n'+\

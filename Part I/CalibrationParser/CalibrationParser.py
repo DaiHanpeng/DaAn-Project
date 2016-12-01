@@ -1,5 +1,7 @@
+import datetime
 from GetLatestFile.GetLatestFile import GetLatestFile
 
+from DatabaseInterface.MySqlTimestampInterface import MYSQL_DB_SCHEMA,TableTimestampInterface
 
 class CalibrationInfo():
     """
@@ -24,6 +26,7 @@ class CalibrationInfo():
                 'abs:' + str(self.abs)
 
 class CalibrationParser():
+    MODULE_NAME = r'Calibration'
     """
     calibration data parser from printed file.
     """
@@ -36,9 +39,19 @@ class CalibrationParser():
 
     def __init__(self):
         self.cal_list = []
+        try:
+            db_interface = TableTimestampInterface()
+            db_interface.db_connect_initialize(MYSQL_DB_SCHEMA)
+            self.last_updated_timestamp = db_interface.get_table_last_updated_timestamp(self.MODULE_NAME)
+            print self.MODULE_NAME,' last updated timestamp: ', self.last_updated_timestamp
+        except Exception as e:
+            print 'db timestamp initialize failed!', e
+        finally:
+            db_interface.db_disconnect()
 
     def extract_cal_info(self,cal_path):
         self.cal_list = []
+        last_updated_timestamp = self.last_updated_timestamp
         
         lates_cal_file = GetLatestFile.get_latest_file(cal_path,'Calibration_','.TXT')
 
@@ -92,13 +105,27 @@ class CalibrationParser():
                             abs = line[58:68].strip()
 
                             if cal_lot and date_time:
-                                cal_info = CalibrationInfo(cal_lot,date_time,test,value,unit,abs_rb,abs)
-                                self.cal_list.append(cal_info)
+                                f_date_time = datetime.datetime.strptime(date_time,'%d %b %Y %H:%M:%S')
+                                if f_date_time > last_updated_timestamp:
+                                    cal_info = CalibrationInfo(cal_lot,f_date_time,test,value,unit,abs_rb,abs)
+                                    self.cal_list.append(cal_info)
+                                    if f_date_time > self.last_updated_timestamp:
+                                        self.last_updated_timestamp = f_date_time
                 else:
                     #empty line, must match next SECTION.
                     cal_lot = ''
                     date_time = ''
                     parsing_mode = CalibrationParser.parsing_mode['SECTION']
+
+        if self.last_updated_timestamp > last_updated_timestamp:
+            try:
+                db_interface = TableTimestampInterface()
+                db_interface.db_connect_initialize(MYSQL_DB_SCHEMA)
+                db_interface.update_table_timestamp(self.MODULE_NAME,self.last_updated_timestamp)
+            except Exception as e:
+                print 'db update timestamp failed!', e
+            finally:
+                db_interface.db_disconnect()
 
 
     def __repr__(self):
@@ -107,7 +134,8 @@ class CalibrationParser():
 
 def test():
     cal_parser = CalibrationParser()
-    cal_path = r'D:\01_Automation\23_Experiential_Conclusions_2016\05_DaAn\Reports\Training_Center_2400_Reports\Reports'
+    #cal_path = r'D:\01_Automation\23_Experiential_Conclusions_2016\05_DaAn\Reports\Training_Center_2400_Reports\Reports'
+    cal_path = '.'
     cal_parser.extract_cal_info(cal_path)
     print cal_parser
 

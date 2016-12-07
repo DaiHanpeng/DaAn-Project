@@ -1,5 +1,8 @@
 from GetLatestFile.GetLatestFile import GetLatestFile
 import uuid
+import datetime
+from DatabaseInterface.MySqlTimestampInterface import MYSQL_DB_SCHEMA,TableTimestampInterface
+
 
 class CalibrationResult():
     '''
@@ -63,13 +66,25 @@ class CalibrationCurveParser():
     [RESULT]F :                                   856.730047
     '''
     PARSING_MODE = {'OFF':0,'HEAD1':1,'HEAD2':2,'HEAD3':3,'HEAD4':4,'HEAD5':5,'HEAD6':6,'HEAD7':7,'RESULT':8}
+    MODULE_NAME = r'CalibrationCurve'
     def __init__(self):
         self.cal_curve_info_list = []
+        try:
+            db_interface = TableTimestampInterface()
+            db_interface.db_connect_initialize(MYSQL_DB_SCHEMA)
+            self.last_updated_timestamp = db_interface.get_table_last_updated_timestamp(self.MODULE_NAME)
+            print self.MODULE_NAME,' last updated timestamp: ', self.last_updated_timestamp
+        except Exception as e:
+            print 'db timestamp initialize failed!', e
+        finally:
+            db_interface.db_disconnect()
 
     def extract_cal_info(self,cal_path):
         self.cal_curve_info_list = []
 
         lates_cal_file = GetLatestFile.get_latest_file(cal_path,'Calibration Curve','.TXT')
+
+        last_updated_timestamp = self.last_updated_timestamp
 
         print lates_cal_file
 
@@ -102,6 +117,7 @@ class CalibrationCurveParser():
                         status = ''
                         cal_results = []
                         rate = r'1.0'
+                        f_date_time = datetime.datetime.now()
                         if line.find(r'Test name :') <> -1:
                             test = line.split(r':')[1].strip()
                             parsing_mode = CalibrationCurveParser.PARSING_MODE['HEAD2']
@@ -115,6 +131,7 @@ class CalibrationCurveParser():
                     elif CalibrationCurveParser.PARSING_MODE['HEAD3'] == parsing_mode:
                         if line.find(r'Date/Time :') <> -1 and line.find(r'Cal Kit Lot Number :') <> -1:
                             date_time = line.split(r'Date/Time :')[1].split(r'Cal Kit Lot Number :')[0].strip()
+                            f_date_time = datetime.datetime.strptime(date_time,'%m/%d/%Y %H:%M:%S')#1/20/2016 16:00:08
                             cal_lot = line.split(r'Cal Kit Lot Number :')[1].split(r'R1 Lot Number :')[0].strip()
                             reagent_lot = line.split(r'R1 Lot Number :')[1].split(r'R2 Lot Number :')[0].strip()
                             parsing_mode = CalibrationCurveParser.PARSING_MODE['HEAD4']
@@ -135,8 +152,11 @@ class CalibrationCurveParser():
                     elif CalibrationCurveParser.PARSING_MODE['RESULT'] == parsing_mode:
                         if line.strip() == '':
                             parsing_mode = CalibrationCurveParser.PARSING_MODE['HEAD1']
-                            self.cal_curve_info_list.append(\
-                                CalibrationCurveInfo(cal_lot,points,rate,status,date_time,reagent_lot,test,curve,cal_results))
+                            if f_date_time > last_updated_timestamp:
+                                if f_date_time > self.last_updated_timestamp:
+                                    self.last_updated_timestamp = f_date_time
+                                self.cal_curve_info_list.append(\
+                                    CalibrationCurveInfo(cal_lot,points,rate,status,f_date_time,reagent_lot,test,curve,cal_results))
                         else:
                             if line.find(r'SD :') <> -1:
                                 rate = line.split(r'     r :')[1].strip()
@@ -148,6 +168,16 @@ class CalibrationCurveParser():
                                 user = line[82:].strip()
                                 if fv and mean and r and n and user:
                                     cal_results.append(CalibrationResult(fv,mean,r,n))
+
+        if self.last_updated_timestamp > last_updated_timestamp:
+            try:
+                db_interface = TableTimestampInterface()
+                db_interface.db_connect_initialize(MYSQL_DB_SCHEMA)
+                db_interface.update_table_timestamp(self.MODULE_NAME,self.last_updated_timestamp)
+            except Exception as e:
+                print 'db update timestamp failed!', e
+            finally:
+                db_interface.db_disconnect()
 
     def __repr__(self):
         return 'Calibration Curve Parse Result:\n' +\

@@ -39,6 +39,7 @@ class TableTimestampInterface(object):
         INSERT INTO table_last_update_timestamp(table_name,update_timestamp) SELECT 'Control','2000-01-01 01:01:01' FROM table_last_update_timestamp WHERE NOT EXISTS(SELECT table_name FROM table_last_update_timestamp WHERE table_name='Control') LIMIT 1;
         INSERT INTO table_last_update_timestamp(table_name,update_timestamp) SELECT 'MtdResult','2000-01-01 01:01:01' FROM table_last_update_timestamp WHERE NOT EXISTS(SELECT table_name FROM table_last_update_timestamp WHERE table_name='MtdResult') LIMIT 1;
         INSERT INTO table_last_update_timestamp(table_name,update_timestamp) SELECT 'ErrorReport','2000-01-01 01:01:01' FROM table_last_update_timestamp WHERE NOT EXISTS(SELECT table_name FROM table_last_update_timestamp WHERE table_name='ErrorReport') LIMIT 1;
+        INSERT INTO table_last_update_timestamp(table_name,update_timestamp) SELECT 'CalibrationCurve','2000-01-01 01:01:01' FROM table_last_update_timestamp WHERE NOT EXISTS(SELECT table_name FROM table_last_update_timestamp WHERE table_name='CalibrationCurve') LIMIT 1;
         '''
 
         self.cursor.execute(db_init)

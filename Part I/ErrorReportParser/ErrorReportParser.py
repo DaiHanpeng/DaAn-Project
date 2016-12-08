@@ -26,7 +26,7 @@ class InstrumentStatusInfo():
     """
     definition of instrument status info
     """
-    STATUS_TYPE = {"START":0,"PAUSE":1,"STOP":2,"FINISHED":3,"POWER_ON":4,"POWER_OFF":5}
+    STATUS_TYPE = {"START":0,"PAUSE":1,"STOP":2,"FINISHED":3,"POWER_ON":4,"POWER_OFF":5,"UNKNOWN":6}
 
     def __init__(self,date_time,status_type):
         self.date_time = date_time
@@ -56,7 +56,7 @@ class ErrorReportParser():
     #INSTRUMENT_POWER_OFF = r""
 
     def __init__(self):
-        self.instrment_status = InstrumentStatusInfo(date_time='',status_type=InstrumentStatusInfo.STATUS_TYPE["POWER_OFF"])
+        self.instrment_status = InstrumentStatusInfo(date_time='',status_type=InstrumentStatusInfo.STATUS_TYPE["UNKNOWN"])
         self.instrment_log_list = []
         self.first_launch_flag = True
         self.last_updated_timestamp = r''

@@ -29,6 +29,8 @@ class InsStatusHandler(object):
                         instr_status.StatusCode = StatusType.POWER_ON
                     elif "5" == row['StatusCode']:
                         instr_status.StatusCode = StatusType.POWER_OFF
+                    else:
+                        continue
                     instr_status.ID = row['ID']
                     instr_status.Sent = row['Sent']
                     # add to unsent list
